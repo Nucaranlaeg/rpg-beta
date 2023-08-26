@@ -17,7 +17,7 @@ classes.fighter = {
 		"Hammer and Chisel - While in this Stance, the damage from all of your attacks against a creature on your turn is added together before how many wounds the creature takes is calculated and is treated as a single attack for the purposes of damage reduction.  When you hit a creature with an attack, your subsequent attacks against that creature this round deal an additional 2 damage.  This damage stacks.",
 	],
 	"General": [
-		"Combat Reflexes - You may take additional reactions each round up to your Dexterity modifier (minimum 1 extra reaction).  Each extra reaction may only be used to make an attack of opportunity.",
+		"Combat Reflexes (Fighter) - You may take additional reactions each round up to your Dexterity modifier (minimum 1 extra reaction).  Each extra reaction may only be used to make an attack of opportunity.",
 		"Martial Tempo - When you use your standard action to attack, you may attack one fewer times than usual but also gain the benefit of the Ready action.  You may only use this to Ready a single attack.",
 		"Armour Mastery - If your armour restricts the maximum Dexterity bonus you may apply to your AC, increase the maximum Dexterity bonus you may apply to your AC by 2.",
 		"Steelclad - While wearing heavy armour, you may ignore the first wound you take each hour.",

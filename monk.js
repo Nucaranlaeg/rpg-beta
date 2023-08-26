@@ -37,7 +37,7 @@ classes.monk = {
 		"Tumble - You don't provoke opportunity attacks when leaving a space threatened by a creature unless that creature threatened you at the start of your turn and it no longer threatens you.",
 		"Whole Body a Weapon - You may use an unarmed strike as an offhand weapon, even if both of your hands are full.",
 		"Improved Initiative - You gain a +2 bonus to initiative.  You retain your Dexterity bonus to AC when you are surprised.",
-		"Deflect Arrows - Once per round, when you are hit by an arrow or other projectile weighing fewer pounds than your strength modifier (minimum 1), you knock it out of the air and take no damage.  You cannot deflect critical hits.",
+		"Deflect Arrows - Once per round, when you are hit by an arrow or other projectile weighing fewer pounds than your strength modifier (minimum 1), you may knock it out of the air and take no damage.  You cannot deflect critical hits.",
 		"Quick Reflexes - When you make a successful physical save against an attack or effect which normally deals half damage on a successful save, take no damage instead.",
 		"Evasion - When you fail a physical save against an attack or effect which normally deals half damage on a successful save, take half damage anyway.",
 	],
