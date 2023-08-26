@@ -1,0 +1,62 @@
+body {
+	background-color: #333;
+	color: #ddd;
+}
+
+.nav {
+	height: 30px;
+	margin-bottom: 10px;
+}
+
+.nav-button {
+	width: 100px;
+	border: 1px solid black;
+	display: inline-block;
+	border-style: outset;
+	height: calc(100% - 6px);
+	padding: 3px;
+	line-height: 24px;
+	margin: 0;
+	text-align: center;
+	cursor: pointer;
+	user-select: none;
+}
+
+.nav-button.selected {
+	background-color: #339;
+	border-style: inset;
+}
+
+.category {
+	background-color: #0004;
+	margin-bottom: 5px;
+	padding: 5px;
+	max-width: 1000px;
+}
+
+.feature {
+	background-color: #0004;
+	padding: 5px;
+	margin-bottom: 5px;
+}
+
+h4 {
+	margin: 0;
+	padding: 10px;
+}
+
+.category.level-1 {
+	background-color: #322;
+}
+
+.category.all {
+	background-color: #232;
+}
+
+.category.general {
+	background-color: #223;
+}
+
+.category.divine-favour {
+	background-color: #9f6700;
+}
