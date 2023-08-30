@@ -43,7 +43,7 @@ function loadView(){
 		const loadTarget = classes[subNavSelection];
 		Object.entries(loadTarget).forEach(category => {
 			if (category[0] === "Stats"){
-				const statsHTML = `<div class='stats'><div class='${category[1].str ? "associated" : ""}'>STR</div><div class='${category[1].dex ? "associated" : ""}'>DEX</div><div class='${category[1].con ? "associated" : ""}'>CON</div><div class='${category[1].int ? "associated" : ""}'>INT</div><div class='${category[1].cha ? "associated" : ""}'>CHA</div><div class='${category[1].wis ? "associated" : ""}'>WIS</div></div>`;
+				const statsHTML = `<div class='stats'><div class='${category[1].str ? "associated" : ""}'>STR</div><div class='${category[1].dex ? "associated" : ""}'>DEX</div><div class='${category[1].con ? "associated" : ""}'>CON</div><div class='${category[1].cha ? "associated" : ""}'>CHA</div><div class='${category[1].int ? "associated" : ""}'>INT</div><div class='${category[1].wis ? "associated" : ""}'>WIS</div></div>`;
 				contentDiv.innerHTML = statsHTML + contentDiv.innerHTML;
 				return;
 			}

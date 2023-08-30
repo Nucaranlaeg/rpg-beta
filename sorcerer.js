@@ -3,8 +3,8 @@ classes.sorcerer = {
 		"str": false,
 		"dex": true,
 		"con": false,
-		"int": true,
 		"cha": true,
+		"int": true,
 		"wis": true,
 	},
 	"All": [

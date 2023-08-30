@@ -18,3 +18,19 @@ Swift:
 # Levelling up
 
 Each class has 4 associated stats.  Each time you level up, gain one point in one of the stats associated with the class you levelled up in.  You may only choose the same stat once every three levels, regardless of which class or classes you choose.
+
+# Stats
+
+There are three physical stats:
+
+Strength: Your ability to change the world around you with your body.
+Dexterity: Your ability to control your own body.
+Constitution: Your ability to resist the outside world changing your body.
+
+Similarly, there are three mental stats:
+
+Charisma: Your ability to change the world around you with your mind.
+Intelligence: Your ability to control your own mind.
+Wisdom: Your ability to resist the outside world changing your mind.
+
+These terms may not line up with the common usages of them.  For example, Intelligence does not represent how much you know or how quickly you can think.  Nor is Charisma your likeability - though both very likeabile and very unlikeable characters will tend to have higher Charisma.

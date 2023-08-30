@@ -3,8 +3,8 @@ classes.paladin = {
 		"str": true,
 		"dex": false,
 		"con": true,
-		"int": false,
 		"cha": true,
+		"int": false,
 		"wis": true,
 	},
 	"All": [

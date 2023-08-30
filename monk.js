@@ -3,8 +3,8 @@ classes.monk = {
 		"str": true,
 		"dex": true,
 		"con": true,
-		"int": false,
 		"cha": true,
+		"int": false,
 		"wis": false,
 	},
 	"All": [

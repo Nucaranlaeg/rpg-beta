@@ -3,8 +3,8 @@ classes.barbarian = {
 		"str": true,
 		"dex": true,
 		"con": true,
-		"int": false,
 		"cha": false,
+		"int": false,
 		"wis": true,
 	},
 	"All": [

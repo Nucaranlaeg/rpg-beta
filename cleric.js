@@ -3,8 +3,8 @@ classes.cleric = {
 		"str": false,
 		"dex": false,
 		"con": true,
-		"int": true,
 		"cha": true,
+		"int": true,
 		"wis": true,
 	},
 	"All": [

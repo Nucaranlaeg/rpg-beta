@@ -3,8 +3,8 @@ classes.wizard = {
 		"str": true,
 		"dex": false,
 		"con": false,
-		"int": true,
 		"cha": true,
+		"int": true,
 		"wis": true,
 	},
 	"All": [

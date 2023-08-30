@@ -3,8 +3,8 @@ classes.fighter = {
 		"str": true,
 		"dex": true,
 		"con": true,
-		"int": true,
 		"cha": false,
+		"int": true,
 		"wis": false,
 	},
 	"All": [
