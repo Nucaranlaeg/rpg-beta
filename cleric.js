@@ -1,4 +1,12 @@
 classes.cleric = {
+	"Stats": {
+		"str": false,
+		"dex": false,
+		"con": true,
+		"int": true,
+		"cha": true,
+		"wis": true,
+	},
 	"All": [
 		"If you don't have a magic source, you gain the Divine magic source and learn two spells.",
 	],

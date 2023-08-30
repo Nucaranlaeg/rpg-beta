@@ -1,4 +1,12 @@
 classes.monk = {
+	"Stats": {
+		"str": true,
+		"dex": true,
+		"con": true,
+		"int": false,
+		"cha": true,
+		"wis": false,
+	},
 	"All": [
 		"Unarmed Prowess - Your unarmed damage die size increases by one (d4 -> d6 -> d8 -> d10 -> d12) at every odd Monk level.  If your unarmed damage die is already a d12, instead gain +1 damage on all of your unarmed attacks.",
 		"Unarmoured Defense - While wearing no armour, gain a bonus to your AC equal to half of your Monk level (rounded up).  You lose this bonus any time you would be denied your Dexterity bonus to AC, even if your Dexterity modifier is 0 or lower.",

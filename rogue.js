@@ -1,4 +1,12 @@
 classes.rogue = {
+	"Stats": {
+		"str": true,
+		"dex": true,
+		"con": true,
+		"int": false,
+		"cha": false,
+		"wis": true,
+	},
 	"All": [
 		"Reaching level 5, 10, 15, and 20 in this class allows you to attack one additional time when you use your standard action to attack.  You may sacrifice one of your attacks gained this way to get Advantage on one of your attacks.",
 	],

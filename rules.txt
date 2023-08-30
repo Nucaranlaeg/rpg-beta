@@ -1,0 +1,20 @@
+# Actions
+
+On your turn, you may take one action of each type.  If an action is divisible (such as making multiple attacks or moving a distance) you may order what you do however you like.
+
+Any Move action can be taken as a Standard action.  Any Swift action may be taken as a Move or a Standard action.
+
+Standard:
+	- Attack: Make an attack.
+	- Spell: Cast a spell.
+	- 
+Move:
+	- Walk: Move a distance up to your speed.
+	- Run: Move a distance up to double your speed.  You grant Advantage to attackers until the beginning of your next turn.
+Swift:
+	- Draw one or more weapons
+	- Channel: Gain mana
+
+# Levelling up
+
+Each class has 4 associated stats.  Each time you level up, gain one point in one of the stats associated with the class you levelled up in.  You may only choose the same stat once every three levels, regardless of which class or classes you choose.

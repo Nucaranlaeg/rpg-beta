@@ -1,4 +1,12 @@
 classes.sorcerer = {
+	"Stats": {
+		"str": false,
+		"dex": true,
+		"con": false,
+		"int": true,
+		"cha": true,
+		"wis": true,
+	},
 	"All": [
 		"If you don't have a magic source, you gain the Arcane magic source and learn two spells.",
 	],

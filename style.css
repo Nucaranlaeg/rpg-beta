@@ -60,3 +60,18 @@ h4 {
 .category.divine-favour {
 	background-color: #9f6700;
 }
+
+.stats div {
+	display: inline-block;
+	width: 60px;
+	height: 25px;
+	padding: 0 5px;
+	line-height: 25px;
+	margin: 2px 2px 5px 2px;
+	background-color: #0004;
+	text-align: center;
+}
+
+.stats div.associated {
+	background-color: #225522;
+}

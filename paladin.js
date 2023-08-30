@@ -1,4 +1,12 @@
 classes.paladin = {
+	"Stats": {
+		"str": true,
+		"dex": false,
+		"con": true,
+		"int": false,
+		"cha": true,
+		"wis": true,
+	},
 	"All": [
 		"Medium armour proficiency",
 		"If you don't have a magic source, you gain the Divine magic source and learn two spells - but divide the number of levels you have in Paladin by two (round up) when calculating how many times per day you can channel.",

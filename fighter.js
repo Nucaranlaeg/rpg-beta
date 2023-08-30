@@ -1,4 +1,12 @@
 classes.fighter = {
+	"Stats": {
+		"str": true,
+		"dex": true,
+		"con": true,
+		"int": true,
+		"cha": false,
+		"wis": false,
+	},
 	"All": [
 		"Medium armour proficiency",
 		"Reaching level 5, 10, 15, and 20 in this class allows you to attack one additional time when you use your standard action to attack.",

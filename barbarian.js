@@ -1,4 +1,12 @@
 classes.barbarian = {
+	"Stats": {
+		"str": true,
+		"dex": true,
+		"con": true,
+		"int": false,
+		"cha": false,
+		"wis": true,
+	},
 	"All": [
 		"Light armour proficiency",
 		"Reaching level 5, 10, 15, and 20 in this class allows you to attack one additional time when you use your standard action to attack.",
@@ -29,7 +37,7 @@ classes.barbarian = {
 		"Quick to the Fight - Your speed increases by 10 feet.  If you attack one or more enemies, your speed increases by another 10 feet until the end of your next turn.",
 		"Invulnerable - Reduce all damage you take by 3.",
 		"Healthy - Your constitution score is increased by 3 for the purposes of wounds.",
-		"Fearful Presence - Once per hour on your turn, you can intimidate creatures near you by your sheer presence.  This is a free action.  Creatures within 30 feet who can see you must make a Wisdom save with DC 10 plus your strength modifier or become frightened for 1 minute.  ",
+		"Fearful Presence - Once per hour on your turn, you can intimidate creatures near you by your sheer presence.  This is a free action.  Creatures within 30 feet who can see you must make a Wisdom save with DC 10 plus your strength modifier or become frightened for 1 minute.",
 		"Tireless - You are treated as having 2 fewer stacks of exhaustion (but not less than 0).  You lose one additional stack of exhaustion when you take a long rest.",
 		"Outlast - When you fail a physical check or save by 5 or less, you may gain a stack of exhaustion to succeed on it instead.",
 		"Unarmoured Defense - When you wear light or no armour, gain bonus AC equal to your Wisdom modifier.  You lose this bonus any time you would be denied your Dexterity bonus to AC, even if your Dexterity modifier is 0 or lower.",
