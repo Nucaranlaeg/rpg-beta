@@ -11,7 +11,7 @@ classes.rogue = {
 		"Reaching level 5, 10, 15, and 20 in this class allows you to attack one additional time when you use your standard action to attack.  You may sacrifice one of your attacks gained this way to get Advantage on one of your attacks.",
 	],
 	"Level 1": [
-		"Precision - When you have Advantage on an attack and the lower die would hit, the attack deals one extra wound.",
+		"Precision - When you have Advantage on an attack and the lower die would hit, the attack deals one extra Wound.  Creatures immune to critical hits are also immune to these Wounds.",
 	],
 	"Rogue": [
 		"Good Aim - When you have Advantage on an attack, add 5 to the lower die before determining which die to take.  This cannot result in a roll greater than 20 and does not cause critical hits if the original value would not be a critical hit.",

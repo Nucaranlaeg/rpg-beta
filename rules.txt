@@ -34,3 +34,81 @@ Intelligence: Your ability to control your own mind.
 Wisdom: Your ability to resist the outside world changing your mind.
 
 These terms may not line up with the common usages of them.  For example, Intelligence does not represent how much you know or how quickly you can think.  Nor is Charisma your likeability - though both very likeabile and very unlikeable characters will tend to have higher Charisma.
+
+# Alignment
+
+Each creature is one of Lawful, Neutral, or Chaotic. Similarly, each creature is Good, Neutral, or Evil. For many creatures this is their nature and - while they may be coerced to act in a different way - their nature is unchanging. These are the unthinking beasts as well as monsters created for servitude by the gods.The mortal races (human, elf, dwarf, gnome, halfling, _, _) are not constrained by their nature and while they have certain tendencies those are tempered by their experiences. Their natures are also less absolute; no elf or dwarf is truly Good all the time - nor Evil.
+For player characters, their alignment is not fixed but revealed over time as the game is played. Each level (including level 1), each character gains one point of Reputation: Honour (Law), Glory (Good), Infamy (Evil), or Notoriety (Chaos).
+There exist various magics capable of detecting and preferentially affecting those of certain alignments. A character is Lawful if she has at least one Honour and more Honour than Notoriety, and similar for other alignments. Once a character has at least six Honour and Notoriety combined, she must have two more Notoriety than Honour to be Chaotic (and vice versa).  If a character is neither Good nor Evil, she is Neutral, as is a character who is neither Lawful nor Chaotic.
+For example, a character with 2 Honour, 1 Glory, and 4 Notoriety is Chaotic Good, while a character with 2 Infamy and 1 Honour is Lawful Evil. 
+When making a skill check in the Social category, you add the amount of relevant reputation to your check and subtract the opposite. You then add your lowest reputation - if you have one each of Honour, Glory, Notoriety, and Infamy, you add one to all social checks. Your DM makes the final call for which alignment you add, but your roleplay influences this determination. Your reputation goes before you: you don't add Glory when you're trying to convince someone that you're Good; you add Glory when you're trying to convince someone to agree with you because you're Good.
+Your bonus from Reputation on any check cannot be greater than three quarters of your level, rounded up.
+
+Some examples:
+- Attempting to convince a town guard that you have no goods to pay taxes on is influenced by your Lawful Reputation 
+- your Honour.
+- Telling a merchant you'll be able to take care of any bandits along the way may be influenced by your Notoriety.  Convincing him that you won't take his goods is influenced by your Honour.  It can help to have party members with different reputations!
+- If you have to work with a criminal, having some Infamy will help him believe that you won't turn him in when the job's done - at least, if the skeletons in your closet are bigger than his.
+- Infiltration and sabotage may not be Evil, but if you have a reputation for not letting morals get in the way of completing your job you'll be able to make a better case for yourself.
+
+## Gaining Reputation
+There are a few different ways of handling Reputation, and each table is different.  Make sure you discuss with your DM and party members how you gain Reputation.
+None of these should be taken as "default", but rather different players play RPGs in different ways, and these are a number of recommended ways to handle table dynamics.  No matter which system you use, you're still limited by your level as to how much Reputation you may gain.
+In any case, at any time that you have four more levels than Reputation, you may immediately gain one of each Reputation.
+
+### Player Choice
+Simply allow each player to choose one Reputation each time they level up.  Choose this method if players are uncomfortable roleplaying or you want to put minimal focus on the social part of the game.
+With this system, players should be encouraged to tie their Reputation gain to an accomplishment - and to delay gaining it if they have no suitable accomplishment to tie it to.
+
+Reputation gained at character creation should be tied to elements of the character's backstory.
+
+### Party Choice
+At the end of each session where your character may gain Reputation (either by levelling up or by not having gained one on a previous level up), have the other players vote as to what Reputation would be most appropriate for your character.  You may then choose whether or not to gain that Reputation, but you may not choose a different reputation at that time.  If you still have another Reputation to gain, have the other players vote again.  Handle tied votes by either both choices being available or having the DM break ties.
+
+If you're not sure, this is a good way to encourage roleplay at your table.
+
+### DM Choice
+At the end of each session (and at any other appropriate moment, such as the slaying of a dragon or the completion of a quest), the DM offers each eligible player one Reputation that he feels is appropriate for their character's recent actions.  Players may choose to gain this Reputation or not.
+This may be inappropriate for games where the players do not know each other well.
+
+# Wounds, Death and Dying
+
+When a creature takes damage, that creature may also take one or more Wounds.  A creature's hit points may be reduced to 0 (but never below), and this does not affect their capabilities in any way - hit points are a representation of a creature's combined luck and skill to avoid injury.  Wounds are calculated in the following way:
+
+- First, if the damage dealt is greater than the creature's Constitution *score*, subtract the creature's Constitution score from the damage dealt and the creature will take a Wound.  For example, an ogre hits a player character with 10 Constitution for 12 damage.  The character takes 1 Wound and loses 2 hit points.
+
+- Second, if the damage reduces a creature to 0 hit points, divide the excess damage by the creature's Constitution score, rounding any remainder up.  The creature takes that many Wounds.  For example, an ogre hits a player character with 8 Constitution for 18 damage, but the character only has 1 hit point remaining.  8 damage causes 1 Wound, 1 more damage reduces the character to 0 hit points, and the remaining 9 damage causes 2 more Wounds, for a total of 3 Wounds.
+
+- Some other effects may cause additional Wounds.  For instance, critical hits always deal 1 additional Wound.
+
+If a creature takes more than one Wound from a single attack or takes a Wound from an attack that leaves it at 0 hit points, that creature must make a death saving throw or fall unconscious and begin dying.  Note that multiple Wounding attacks from one creature on its turn may not require any death saving throws, provided they only deal one Wound each.  The DC of a death saving throw is always equal to the number of Wounds that a creature has taken.  A creature gets a bonus on their death saving throw equal to their Constitution modifier.  A natural 1 is not neccessarily a failure on a death saving throw - so you are not required to roll death saving throws if you have not taken Wounds equal to your Constitution modifier plus two or more.
+
+When a creature is dying at the beginning of their turn, they must roll a death saving throw.  The results are as follows:
+
+- DC - 6 or worse: the creature dies.
+
+- DC - 5 to DC - 1: the creature gains an additional Wound.
+
+- DC to DC + 4: no change.
+
+- DC + 5 to DC + 9: the creature becomes stable and no longer rolls death saving throws unless it takes another Wound.  It will awaken in 1d4 hours.
+
+- DC + 10 or better: the creature becomes stable and conscious.
+
+A natural 20 always stabilizes the creature, and if the result is at least DC + 5, the creature becomes conscious.
+
+When a dying creature recieves magical healing, they may immediately roll a death saving throw.  This special death saving throw has no consequences if it is a failure, but it can stabilize the creature or cause it to become conscious (even if it is already stable).  Note that even with magical healing, a creature may still be dying, and will continue rolling death saving throws at the beginning of each of its turns.
+
+All hit points are restored after a short break of 15 minutes spent relaxing or 30 minutes of easy travel.
+
+## Long Term Healing
+
+Each night that you rest, you heal one Wound.  However, you may still die from your injuries.  If you are Wounded when you begin your rest, then at the midpoint of your rest, roll a death saving throw.  If you fail it you begin dying, but only roll once per hour and do not wake up from results that say you do.  Provided you do not die, you stop dying and wake up in the morning as usual (for a typical 8 hour rest, you would roll a maximum of 5 times per night).
+
+You may hire a nurse to watch over you through the night; one nurse can watch over up to 10 creatures and reduces the maximum number of death saves to 2 per night.
+
+## Typical Reactions to Wounds
+
+Different creatures vary in their reactions to being Wounded, but most will not fight to the death.  Animals will flee after taking Wounds equal to their Constitution score (the presence of a pack or young may alter this), and almost all beasts will flee before they reach Constitution + 10 Wounds.  Intelligent creatures who are not Evil may hesitate to attack unconscious creatures unless players have done so.
+
+Undead creatures and constructs are destroyed on their first failed death saving throw, but they are immune to critical hits.
