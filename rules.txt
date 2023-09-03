@@ -107,6 +107,16 @@ Each night that you rest, you heal one Wound.  However, you may still die from y
 
 You may hire a nurse to watch over you through the night; one nurse can watch over up to 10 creatures and reduces the maximum number of death saves to 2 per night.
 
+## Less Deadly Games
+
+Some groups might prefer a less deadly game at higher levels.  If your group desires a less deadly game, consider one of the following options:
+
+- Player characters cannot die from failed death saving throws if they have fewer wounds than their level plus their Constitution modifier (don't subtract a malus).
+
+- Player characters do not roll death saving throws if they have fewer wounds than their level plus their Constitution modifier (don't subtract a malus).
+
+- Player characters add half their level to death saving throws.
+
 ## Typical Reactions to Wounds
 
 Different creatures vary in their reactions to being Wounded, but most will not fight to the death.  Animals will flee after taking Wounds equal to their Constitution score (the presence of a pack or young may alter this), and almost all beasts will flee before they reach Constitution + 10 Wounds.  Intelligent creatures who are not Evil may hesitate to attack unconscious creatures unless players have done so.
