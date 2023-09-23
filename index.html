@@ -5,6 +5,7 @@
 		<title>Sam's beta RPG</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<script src="main.js"></script>
+		<!-- Classes -->
 		<script src="barbarian.js"></script>
 		<script src="bard.js"></script>
 		<script src="cleric.js"></script>
@@ -14,13 +15,16 @@
 		<script src="rogue.js"></script>
 		<script src="sorcerer.js"></script>
 		<script src="wizard.js"></script>
+		<!-- Rule Sections -->
+		<script src="social.js"></script>
 	</head>
 	<body>
 		<div id="header-nav" class="nav" onclick="mainNavClick(event)">
 			<div id="nav-classes" class="selected nav-button">Classes</div>
+			<div id="nav-character" class="nav-button">Character</div>
 			<div id="nav-social" class="nav-button">Social</div>
 		</div>
-		<div id="sub-header-classes-nav" class="nav" onclick="subNavClick(event)">
+		<div id="sub-header-nav-classes" class="nav" onclick="subNavClick(event)">
 			<div id="nav-barbarian" class="selected nav-button">Barbarian</div>
 			<div id="nav-bard" class="nav-button">Bard</div>
 			<div id="nav-cleric" class="nav-button">Cleric</div>
@@ -31,7 +35,11 @@
 			<div id="nav-sorcerer" class="nav-button">Sorcerer</div>
 			<div id="nav-wizard" class="nav-button">Wizard</div>
 		</div>
-		<div id="sub-header-social-nav" class="nav" onclick="subNavClick(event)">
+		<div id="sub-header-nav-character" class="nav" onclick="subNavClick(event)" style="display:none">
+			<div id="nav-levelling" class="selected nav-button">Levelling</div>
+			<div id="nav-stats" class="nav-button">Stats</div>
+		</div>
+		<div id="sub-header-nav-social" class="nav" onclick="subNavClick(event)" style="display:none">
 			<div id="nav-alignment" class="selected nav-button">Alignment</div>
 		</div>
 		<div id="main-content">

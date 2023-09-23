@@ -27,11 +27,14 @@ body {
 	border-style: inset;
 }
 
+#main-content {
+	max-width: 1000px;
+}
+
 .category {
 	background-color: #0004;
 	margin-bottom: 5px;
 	padding: 5px;
-	max-width: 1000px;
 }
 
 .feature {
@@ -74,4 +77,29 @@ h4 {
 
 .stats div.associated {
 	background-color: #225522;
+}
+
+.paragraph {
+	background-color: #0004;
+	padding: 5px;
+	margin-bottom: 5px;
+}
+
+.example {
+	background-color: #0004;
+	padding: 5px;
+	margin-bottom: 5px;
+	padding-left: 20px;
+	position: relative;
+}
+
+.example + .example {
+	margin-top: -5px;
+}
+
+.example::before{
+	content: "•";
+	position: relative;
+	top: 0px;
+	left: -10px;
 }

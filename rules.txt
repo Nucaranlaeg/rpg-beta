@@ -19,6 +19,9 @@ Swift:
 
 Each class has 4 associated stats.  Each time you level up, gain one point in one of the stats associated with the class you levelled up in.  You may only choose the same stat once every three levels, regardless of which class or classes you choose.
 
+Gain one skill.
+
+
 # Stats
 
 There are three physical stats:
@@ -35,41 +38,6 @@ Wisdom: Your ability to resist the outside world changing your mind.
 
 These terms may not line up with the common usages of them.  For example, Intelligence does not represent how much you know or how quickly you can think.  Nor is Charisma your likeability - though both very likeabile and very unlikeable characters will tend to have higher Charisma.
 
-# Alignment
-
-Each creature is one of Lawful, Neutral, or Chaotic. Similarly, each creature is Good, Neutral, or Evil. For many creatures this is their nature and - while they may be coerced to act in a different way - their nature is unchanging. These are the unthinking beasts as well as monsters created for servitude by the gods.The mortal races (human, elf, dwarf, gnome, halfling, _, _) are not constrained by their nature and while they have certain tendencies those are tempered by their experiences. Their natures are also less absolute; no elf or dwarf is truly Good all the time - nor Evil.
-For player characters, their alignment is not fixed but revealed over time as the game is played. Each level (including level 1), each character gains one point of Reputation: Honour (Law), Glory (Good), Infamy (Evil), or Notoriety (Chaos).
-There exist various magics capable of detecting and preferentially affecting those of certain alignments. A character is Lawful if she has at least one Honour and more Honour than Notoriety, and similar for other alignments. Once a character has at least six Honour and Notoriety combined, she must have two more Notoriety than Honour to be Chaotic (and vice versa).  If a character is neither Good nor Evil, she is Neutral, as is a character who is neither Lawful nor Chaotic.
-For example, a character with 2 Honour, 1 Glory, and 4 Notoriety is Chaotic Good, while a character with 2 Infamy and 1 Honour is Lawful Evil. 
-When making a skill check in the Social category, you add the amount of relevant reputation to your check and subtract the opposite. You then add your lowest reputation - if you have one each of Honour, Glory, Notoriety, and Infamy, you add one to all social checks. Your DM makes the final call for which alignment you add, but your roleplay influences this determination. Your reputation goes before you: you don't add Glory when you're trying to convince someone that you're Good; you add Glory when you're trying to convince someone to agree with you because you're Good.
-Your bonus from Reputation on any check cannot be greater than three quarters of your level, rounded up.
-
-Some examples:
-- Attempting to convince a town guard that you have no goods to pay taxes on is influenced by your Lawful Reputation 
-- your Honour.
-- Telling a merchant you'll be able to take care of any bandits along the way may be influenced by your Notoriety.  Convincing him that you won't take his goods is influenced by your Honour.  It can help to have party members with different reputations!
-- If you have to work with a criminal, having some Infamy will help him believe that you won't turn him in when the job's done - at least, if the skeletons in your closet are bigger than his.
-- Infiltration and sabotage may not be Evil, but if you have a reputation for not letting morals get in the way of completing your job you'll be able to make a better case for yourself.
-
-## Gaining Reputation
-There are a few different ways of handling Reputation, and each table is different.  Make sure you discuss with your DM and party members how you gain Reputation.
-None of these should be taken as "default", but rather different players play RPGs in different ways, and these are a number of recommended ways to handle table dynamics.  No matter which system you use, you're still limited by your level as to how much Reputation you may gain.
-In any case, at any time that you have four more levels than Reputation, you may immediately gain one of each Reputation.
-
-### Player Choice
-Simply allow each player to choose one Reputation each time they level up.  Choose this method if players are uncomfortable roleplaying or you want to put minimal focus on the social part of the game.
-With this system, players should be encouraged to tie their Reputation gain to an accomplishment - and to delay gaining it if they have no suitable accomplishment to tie it to.
-
-Reputation gained at character creation should be tied to elements of the character's backstory.
-
-### Party Choice
-At the end of each session where your character may gain Reputation (either by levelling up or by not having gained one on a previous level up), have the other players vote as to what Reputation would be most appropriate for your character.  You may then choose whether or not to gain that Reputation, but you may not choose a different reputation at that time.  If you still have another Reputation to gain, have the other players vote again.  Handle tied votes by either both choices being available or having the DM break ties.
-
-If you're not sure, this is a good way to encourage roleplay at your table.
-
-### DM Choice
-At the end of each session (and at any other appropriate moment, such as the slaying of a dragon or the completion of a quest), the DM offers each eligible player one Reputation that he feels is appropriate for their character's recent actions.  Players may choose to gain this Reputation or not.
-This may be inappropriate for games where the players do not know each other well.
 
 # Wounds, Death and Dying
 
@@ -122,3 +90,15 @@ Some groups might prefer a less deadly game at higher levels.  If your group des
 Different creatures vary in their reactions to being Wounded, but most will not fight to the death.  Animals will flee after taking Wounds equal to their Constitution score (the presence of a pack or young may alter this), and almost all beasts will flee before they reach Constitution + 10 Wounds.  Intelligent creatures who are not Evil may hesitate to attack unconscious creatures unless players have done so.
 
 Undead creatures and constructs are destroyed on their first failed death saving throw, but they are immune to critical hits.
+
+
+# Skills
+
+There are three types of skills: narrow skills, broad skills, and special skills.  You gain one skill of your choice each level, or increase the rank of a skill that you already have.  You may not increase the rank of a skill if it is already ranked equal to one quarter your level or higher.
+
+There is no fixed list of skills.  Instead, there are some suggested skills, but you may choose whatever skill you wish when you level up.  If it is not listed, decide with your DM whether it is a narrow or broad skill, using the examples as a guide.
+
+Whenever you perform an action which is similar to one of your skills, you may apply the bonus from your skill to any rolls made regarding it (other than saving throws).  For example, you might be able to apply Climbing to ascend the rigging of a ship, but Sailing or Athletics might also apply.  In any case, only one skill can be applied to any roll.
+
+A narrow skill gives a +2 per rank to related actions.  A broad skill will apply to more actions, but only gives a +1 per rank.  Special skills provide other bonuses and do not apply a bonus to any roll unless the rules governing that skill say that it does.
+
