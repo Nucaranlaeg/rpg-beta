@@ -13,15 +13,19 @@ const navOptions = {
 		"sorcerer",
 		"wizard",
 	],
+	"rules": [
+		"combat",
+	],
 }
 
 const classes = {};
 
 function mainNavClick(event){
-	if (event.target.classList.contains("nav-button") && event.target.classList.contains("selected")){
+	console.log(event)
+	if (event.target.classList.contains("nav-button")){
 		event.target.closest(".nav").querySelector(".selected")?.classList.remove("selected");
 		event.target.classList.add("selected");
-		mainNavSelection = event.target.id.replace("nav-", "");
+		const mainNavSelection = event.target.id.replace("nav-", "");
 		document.querySelector(`#nav-${navOptions[mainNavSelection][0]}`).click();
 	}
 }
