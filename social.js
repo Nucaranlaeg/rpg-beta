@@ -36,7 +36,8 @@ ruleSections.alignment = [
 		type: RULE_BLOCK.BODY,
 		body: `There are a few different ways of handling Reputation, and each table is different. Make sure you discuss with your DM and party members how you gain Reputation.
 		None of these should be taken as "default", but rather different players play RPGs in different ways, and these are a number of recommended ways to handle table dynamics. No matter which system you use, you're still limited by your level as to how much Reputation you may gain.
-		In any case, at any time that you have four more levels than Reputation, you may immediately gain one of each Reputation.`,
+		In any case, at any time that you have four more levels than Reputation, you may immediately gain one of each Reputation.
+		Reputation gained at character creation should be tied to elements of the character's backstory.`,
 	},
 	{
 		type: RULE_BLOCK.SUBSUBTITLE,
@@ -45,8 +46,7 @@ ruleSections.alignment = [
 	{
 		type: RULE_BLOCK.BODY,
 		body: `Simply allow each player to choose one Reputation each time they level up. Choose this method if players are uncomfortable roleplaying or you want to put minimal focus on the social part of the game.
-		With this system, players should be encouraged to tie their Reputation gain to an accomplishment - and to delay gaining it if they have no suitable accomplishment to tie it to.
-		Reputation gained at character creation should be tied to elements of the character's backstory.`,
+		With this system, players should be encouraged to tie their Reputation gain to an accomplishment - and to delay gaining it if they have no suitable accomplishment to tie it to.`,
 	},
 	{
 		type: RULE_BLOCK.SUBSUBTITLE,

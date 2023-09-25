@@ -9,9 +9,10 @@ classes.sorcerer = {
 	},
 	"All": [
 		"If you don't have a magic source, you gain the Arcane magic source and learn two spells.",
+		"Reaching level 1, 5, 9, 13, and 17 in this class grants or improves the Channelling skill.",
 	],
 	"Level 1": [
-		"Metamagic - Once per turn when you cast a spell, you may spend additional mana and add an additional effect to the spell.  Gain one metamagic of your choice.  You may only use one metamagic at a time.",
+		"Metamagic - Once per turn when you cast a spell, you may spend additional mana and add an additional effect to the spell.  Gain one metamagic of your choice.  You may only apply one metamagic to a spell.",
 	],
 	"Metamagic": [
 		"Quickened (2 mana) - The spell does not require an action to cast.",

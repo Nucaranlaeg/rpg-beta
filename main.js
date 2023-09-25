@@ -24,6 +24,7 @@ const navOptions = {
 	"character": [
 		"levelling",
 		"stats",
+		"skills",
 	],
 	"social": [
 		"alignment",
@@ -77,9 +78,10 @@ function loadView(){
 				const featureDiv = document.createElement("div");
 				categoryDiv.appendChild(featureDiv);
 				featureDiv.classList.add("feature");
-				featureDiv.innerHTML = feature;
-				if (category[0] !== "All" && category[0] !== "Level 1") featureCount++;
-			})
+				featureDiv.innerHTML = feature.replaceAll("\n", "<br>");
+				if (category[0] !== "All" && category[0] !== "Level 1" && category[0] !== "Divine Favour") featureCount++;
+			});
+			if (category[0] === "Divine Favour") featureCount++;
 		});
 		console.log(`${subNavSelection} has ${featureCount} features.`);
 	} else {

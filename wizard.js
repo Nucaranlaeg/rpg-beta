@@ -9,9 +9,10 @@ classes.wizard = {
 	},
 	"All": [
 		"If you don't have a magic source, you gain the Arcane magic source and learn two spells.",
+		"Reaching level 1, 5, 9, 13, and 17 in this class grants or improves the Channelling skill.",
 	],
 	"Level 1": [
-		"Arcane Preparation - Once per hour, you may prepare a spell.  This takes 5 minutes of concentration (you must use your standard action each turn to concentrate on the preparation).  Choose one spell you can cast.  You may cast it once without channelling or paying any mana cost, and it is treated as though you spent mana on it equal to one turns' worth of channelling.  If you prepare a new spell, the old spell is lost.",
+		"Arcane Preparation - Once per hour, you may prepare a spell.  This takes 5 minutes of concentration (you must use your standard action each turn to concentrate on the preparation).  Choose one spell you can cast.  You may cast it once without channelling or paying any mana cost, and it is treated as though you spent mana on it equal the mana you gain from channelling once.  If you prepare a new spell, the old spell is lost.",
 	],
 	"Wizard": [
 		"Intense Preparation - You can pack more mana into your prepared spells.  Your prepared spells are considered to have one additional mana spent on them.",
