@@ -1,3 +1,14 @@
+ruleSections.creation = [
+	{
+		type: RULE_BLOCK.TITLE,
+		body: "Character Creation",
+	},
+	{
+		type: RULE_BLOCK.BODY,
+		body: `Upon levelling up, your capabilities increase.  Do all of the following to complete your level up.`,
+	},
+];
+
 ruleSections.levelling = [
 	{
 		type: RULE_BLOCK.TITLE,
@@ -34,6 +45,50 @@ ruleSections.stats = [
 	{
 		type: RULE_BLOCK.TITLE,
 		body: "Stats",
+	},
+	{
+		type: RULE_BLOCK.BODY,
+		body: "There are three physical stats:",
+	},
+	{
+		type: RULE_BLOCK.EXAMPLE,
+		body: "Strength: Your ability to change the world around you with your body.",
+	},
+	{
+		type: RULE_BLOCK.EXAMPLE,
+		body: "Dexterity: Your ability to control your own body.",
+	},
+	{
+		type: RULE_BLOCK.EXAMPLE,
+		body: "Constitution: Your ability to resist the outside world changing your body.",
+	},
+	{
+		type: RULE_BLOCK.BODY,
+		body: "Similarly, there are three mental stats:",
+	},
+	{
+		type: RULE_BLOCK.EXAMPLE,
+		body: "Charisma: Your ability to change the world around you with your mind.",
+	},
+	{
+		type: RULE_BLOCK.EXAMPLE,
+		body: "Intelligence: Your ability to control your own mind.",
+	},
+	{
+		type: RULE_BLOCK.EXAMPLE,
+		body: "Wisdom: Your ability to resist the outside world changing your mind.",
+	},
+	{
+		type: RULE_BLOCK.BODY,
+		body: "These terms may not line up with the common usages of them.  For example, Intelligence does not represent how much you know or how quickly you can think.  Nor is Charisma your likeability - though very likeabile characters (and some very unlikeable characters) will tend to have higher Charisma.",
+	},
+	{
+		type: RULE_BLOCK.SUBTITLE,
+		body: "Gaining Stats",
+	},
+	{
+		type: RULE_BLOCK.BODY,
+		body: "At each level, you choose one stat associated with your class and increase that stat by 1.  For example, the stats associated with Barbarian are STR, CON, DEX, and WIS.  You can only increase each stat in this way once every three levels.",
 	},
 ];
 

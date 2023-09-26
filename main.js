@@ -21,7 +21,15 @@ const navOptions = {
 		"sorcerer",
 		"wizard",
 	],
+	"races": [
+		"human",
+		"elf",
+		"dwarf",
+		"gnome",
+		"halfling",
+	],
 	"character": [
+		"creation",
 		"levelling",
 		"stats",
 		"skills",
