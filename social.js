@@ -1,9 +1,5 @@
 ruleSections.alignment = [
 	{
-		type: RULE_BLOCK.TITLE,
-		body: "Reputation",
-	},
-	{
 		type: RULE_BLOCK.BODY,
 		body: `Each creature is one of Lawful, Neutral, or Chaotic. Similarly, each creature is Good, Neutral, or Evil. For many creatures this is their nature and - while they may be coerced to act in a different way - their nature is unchanging. These are the unthinking beasts as well as monsters created for servitude by the gods.The mortal races (human, elf, dwarf, gnome, halfling, _, _) are not constrained by their nature and while they have certain tendencies those are tempered by their experiences. Their natures are also less absolute; no elf or dwarf is truly Good all the time - nor Evil.
 		For player characters, their alignment is not fixed but revealed over time as the game is played. Each level (including level 1), each character gains one point of Reputation: Honour (Law), Glory (Good), Infamy (Evil), or Notoriety (Chaos).

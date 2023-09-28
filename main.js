@@ -40,6 +40,7 @@ const navOptions = {
 }
 
 const classes = {};
+const races = {};
 
 const ruleSections = {};
 
@@ -92,6 +93,28 @@ function loadView(){
 			if (category[0] === "Divine Favour") featureCount++;
 		});
 		console.log(`${subNavSelection} has ${featureCount} features.`);
+	} else if (mainNavSelection === "races"){
+		const loadTarget = races[subNavSelection];
+		Object.entries(loadTarget).forEach(category => {
+			if (category[0] === "Stats"){
+				const statsHTML = `<div class='stats'><div class='${category[1].str ? "associated" : ""}'>STR</div><div class='${category[1].dex ? "associated" : ""}'>DEX</div><div class='${category[1].con ? "associated" : ""}'>CON</div><div class='${category[1].cha ? "associated" : ""}'>CHA</div><div class='${category[1].int ? "associated" : ""}'>INT</div><div class='${category[1].wis ? "associated" : ""}'>WIS</div></div>`;
+				contentDiv.innerHTML = statsHTML + contentDiv.innerHTML;
+				return;
+			}
+			const categoryDiv = document.createElement("div");
+			contentDiv.appendChild(categoryDiv);
+			categoryDiv.classList.add(category[0].replaceAll(" ", "-").toLowerCase());
+			categoryDiv.classList.add("category");
+			const headerDiv = document.createElement("h4");
+			categoryDiv.appendChild(headerDiv);
+			headerDiv.innerHTML = category[0];
+			category[1].forEach(feature => {
+				const featureDiv = document.createElement("div");
+				categoryDiv.appendChild(featureDiv);
+				featureDiv.classList.add("feature");
+				featureDiv.innerHTML = feature.replaceAll("\n", "<br>");
+			});
+		});
 	} else {
 		const loadTarget = ruleSections[subNavSelection];
 		let block = null;
