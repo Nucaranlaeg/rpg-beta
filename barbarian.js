@@ -17,7 +17,7 @@ classes.barbarian = {
 	],
 	"Rage Modifier": [
 		"Undying - Whenever you roll a death saving throw while raging, you may choose to treat the roll as a 20 (after seeing the roll).  If you use this feature, you must immediately make a death saving throw when your rage ends.",
-		"Brutal - During this rage, your critical threat range is doubled (from 20 to 19-20, from 19-20 to 17-20, and so on).  Attacks which miss continue to not be criticals hits.",
+		"Brutal - During this rage, your critical threat range is doubled (from 20 to 19-20, from 19-20 to 17-20, and so on).  You still must hit to score a critical threat.",
 		"Reckless - Whenever you attack during this rage, you gain a bonus to your attack roll up to your level.  Until the end of your next turn, you take a penalty to your AC equal to the bonus.  If you use this feature multiple times in one turn, only the greatest penalty applies.",
 		"Painless - Whenever you would take a wound, you may instead lose hit points equal to half of your constitution score.  Whenever you take damage, you may reduce that damage by your constitution score and take a wound instead.  You may only use this feature once per instance of damage.",
 		"Furious - Whenever you miss, you gain Advantage on your next attack against the same target until the end of your next turn.",

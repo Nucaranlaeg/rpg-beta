@@ -7,13 +7,15 @@ const RULE_BLOCK = {
 }
 
 let mainNavSelection = "classes";
-let subNavSelection = "barbarian";
+let subNavSelection = "archer";
 
 const navOptions = {
 	"classes": [
+		"archer",
 		"barbarian",
 		"bard",
 		"cleric",
+		"druid",
 		"fighter",
 		"monk",
 		"paladin",

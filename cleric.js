@@ -8,6 +8,7 @@ classes.cleric = {
 		"wis": true,
 	},
 	"All": [
+		"Medium armour proficiency",
 		"If you don't have a magic source, you gain the Divine magic source and learn two spells.",
 		"Reaching level 1, 5, 9, 13, and 17 in this class grants or improves the Channelling skill.",
 	],
