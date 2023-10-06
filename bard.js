@@ -9,7 +9,7 @@ classes.bard = {
 	},
 	"All": [
 		"Light armour proficiency",
-		"Reaching level 6, 13, and 20 in this class allows you to attack one additional time when you use your standard action to attack.",
+		"Extra Attacks - Reaching level 6, 12, and 18 in this class allows you to attack one additional time when you use your standard action to attack.",
 		"Reaching level 1, 5, 9, 13, and 17 in this class grants or improves the Melee Weapons skill or the Ranged Weapons skill.",
 	],
 	"Level 1": [

@@ -17,14 +17,11 @@ Swift:
 
 # Mana
 
-You may channel as a swift action three times plus your intelligence modifier per day, but only once per turn.  Add half of your total levels in classes which grant a magic source (rounded down) to the number of times per day you can channel.  For example, a level 5 Wizard with 16 intelligence can channel 3 + 3 (5/2) + 3 (Int) = 9 times per day.
+You may Channel as a swift action three times plus your intelligence modifier per day, but only once per turn.  Add your total levels in classes which grant a magic source to the number of times per day you can Channel.  For example, a level 5 Wizard with 16 intelligence can Channel 3 + 5 (levels) + 3 (Int) = 11 times per day.
 
-# Levelling up
+If you have no channels left for the day, you may overchannel.  This is just like channelling, but you immediately suffer one Overchannel Wound.  An Overchannel Wound is just like a regular Wound but it cannot not be healed by healing magic.
 
-Each class has 4 associated stats.  Each time you level up, gain one point in one of the stats associated with the class you levelled up in.  You may only choose the same stat once every three levels, regardless of which class or classes you choose.
-
-Gain one skill.
-
+When you Channel, gain 2 mana plus mana equal to your rank in Channelling.  You may use this mana for casting spells this turn or hold it for another turn.  At the end of each turn that you do not Channel or use mana to cast a spell, lose one mana.
 
 # Wounds, Death and Dying
 
@@ -38,7 +35,7 @@ When a creature takes damage, that creature may also take one or more Wounds.  A
 
 If a creature takes more than one Wound from a single attack or takes a Wound from an attack that leaves it at 0 hit points, that creature must make a death saving throw or fall unconscious and begin dying.  Note that multiple Wounding attacks from one creature on its turn may not require any death saving throws, provided they only deal one Wound each.  The DC of a death saving throw is always equal to the number of Wounds that a creature has taken.  A creature gets a bonus on their death saving throw equal to their Constitution modifier.  A natural 1 is not neccessarily a failure on a death saving throw - so you are not required to roll death saving throws if you have not taken Wounds equal to your Constitution modifier plus two or more.
 
-When a creature is dying at the beginning of their turn, they must roll a death saving throw.  The results are as follows:
+When a creature is dying at the beginning of their turn, it must roll a death saving throw.  The results are as follows:
 
 - DC - 6 or worse: the creature dies.
 
@@ -52,9 +49,11 @@ When a creature is dying at the beginning of their turn, they must roll a death 
 
 A natural 20 always stabilizes the creature, and if the result is at least DC + 5, the creature becomes conscious.
 
-When a dying creature recieves magical healing, they may immediately roll a death saving throw.  This special death saving throw has no consequences if it is a failure, but it can stabilize the creature or cause it to become conscious (even if it is already stable).  Note that even with magical healing, a creature may still be dying, and will continue rolling death saving throws at the beginning of each of its turns.
+When a dying creature recieves magical healing, it may immediately roll a death saving throw.  This special death saving throw has no consequences if it is a failure, but it can stabilize the creature or cause it to become conscious (even if it is already stable).  Note that even with magical healing, a creature may still be dying, and will continue rolling death saving throws at the beginning of each of its turns if it does not stabilize.
 
 All hit points are restored after a short break of 15 minutes spent relaxing or 30 minutes of easy travel.
+
+Your DM may assume that creatures which are not player characters (or important NPCs) simply die if they fall unconscious during combat.
 
 ## Long Term Healing
 

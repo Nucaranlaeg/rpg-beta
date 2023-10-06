@@ -9,7 +9,7 @@ classes.fighter = {
 	},
 	"All": [
 		"Medium armour proficiency",
-		"Reaching level 5, 10, 15, and 20 in this class allows you to attack one additional time when you use your standard action to attack.",
+		"Extra Attacks - Reaching level 5, 10, 15, and 20 in this class allows you to attack one additional time when you use your standard action to attack.",
 		"Reaching level 1, 5, 9, 13, and 17 in this class grants or improves the Melee Weapons skill.",
 	],
 	"Level 1": [

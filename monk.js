@@ -10,6 +10,7 @@ classes.monk = {
 	"All": [
 		"Unarmed Prowess - Your unarmed damage die size increases by two (d4 -> d6 -> d8 -> d10 -> d12) at every odd Monk level.  If your unarmed damage die is already a d12, instead gain +1 damage on all of your unarmed attacks.",
 		"Unarmoured Defense - While wearing no armour, gain a bonus to your AC equal to half of your Monk level (rounded up).  You lose this bonus any time you would be denied your Dexterity bonus to AC, even if your Dexterity modifier is 0 or lower.",
+		"Extra Attacks - Reaching level 6, 12, and 18 in this class allows you to attack one additional time when you use your standard action to attack.",
 		"Reaching level 1, 5, 9, 13, and 17 in this class grants or improves the Unarmed Combat skill.",
 	],
 	"Level 1": [
@@ -18,7 +19,6 @@ classes.monk = {
 	],
 	"Ki Techniques": [
 		"Ki Strike - Spend one Ki point to deal an additional 1d6+Wis damage on all of your attacks until the start of your next turn.  You may activate this technique after you hit.",
-		"Cloud Step - Spend one Ki point to not fall during or at the end of your turn.  If you jump, you may jump a second time at the apex of your jump.  Alternately, you can fall but take no fall damage.",
 		"Stunning Strike - Spend one Ki point when you hit with an attack to force the target to make a Fortitude save with DC equal to 10 plus your Wisdom modifier.  On a failed save, that creature is stunned until the end of your next turn.  Either way, it is immune to Stunning Strike until the end of your next turn.",
 		"Hundred League Step - Spend one Ki point to move a distance up to your speed as a swift action.  Attacks of opportunity made against you as a result of this movement are at Disadvantage.",
 		"Phantom Fist - Once per attack, spend one Ki point to reroll one to-hit die or all of your damage dice.",
@@ -29,7 +29,8 @@ classes.monk = {
 		"Harness Elements (Fire) - Spend one Ki point to increase your critical threat range by 1 until the end of your turn (normally, this changes critical strikes to happen on 19-20 rather than just 20).  If you score a critical hit, deal an additional 2d6 fire damage.",
 		"Harness Elements (Water) - Spend one Ki point to move 5 feet without provoking attacks of opportunity whenever you hit a creature with an attack before the beginning of your next turn.  The creature you hit must remain within your reach.",
 		"Harness Elements (Earth) - Spend one Ki point to increase your AC by 2 until the beginning of your next turn.  You may use this technique as a reaction to being attacked.",
-		"Master Elements - Spend one Ki point to activate any number of your Harness Elements techniques.",
+		"Master Elements - Spend one Ki point to activate two of your Harness Elements techniques.",
+		"Cloud Step - Spend one Ki point to not fall during or at the end of your turn.  If you jump, you may jump a second time at the apex of your jump.  Alternately, you can fall but take no fall damage.",
 		"Wound Soul - Spend a Ki point when you hit a creature with an attack to force it to immediately make a death saving throw with Disadvantage.",
 		"Disrupt Mana - When a creature within your reach attempts to channel, you may make an attack of opportunity.  If it hits, that creature must make a Wisdom save with DC equal to 5 plus the damage done or lose the mana gained from the channel.",
 		"Soul Shield - When you would be affected by a spell, you may prevent it from affecting you as a reaction.  You lose Ki points equal to half of the mana spent to cast the spell (rounded up).  If you don't have enough Ki points, you take one wound for each Ki point you are missing.  You may use this technique even if you don't have any Ki points.",

@@ -45,6 +45,10 @@ ruleSections.levelling = [
 		type: RULE_BLOCK.EXAMPLE,
 		body: `Gain a racial trait if your total level is 5, 10, 15, or 20.`,
 	},
+	{
+		type: RULE_BLOCK.BODY,
+		body: `You may not select an identical feature more than once unless the feature says that you may, even if the same feature is available from two different classes.  You may add up levels from all classes with Extra Attacks to qualify for extra attacks, but use your base class's version.`,
+	},
 ];
 
 ruleSections.stats = [

@@ -9,6 +9,7 @@ classes.druid = {
 	},
 	"All": [
 		"If you don't have a magic source, you gain the Primal magic source and learn two spells.",
+		"Extra Attacks - Reaching level 6, 12, and 18 in this class allows you to attack one additional time when you use your standard action to attack.",
 		"Reaching level 1, 5, 9, 13, and 17 in this class grants or improves the Channelling skill.",
 	],
 	"Level 1": [

@@ -18,10 +18,11 @@ classes.wizard = {
 		"Intense Preparation - You can pack more mana into your prepared spells.  Your prepared spells are considered to have one additional mana spent on them.",
 		"Hair Trigger - You may cast your prepared spell as a reaction to being attacked or a creature entering a space adjacent to you as long as its normal casting time is no more than one action and you are not flat-footed.",
 		"Conduit - Increase the maximum mana you can apply to a spell by one third of your Wizard level (rounded up).",
-		"Bend the Weave - If you cast a spell with a mana cost of at least twice your channel amount, your next Counterspell within 1 minute has its effective mana cost increased by 1.",
+		"Bend the Weave - If you cast a spell with a mana cost of at least twice your channel amount, your next Counterspell or Dispel Magic within 1 minute has its effective mana cost increased by 1.",
+		"Magical Torrent - When you Channel, you may choose to use all of your remaining channels for the day in one final blast.  Gain one mana for each channel lost this way, and at the end of your turn your mana drops to 0.",
 	],
 	"General": [
 		"New Spell - Choose an Arcane spell and add it to your spell list.  You may choose this feature any number of times.",
-		"Specialize - Choose a School of magic to specialize in.  After this level, whenever you learn a spell from that School, you may learn a second spell from that School.  Choose a second School of magic to be forbidden to you.  You forget all spells you know of that School and may never again learn a spell from that School.  Learn two spells from one of your specialized Schools.  You may choose this feature multiple times, but must select different Schools each time.",
+		"Specialize - Choose a School of magic to specialize in.  After this level, whenever you choose the New Spell feature, you may instead gain two spells from the Schools you specialize in.  Choose a second School of magic to be forbidden to you.  You forget all spells you know of that School and may never again learn a spell from that School.  Learn two spells from Schools you specialize in.  You may choose this feature multiple times, but must select different Schools each time.",
 	],
 };
