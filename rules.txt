@@ -78,3 +78,8 @@ Different creatures vary in their reactions to being Wounded, but most will not 
 
 Undead creatures and constructs are destroyed on their first failed death saving throw, but they are immune to critical hits.
 
+
+
+# OTHER
+
+Mounted combat: if move, -D to ranged attacks, +A to melee polearm attacks
