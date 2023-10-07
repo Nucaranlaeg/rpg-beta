@@ -82,3 +82,15 @@ Undead creatures and constructs are destroyed on their first failed death saving
 # OTHER
 
 Mounted combat: if move, -D to ranged attacks, +A to melee polearm attacks
+
+
+Size classes:
+Fine
+Diminuitive
+Tiny
+Small
+Medium
+Large
+Huge
+Gargantuan
+Colossal

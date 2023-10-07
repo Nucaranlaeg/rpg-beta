@@ -27,9 +27,10 @@ classes.archer = {
 	],
 	"General": [
 		"Bull's Eye - Your critical threat range is increased by 1 plus your net Advantage (if you have net Disadvantage, this has no effect).",
-		"Stand Your Ground - You gain Advantage on readied attacks against creatures within 30 feet if the target is moving closer to you.",
+		"Warding Shot - When you hit a creature within 30 feet with a Readied attack, that creature suffers Disadvantage on its next attack this turn.",
+		"Stand Your Ground - You gain Advantage on Readied attacks against creatures within 30 feet if the target is moving closer to you.",
 		"Hair Trigger - When you Ready an attack and do not move on your turn, you may make the Readied attack one additional time.  Each attacks must be against a different target, each must independantly qualify, and you must be able to attack with your standard action at least as many times as you use the Readied attack.  You may choose this feature any number of times.",
-		"Injure: Slow - When you make an attack, you can choose to suffer Disadvantage.  If you do and you hit with the attack, the target must make a Dexterity save with DC equal to the damage you dealt plus 10 or be slowed for 2 rounds.",
+		"Injure: Slow - When you make an attack, you can choose to suffer Disadvantage.  If you do and you hit with the attack, the target must make a Dexterity save with DC equal to the damage you dealt plus 10 or be slowed until the beginning of your next turn.",
 		"Injure: Bleed - When you make an attack, you can choose to suffer Disadvantage.  If you do and you hit with the attack, the target must make a Constitution save with DC equal to the damage you dealt plus 10 or take 2 damage for every 5 feet that it moves on its next turn.  This damage can cause Wounds (add it up and apply it at the end of the creature's turn).",
 		"Injure: Distract - When you make an attack, you can choose to suffer Disadvantage.  If you do and you hit with the attack, the target is Distracted until the end of your next turn.",
 		"Good Arm - Increase your range on thrown weapons by a number of feet equal to your Strength score.  Increase your range on fired weapons by a number of feet equal to thrice your Strength score",
