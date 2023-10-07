@@ -19,6 +19,7 @@ const navOptions = {
 		"fighter",
 		"monk",
 		"paladin",
+		"psion",
 		"rogue",
 		"sorcerer",
 		"wizard",
@@ -39,12 +40,17 @@ const navOptions = {
 	"social": [
 		"alignment",
 	],
+	"magic": [
+		"spells",
+	],
 }
 
 const classes = {};
 const races = {};
 
 const ruleSections = {};
+
+const spellFilters = {};
 
 function mainNavClick(event){
 	if (event.target.classList.contains("nav-button")){
@@ -116,6 +122,66 @@ function loadView(){
 				featureDiv.classList.add("feature");
 				featureDiv.innerHTML = feature.replaceAll("\n", "<br>");
 			});
+		});
+	} else if (mainNavSelection === "magic" && subNavSelection === "spells"){
+		const schoolFilterRow = document.createElement("div");
+		schoolFilterRow.classList.add("filter-row");
+		Object.values(SCHOOLS).forEach(school => {
+			const schoolButton = document.createElement("div");
+			schoolButton.classList.add("filter");
+			schoolButton.innerHTML = school;
+			if (spellFilters[school]){
+				schoolButton.classList.add("filtering");
+			}
+			schoolButton.onclick = ((event) => {
+				spellFilters[event.target.innerHTML] = !spellFilters[event.target.innerHTML];
+				loadView();
+			});
+			schoolFilterRow.append(schoolButton);
+		});
+		contentDiv.appendChild(schoolFilterRow);
+
+		const sourcesFilterRow = document.createElement("div");
+		sourcesFilterRow.classList.add("filter-row");
+		Object.values(SOURCES).forEach(source => {
+			const sourceButton = document.createElement("div");
+			sourceButton.classList.add("filter");
+			sourceButton.innerHTML = source;
+			if (spellFilters[source]){
+				sourceButton.classList.add("filtering");
+			}
+			sourceButton.onclick = ((event) => {
+				spellFilters[event.target.innerHTML] = !spellFilters[event.target.innerHTML];
+				loadView();
+			});
+			sourcesFilterRow.append(sourceButton);
+		});
+		contentDiv.appendChild(sourcesFilterRow);
+		contentDiv.appendChild(document.createElement("br"));
+
+		const schoolFilter = Object.values(SCHOOLS).map(school => spellFilters[school] ? school : null).filter(s=>s);
+		const sourceFilter = Object.values(SOURCES).map(source => spellFilters[source] ? source : null).filter(s=>s);
+
+		spells.forEach(spell => {
+			if (schoolFilter.length && !schoolFilter.includes(spell.spellData.school)) return;
+			if (sourceFilter.length && !sourceFilter.some(source => spell.type.some(type => type === source))) return;
+			const spellDiv = document.createElement("div");
+			spellDiv.classList.add("category");
+			spellDiv.innerHTML = `<h4>${spell.name}</h4>` +
+				`<div class="spelldata">` +
+					`<div class="datum">Range: ${spell.spellData.range}</div>` +
+					`<div class="datum">Minimum Mana: ${spell.spellData.minMana}</div>` +
+					(spell.requirements?.length ? `<div class="datum">Requires: ${spell.requirements}</div>` : "") + "<br />" +
+					`<div class="datum">School: ${spell.spellData.school}</div>` +
+					`<div class="datum">Save: ${spell.spellData.save}</div>` +
+					(spell.spellData.duration || spell.spellData.upkeep ? "<br />" : "") +
+					(spell.spellData.duration ? `<div class="datum">Duration: ${spell.spellData.duration}</div>` : "") +
+					(spell.spellData.upkeep ? `<div class="datum">Upkeep: ${spell.spellData.upkeep}</div>` : "") +
+				`</div>` +
+				`<div class="effect">${spell.effect}</div>` +
+				`<div class="effect">${spell.manaEffect}</div>` +
+				"";
+			contentDiv.appendChild(spellDiv);
 		});
 	} else {
 		const loadTarget = ruleSections[subNavSelection];

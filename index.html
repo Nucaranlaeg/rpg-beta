@@ -14,6 +14,7 @@
 		<script src="fighter.js"></script>
 		<script src="monk.js"></script>
 		<script src="paladin.js"></script>
+		<script src="psion.js"></script>
 		<script src="rogue.js"></script>
 		<script src="sorcerer.js"></script>
 		<script src="wizard.js"></script>
@@ -21,6 +22,8 @@
 		<script src="social.js"></script>
 		<script src="character.js"></script>
 		<script src="races.js"></script>
+		<!-- Spells -->
+		<script src="spells.js"></script>
 	</head>
 	<body>
 		<div id="header-nav" class="nav" onclick="mainNavClick(event)">
@@ -28,6 +31,7 @@
 			<div id="nav-character" class="nav-button">Character</div>
 			<div id="nav-races" class="nav-button">Races</div>
 			<div id="nav-social" class="nav-button">Social</div>
+			<div id="nav-magic" class="nav-button">Magic</div>
 		</div>
 		<div id="sub-header-nav-classes" class="nav" onclick="subNavClick(event)">
 			<div id="nav-archer" class="selected nav-button">Archer</div>
@@ -57,6 +61,9 @@
 			<div id="nav-dwarf" class="nav-button">Dwarf</div>
 			<div id="nav-gnome" class="nav-button">Gnome</div>
 			<div id="nav-halfling" class="nav-button">Halfling</div>
+		</div>
+		<div id="sub-header-nav-magic" class="nav" onclick="subNavClick(event)" style="display:none">
+			<div id="nav-spells" class="selected nav-button">Spells</div>
 		</div>
 		<div id="main-content">
 		</div>
