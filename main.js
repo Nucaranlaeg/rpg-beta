@@ -157,16 +157,59 @@ function loadView(){
 			sourcesFilterRow.append(sourceButton);
 		});
 		contentDiv.appendChild(sourcesFilterRow);
+
+		const typeFilterRow = document.createElement("div");
+		typeFilterRow.classList.add("filter-row");
+		Object.values(SPELL_TYPES).forEach(type => {
+			if (type === "Sustained") return;
+			type = type.replace(" Energy", "");
+			const typeButton = document.createElement("div");
+			typeButton.classList.add("filter");
+			typeButton.innerHTML = type;
+			if (spellFilters[type]){
+				typeButton.classList.add("filtering");
+			}
+			typeButton.onclick = ((event) => {
+				spellFilters[event.target.innerHTML.replace(" Energy", "")] = !spellFilters[event.target.innerHTML.replace(" Energy", "")];
+				loadView();
+			});
+			typeFilterRow.append(typeButton);
+		});
+		contentDiv.appendChild(typeFilterRow);
+
+		const costFilterRow = document.createElement("div");
+		costFilterRow.classList.add("filter-row");
+		[...new Set(spells.map(s => s.spellData.minMana))].sort().forEach(cost => {
+			const costButton = document.createElement("div");
+			costButton.classList.add("filter");
+			costButton.innerHTML = cost;
+			if (spellFilters[cost]){
+				costButton.classList.add("filtering");
+			}
+			costButton.onclick = ((event) => {
+				spellFilters[event.target.innerHTML] = !spellFilters[event.target.innerHTML];
+				loadView();
+			});
+			costFilterRow.append(costButton);
+		});
+		contentDiv.appendChild(costFilterRow);
 		contentDiv.appendChild(document.createElement("br"));
 
 		const schoolFilter = Object.values(SCHOOLS).map(school => spellFilters[school] ? school : null).filter(s=>s);
 		const sourceFilter = Object.values(SOURCES).map(source => spellFilters[source] ? source : null).filter(s=>s);
+		const typeFilter = Object.values(SPELL_TYPES).map(type => spellFilters[type.replace(" Energy", "")] ? type : null).filter(s=>s);
+		const costFilter = [...new Set(spells.map(s => s.spellData.minMana))].map(cost => spellFilters[cost] ? cost : null).filter(s=>s);
 
+		spells.sort((a, b) => a.name < b.name ? -1 : 1).sort((a, b) => a.spellData.minMana - b.spellData.minMana);
 		spells.forEach(spell => {
 			if (schoolFilter.length && !schoolFilter.includes(spell.spellData.school)) return;
 			if (sourceFilter.length && !sourceFilter.some(source => spell.type.some(type => type === source))) return;
+			if (typeFilter.length && !typeFilter.some(type => spell.descriptors.some(desc => desc === type))) return;
+			if (costFilter.length && !costFilter.includes(spell.spellData.minMana)) return;
 			const spellDiv = document.createElement("div");
 			spellDiv.classList.add("category");
+			spellDiv.classList.add("spell");
+			spell.descriptors.forEach(desc => spellDiv.classList.add(desc.replaceAll(" ", "-").toLowerCase()));
 			spellDiv.innerHTML = `<h4>${spell.name}</h4>` +
 				`<div class="spelldata">` +
 					`<div class="datum">Range: ${spell.spellData.range}</div>` +

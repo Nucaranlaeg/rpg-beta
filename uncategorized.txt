@@ -19,7 +19,7 @@ Swift:
 
 You may Channel as a swift action three times plus your intelligence modifier per day, but only once per turn.  Add your total levels in classes which grant a magic source to the number of times per day you can Channel.  For example, a level 5 Wizard with 16 intelligence can Channel 3 + 5 (levels) + 3 (Int) = 11 times per day.
 
-If you have no channels left for the day, you may overchannel.  This is just like channelling, but you immediately suffer one Overchannel Wound.  An Overchannel Wound is just like a regular Wound but it cannot not be healed by healing magic.
+If you have no channels left for the day, you may overchannel.  This is just like channelling, but you immediately suffer one Overdraw Wound.  An Overdraw Wound is just like a regular Wound but it cannot not be healed by healing magic.
 
 When you Channel, gain 2 mana plus mana equal to your rank in Channelling.  You may use this mana for casting spells this turn or hold it for another turn.  At the end of each turn that you do not Channel or use mana to cast a spell, lose one mana.
 
@@ -96,19 +96,3 @@ Gargantuan
 Colossal
 
 ## New spells:
-
-Dispel Magic
-Universal
-Touch
-2 mana
-Concentration (no upkeep)
-Suppress the magical properties of an item or creature for up to 1 minute. If the target is a creature or an item held by a creature, you must succeed on a touch attack against that creature. If the target is under the effect of one or more spells, you may instead attempt to end one of them of your choice. Effects caused by a spell that are not coterminus with the spell cannot be ended this way. To succeed you must succeed on an Intelligence check with DC equal to 10 + 3× the mana used on the targetted spell. 
-Each additional mana extends the duration of the suppression by 1 minute or gives a +2 bonus to the Intelligence check. 
-
-Bull's Strength
-Enchantment
-Short
-1 mana
-Grant a target creature +2 to Strength for one minute.
-Each additional mana increases the bonus by 2.
-(+ other stats)

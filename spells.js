@@ -49,7 +49,6 @@ const STATUSES = {
 const SOURCES = {
 	Arcane: "Arcane",
 	Divine: "Divine",
-	Psionic: "Psionic",
 }
 
 const SCHOOLS = {
@@ -91,6 +90,7 @@ const DURATIONS = {
 const UPKEEP = {
 	Half: "Half of the initial mana cost",
 	One: "One mana",
+	Zero: "Concentration only",
 }
 
 let spells = [
@@ -488,7 +488,7 @@ let spells = [
 	},
 },
 {
-	type: [SOURCES.Arcane, SOURCES.Divine, SOURCES.Psionic],
+	type: [SOURCES.Arcane, SOURCES.Divine],
 	descriptors: [],
 	name: "Counterspell",
 	requirements: [],
@@ -501,5 +501,112 @@ let spells = [
 		save: SAVES.None,
 	},
 },
+{
+	type: [SOURCES.Arcane, SOURCES.Divine],
+	descriptors: [SPELL_TYPES.Sustained],
+	name: "Dispel Magic",
+	requirements: [],
+	effect: "Suppress the magical properties of an item or creature for up to 1 minute. If the target is a creature or an item held by a creature, you must succeed on a touch attack against that creature. If the target is under the effect of one or more spells, you may instead attempt to end one of them of your choice. Effects caused by a spell that are not coterminus with the spell cannot be ended this way. To succeed you must succeed on an Intelligence check with DC equal to 10 plus 3 times the mana used on the targetted spell.",
+	manaEffect: "Each additional mana extends the duration of the suppression by 1 minute or gives a +2 bonus to the Intelligence check.",
+	spellData: {
+		range: RANGE.Touch,
+		minMana: 2,
+		school: SCHOOLS.Universal,
+		save: SAVES.None,
+		duration: DURATIONS.Minute,
+		upkeep: UPKEEP.Zero,
+	}
+},
+{
+	type: [SOURCES.Arcane, SOURCES.Divine],
+	descriptors: [],
+	name: "Bull's Strength",
+	requirements: [],
+	effect: "Grant a target creature +2 to Strength for one minute.",
+	manaEffect: "Each additional mana increases the bonus by 2.",
+	spellData: {
+		range: RANGE.Short,
+		minMana: 1,
+		school: SCHOOLS.Enchantment,
+		save: SAVES.None,
+		duration: DURATIONS.Minute,
+	}
+},
+{
+	type: [SOURCES.Arcane, SOURCES.Divine],
+	descriptors: [],
+	name: "Cat's Grace",
+	requirements: [],
+	effect: "Grant a target creature +2 to Dexterity for one minute.",
+	manaEffect: "Each additional mana increases the bonus by 2.",
+	spellData: {
+		range: RANGE.Short,
+		minMana: 1,
+		school: SCHOOLS.Enchantment,
+		save: SAVES.None,
+		duration: DURATIONS.Minute,
+	}
+},
+{
+	type: [SOURCES.Arcane, SOURCES.Divine],
+	descriptors: [],
+	name: "Bear's Endurance",
+	requirements: [],
+	effect: "Grant a target creature +2 to Constitution for one minute.",
+	manaEffect: "Each additional mana increases the bonus by 2.",
+	spellData: {
+		range: RANGE.Short,
+		minMana: 1,
+		school: SCHOOLS.Enchantment,
+		save: SAVES.None,
+		duration: DURATIONS.Minute,
+	}
+},
+{
+	type: [SOURCES.Arcane, SOURCES.Divine],
+	descriptors: [],
+	name: "Owl's Wisdom",
+	requirements: [],
+	effect: "Grant a target creature +2 to Wisdom for one minute.",
+	manaEffect: "Each additional mana increases the bonus by 2.",
+	spellData: {
+		range: RANGE.Short,
+		minMana: 1,
+		school: SCHOOLS.Enchantment,
+		save: SAVES.None,
+		duration: DURATIONS.Minute,
+	}
+},
+{
+	type: [SOURCES.Arcane, SOURCES.Divine],
+	descriptors: [],
+	name: "Fox's Cunning",
+	requirements: [],
+	effect: "Grant a target creature +2 to Intelligence for one minute.",
+	manaEffect: "Each additional mana increases the bonus by 2.",
+	spellData: {
+		range: RANGE.Short,
+		minMana: 1,
+		school: SCHOOLS.Enchantment,
+		save: SAVES.None,
+		duration: DURATIONS.Minute,
+	}
+},
+{
+	type: [SOURCES.Arcane, SOURCES.Divine],
+	descriptors: [],
+	name: "Eagle's Splendour",
+	requirements: [],
+	effect: "Grant a target creature +2 to Charisma for one minute.",
+	manaEffect: "Each additional mana increases the bonus by 2.",
+	spellData: {
+		range: RANGE.Short,
+		minMana: 1,
+		school: SCHOOLS.Enchantment,
+		save: SAVES.None,
+		duration: DURATIONS.Minute,
+	}
+},
+
 
 ];
