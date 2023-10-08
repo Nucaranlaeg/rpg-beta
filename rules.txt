@@ -94,3 +94,21 @@ Large
 Huge
 Gargantuan
 Colossal
+
+## New spells:
+
+Dispel Magic
+Universal
+Touch
+2 mana
+Concentration (no upkeep)
+Suppress the magical properties of an item or creature for up to 1 minute. If the target is a creature or an item held by a creature, you must succeed on a touch attack against that creature. If the target is under the effect of one or more spells, you may instead attempt to end one of them of your choice. Effects caused by a spell that are not coterminus with the spell cannot be ended this way. To succeed you must succeed on an Intelligence check with DC equal to 10 + 3× the mana used on the targetted spell. 
+Each additional mana extends the duration of the suppression by 1 minute or gives a +2 bonus to the Intelligence check. 
+
+Bull's Strength
+Enchantment
+Short
+1 mana
+Grant a target creature +2 to Strength for one minute.
+Each additional mana increases the bonus by 2.
+(+ other stats)
