@@ -85,6 +85,16 @@ h4 {
 	margin-bottom: 5px;
 }
 
+.paragraph table {
+	border-collapse: collapse;
+}
+
+.paragraph td {
+	border: 2px solid #0006;
+	padding: 4px;
+	text-align: right;
+}
+
 .example {
 	background-color: #0004;
 	padding: 5px;

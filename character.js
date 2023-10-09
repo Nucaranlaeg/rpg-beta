@@ -9,9 +9,38 @@ ruleSections.creation = [
 	},
 	{
 		type: RULE_BLOCK.BODY,
-		body: `Selecting a race grants you a number of traits at level 1, including adjustments to your starting stats.  Select one racial trait.
+		body: `Selecting a race grants you a number of traits at level 1, including restrictions on your starting stats.  Select one racial trait.
 		At level 5, 10, 15, and 20, you'll select a new trait.
 		This is intended to make race selection relevant even at higher levels.  Some of the racial traits are cultural and can be swapped out (with your DM's permission) for cultural traits of other races.`,
+	},
+	{
+		type: RULE_BLOCK.SUBTITLE,
+		body: `Stats`,
+	},
+	{
+		type: RULE_BLOCK.BODY,
+		body: `Your stats start at 11/9/7/7/5/3, distributed how you wish.  Most races have a "high" stat which cannot start below 7 and a "low" stat which cannot start above 7.
+		Then increase your stats, having 54 points to spend.  No stat can begin above 18.`,
+	},
+	{
+		type: RULE_BLOCK.TABLE,
+		body: [
+			["Change", "Cost"],
+			["+1", "1"],
+			["+2", "2"],
+			["+3", "4"],
+			["+4", "6"],
+			["+5", "9"],
+			["+6", "12"],
+			["+7", "16"],
+			["+8", "20"],
+			["+9", "25"],
+		],
+	},
+	{
+		type: RULE_BLOCK.BODY,
+		body: `Alternately, you can roll 4d6 and drop the lowest, assigning your stats as you choose and then getting +1 to your race's high stat and -1 to your race's low stat.
+		Only do this if your DM allows it (and your entire party is rolling for their stats).`,
 	},
 ];
 

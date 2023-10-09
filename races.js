@@ -9,7 +9,7 @@ races.human = {
 
 races.elf = {
 	"Level 1": [
-		"+1 Intelligence, -1 Strength",
+		"High Intelligence, Low Strength",
 		"Trance: Elves do not sleep as other creatures.  They instead enter a trance for 4 hours, during which they have limited awareness of the world around them.  Resting still requires at least 8 hours of minimal activity.  Elves cannot be magically put to sleep.",
 	],
 	"Racial Traits": [
@@ -19,7 +19,7 @@ races.elf = {
 
 races.dwarf = {
 	"Level 1": [
-		"+1 Constitution, -1 Charisma",
+		"High Constitution, Low Charisma",
 		"Infravision 60 feet",
 	],
 	"Racial Traits": [
@@ -29,7 +29,7 @@ races.dwarf = {
 
 races.gnome = {
 	"Level 1": [
-		"+1 Dexterity, -1 Intelligence",
+		"High Dexterity, Low Intelligence",
 	],
 	"Racial Traits": [
 
@@ -38,7 +38,7 @@ races.gnome = {
 
 races.halfling = {
 	"Level 1": [
-		"+1 Wisdom, -1 Constitution",
+		"High Wisdom, Low Constitution",
 	],
 	"Racial Traits": [
 

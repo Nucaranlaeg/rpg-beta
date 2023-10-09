@@ -4,6 +4,7 @@ const RULE_BLOCK = {
 	SUBSUBTITLE: 2,
 	BODY: 3,
 	EXAMPLE: 4,
+	TABLE: 5,
 }
 
 let mainNavSelection = "classes";
@@ -252,6 +253,12 @@ function loadView(){
 					node = document.createElement("div");
 					node.classList.add("example");
 					break;
+				case RULE_BLOCK.TABLE:
+					node = document.createElement("div");
+					node.classList.add("paragraph");
+					node.innerHTML = `<table>${entry.body.map(r => `<tr>${r.map(c => `<td>${c}</td>`).join("")}</tr>`).join("")}</table>`;
+					contentDiv.appendChild(node);
+					return;
 				default:
 					throw "No type on block";
 			}
