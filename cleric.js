@@ -13,7 +13,7 @@ classes.cleric = {
 		"Reaching level 1, 5, 9, 13, and 17 in this class grants or improves the Channelling skill.",
 	],
 	"Level 1": [
-		"Divine Conduit - The first time you Channel every hour does not count against your limit.",
+		"Divine Conduit - The second time you Channel every hour does not count against your limit. Your first channel must not have been free.",
 	],
 	"Cleric": [
 		"Holy Proficiency - As a free action, you may expend one of your daily Channels to gain divine guidance in the use of one weapon you are currently holding.  Until the end of your next turn, you gain a bonus to attacks made with that weapon as though Channelling were a narrow skill applying to that attack.  You also gain the effects of the Extra Attack feature (counting levels in Cleric, gaining attacks at levels 6, 12, and 18).",

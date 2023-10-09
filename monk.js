@@ -2,9 +2,9 @@ classes.monk = {
 	"Stats": {
 		"str": true,
 		"dex": true,
-		"con": true,
+		"con": false,
 		"cha": true,
-		"int": false,
+		"int": true,
 		"wis": false,
 	},
 	"All": [
@@ -14,12 +14,12 @@ classes.monk = {
 		"Reaching level 1, 5, 9, 13, and 17 in this class grants or improves the Unarmed Combat skill.",
 	],
 	"Level 1": [
-		"Ki - You have a pool of Ki you can use to power your abilities.  Your maximum Ki is equal to half your level rounded up plus your Wisdom modifier.  Gain the Ki Strike technique.  Techniques may be activated more than once per round, but their effects do not stack with themselves.",
+		"Ki - You have a pool of Ki you can use to power your abilities.  Your maximum Ki is equal to half your level rounded up plus your Intelligence modifier.  Gain the Ki Strike technique.  Techniques may be activated more than once per round, but their effects do not stack with themselves.",
 		"Meditate - You can meditate, taking no actions for one round and regaining one Ki point.",
 	],
 	"Ki Techniques": [
-		"Ki Strike - Spend one Ki point to deal an additional 1d6+Wis damage on all of your attacks until the start of your next turn.  You may activate this technique after you hit.",
-		"Stunning Strike - Spend one Ki point when you hit with an attack to force the target to make a Fortitude save with DC equal to 10 plus your Wisdom modifier.  On a failed save, that creature is stunned until the end of your next turn.  Either way, it is immune to Stunning Strike until the end of your next turn.",
+		"Ki Strike - Spend one Ki point to deal an additional 1d6+Cha damage on all of your attacks until the start of your next turn.  You may activate this technique after you hit.",
+		"Stunning Strike - Spend one Ki point when you hit with an attack to force the target to make a Fortitude save with DC equal to 10 plus your Charisma modifier.  On a failed save, that creature is stunned until the end of your next turn.  Either way, it is immune to Stunning Strike until the end of your next turn.",
 		"Hundred League Step - Spend one Ki point to move a distance up to your speed as a swift action.  Attacks of opportunity made against you as a result of this movement are at Disadvantage.",
 		"Phantom Fist - Once per attack, spend one Ki point to reroll one to-hit die or all of your damage dice.",
 		"Retributive Strike - Immediately after being wounded, spend one Ki point to make an attack against the creature that wounded you as a reaction.  If the attack does damage, it deals one additional wound.",
