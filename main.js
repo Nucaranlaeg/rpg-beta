@@ -234,8 +234,14 @@ function loadView(){
 	} else {
 		const loadTarget = ruleSections[subNavSelection];
 		let block = null;
+		let block_size = 0;
 		loadTarget.forEach(entry => {
 			let node;
+			if (block && block_size > 1 && entry.type !== RULE_BLOCK.EXAMPLE){
+				contentDiv.appendChild(block);
+				block = null;
+				block_size = 0;
+			}
 			switch (entry.type){
 				case RULE_BLOCK.TITLE:
 					node = document.createElement("h2");
@@ -261,21 +267,27 @@ function loadView(){
 					node = document.createElement("div");
 					node.classList.add("paragraph");
 					node.innerHTML = `<table>${entry.body.map(r => `<tr>${r.map(c => `<td>${c}</td>`).join("")}</tr>`).join("")}</table>`;
-					contentDiv.appendChild(node);
+					if (block){
+						block.appendChild(node);
+						block_size++;
+					} else {
+						contentDiv.appendChild(node);
+					}
 					return;
 				default:
 					throw "No type on block";
 			}
 			node.innerHTML = entry.body.replaceAll("\n", "<br><br>");
 			if (block){
-				if (entry.type === RULE_BLOCK.SUBSUBTITLE) return;
-				block.appendChild(node);
-				// Make multiple examples work after one subsubtitle
-				node = block;
-				block = null;
+				if (entry.type !== RULE_BLOCK.SUBSUBTITLE) block.appendChild(node);
+				block_size++;
+				return;
 			}
 			contentDiv.appendChild(node);
 		});
+		if (block){
+			contentDiv.appendChild(block);
+		}
 	}
 }
 
