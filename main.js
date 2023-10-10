@@ -25,6 +25,12 @@ const navOptions = {
 		"sorcerer",
 		"wizard",
 	],
+	"character": [
+		"creation",
+		"levelling",
+		"stats",
+		"skills",
+	],
 	"races": [
 		"human",
 		"elf",
@@ -32,17 +38,15 @@ const navOptions = {
 		"gnome",
 		"halfling",
 	],
-	"character": [
-		"creation",
-		"levelling",
-		"stats",
-		"skills",
-	],
 	"social": [
 		"alignment",
 	],
 	"magic": [
 		"spells",
+		"casting",
+	],
+	"combat": [
+		"actions",
 	],
 }
 
@@ -266,6 +270,7 @@ function loadView(){
 			if (block){
 				if (entry.type === RULE_BLOCK.SUBSUBTITLE) return;
 				block.appendChild(node);
+				// Make multiple examples work after one subsubtitle
 				node = block;
 				block = null;
 			}
