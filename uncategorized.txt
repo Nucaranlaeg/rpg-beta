@@ -24,3 +24,11 @@ Gargantuan
 Colossal
 
 ## New spells:
+
+Light
+
+Repair
+Transmutation
+1 Mana
+Return a single object to the state it was in one hour ago. If it is in multiple pieces, it can reunite those pieces. Three quarters of the original mass must be present, and magic lost by the breaking of the object cannot be restored. Optionally, casting this spell can take more than one round, with mana provided to it each round.
+Each additional mana allows the spell to reach one additional hour into the past.

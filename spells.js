@@ -607,6 +607,47 @@ let spells = [
 		duration: DURATIONS.Minute,
 	}
 },
-
+{
+	type: [SOURCES.Arcane],
+	descriptors: [],
+	name: "Mage Armour",
+	requirements: [],
+	effect: `One creature gains +2 AC for the duration of the spell. Each time the creature is damaged, the bonus granted is reduced by 1. The spell ends when the bonus is reduced to 0 or one hour has passed.`,
+	manaEffect: `Each additional mana spent increases the initial bonus by 1.`,
+	spellData: {
+		range: RANGE.Touch,
+		minMana: 2,
+		school: SCHOOLS.Conjuration,
+		save: SAVES.None,
+	},
+},
+{
+	type: [SOURCES.Arcane],
+	descriptors: [],
+	name: "Silence",
+	requirements: [],
+	effect: `A 20 foot radius bubble of silence emanates from a point, creature, or object in range. If targetting a creature or an object in a creature's possession, a successful Wisdom save negates the effect, but the effect otherwise follows the creature. No sound can be generated or heard in the area for 1 minute, and Sonic spells have no effect in the area.`,
+	manaEffect: `For each additional mana spent, the radius increases by 10 feet.`,
+	spellData: {
+		range: RANGE.Medium,
+		minMana: 2,
+		school: SCHOOLS.Illusion,
+		save: SAVES.Wisdom,
+	},
+},
+{
+	type: [SOURCES.Arcane],
+	descriptors: [],
+	name: "Invisibility",
+	requirements: [],
+	effect: `A creature you touch turns invisible for up to one hour (including to infravision). It is still detectable by other means. When it attacks or casts a spell which has the potential to cause a harmful effect to a hostile creature, the spell ends early.`,
+	manaEffect: `For each additional two mana spent, the spell can target one additional creature.`,
+	spellData: {
+		range: RANGE.Touch,
+		minMana: 4,
+		school: SCHOOLS.Illusion,
+		save: SAVES.Wisdom,
+	},
+},
 
 ];
