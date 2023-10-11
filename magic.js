@@ -24,3 +24,18 @@ ruleSections.casting = [
 		When you Channel, gain 2 mana plus mana equal to your rank in Channelling.  You may use this mana for casting spells this turn or hold it for another turn.  At the end of each turn that you do not Channel or use mana to cast a spell, lose one mana.  There is no limit to the amount of mana you can hold.`,
 	},
 ];
+
+ruleSections.elements = [
+	{
+		type: RULE_BLOCK.SUBTITLE,
+		body: `Elemental Damage Types`,
+	},
+	{
+		type: RULE_BLOCK.BODY,
+		body: `There are 10 magical damage types. Each has different properties, and changing a spell from one damage type to another may have effects beyond merely changing whether a creature is resistant to it.`,
+	},
+	{
+		type: RULE_BLOCK.TABLE,
+		body: [],
+	},
+];

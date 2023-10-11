@@ -44,6 +44,7 @@ const navOptions = {
 	"magic": [
 		"spells",
 		"casting",
+		"elements",
 	],
 	"combat": [
 		"actions",
