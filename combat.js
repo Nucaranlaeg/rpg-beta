@@ -101,7 +101,7 @@ ruleSections.dying = [
 		type: RULE_BLOCK.BODY,
 		body: `A natural 20 always stabilizes the creature, and if the result is at least DC + 5, the creature becomes conscious.
 		When a dying creature recieves magical healing, it may immediately roll a death saving throw.  This special death saving throw has no consequences if it is a failure, but it can stabilize the creature or cause it to become conscious (even if it is already stable).  Note that even with magical healing, a creature may still be dying, and will continue rolling death saving throws at the beginning of each of its turns if it does not stabilize.
-		Your DM may assume that creatures which are not player characters (or important NPCs) simply die if they fall unconscious during combat.`,
+		Your DM may assume that creatures which are not player characters (or important NPCs) simply die if they fall unconscious during combat. Similarly, your DM may assume that a creature dies without rolling if it takes Wounds equal to its Constitution score.`,
 	},
 	{
 		type: RULE_BLOCK.SUBTITLE,
@@ -109,7 +109,7 @@ ruleSections.dying = [
 	},
 	{
 		type: RULE_BLOCK.BODY,
-		body: `All hit points are restored after a short break of 15 minutes spent relaxing or 30 minutes of easy travel.
+		body: `All hit points are restored after a short break of 10 minutes spent relaxing or 20 minutes of light activity.
 		Each night that you rest, you heal one Wound.  However, you may still die from your injuries.  If you are Wounded when you begin your rest, then at the midpoint of your rest, roll a death saving throw.  If you fail it you begin dying, but only roll once per hour and do not wake up from results that say you do.  Provided you do not die, you stop dying and wake up in the morning as usual (for a typical 8 hour rest, you would roll a maximum of 5 times per night).
 		You may hire a nurse to watch over you through the night; one nurse can watch over up to 10 creatures and reduces the maximum number of death saves to 2 per night.`,
 	},
