@@ -86,6 +86,8 @@ const DURATIONS = {
 	Round: "1 round",
 	Minute: "1 minute",
 	Hour: "1 hour",
+	Dawn: "Until the next dawn",
+	Day: "1 day",
 }
 
 const UPKEEP = {
