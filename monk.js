@@ -14,7 +14,7 @@ classes.monk = {
 		"Reaching level 1, 5, 9, 13, and 17 in this class grants or improves the Unarmed Combat skill.",
 	],
 	"Level 1": [
-		"Ki - You have a pool of Ki you can use to power your abilities.  Your maximum Ki is equal to half your level rounded up plus your Intelligence modifier.  Gain the Ki Strike technique.  Techniques may be activated more than once per round, but their effects do not stack with themselves.",
+		"Ki - You have a pool of Ki you can use to power your abilities.  Your maximum Ki is equal to your level plus your Intelligence modifier.  Gain the Ki Strike technique.  Techniques may be activated more than once per round, but their effects do not stack with themselves.",
 		"Meditate - You can meditate, taking no actions for one round and regaining one Ki point.",
 	],
 	"Ki Techniques": [

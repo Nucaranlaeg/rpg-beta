@@ -15,12 +15,10 @@ classes.rogue = {
 		"Precision - When you have Advantage on an attack and the lower die would hit, the attack deals one extra wound.  Creatures immune to critical hits are also immune to these wounds.",
 	],
 	"Rogue": [
-		"Good Aim - When you have Advantage on an attack, add 5 to the lower die before determining which die to take.  This cannot result in a roll greater than 20 and does not cause critical hits if the original value would not be a critical hit.",
+		"Good Aim - When you have Advantage on an attack, add 5 to the lower die before determining which die to take.  This cannot result in a roll greater than 20 and does not cause critical threats if the original value would not be a critical threat.",
 		"Lethal Strike - Whenever you deal a wound to a creature with Precision, that creature must make a death saving throw or fall unconscious as if it had taken two or more wounds.  The creature has a penalty on this save equal to your total Advantage on the attack.",
 		"Accuracy - When you do not have any Advantage on an attack, you gain Advantage.  This does not allow you to use any feature which you can only use if you have Advantage.",
-		"Constant Threat - If you would have Advantage on an attack, you may choose not to roll to hit and just do damage as though you had hit.  If you do, that damage cannot cause the target to take any wounds.",
-		"Deadly - Your attacks deal 2 additional damage.  You may choose this feature any number of times, but the bonus you receive from it may not exceed your Dexterity modifier.",
-		"Feint - You may forego one of your attacks to get Advantage on one of your attacks.",
+		"Deadly - Your attacks deal 2 additional damage.  You may choose this feature any number of times, but the total bonus you receive from it may not exceed your Dexterity modifier.",
 	],
 	"General": [
 		"Hidden Blade - When you miss an attack against a creature who does not know your location, you may immediately attempt a skill check to hide as a free action.",
@@ -31,5 +29,7 @@ classes.rogue = {
 		"Quick Reflexes - When you make a successful physical save against an attack or effect which normally deals half damage on a successful save, take no damage instead.",
 		"Evasion - When you fail a physical save against an attack or effect which normally deals half damage on a successful save, take half damage anyway.",
 		"Improved Initiative - You gain a +2 bonus to initiative.  You retain your Dexterity bonus to AC when you are surprised.",
+		"Constant Threat - If you would have Advantage on an attack, you may choose not to roll to hit and just do damage as though you had hit.  If you do, that damage cannot cause the target to take any wounds.",
+		"Feint - You may forego one of your attacks to get Advantage on one of your attacks.",
 	],
 };

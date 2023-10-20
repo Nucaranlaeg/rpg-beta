@@ -80,6 +80,7 @@ const RANGE = {
 	Medium: "50 feet",
 	Long: "100 feet",
 	Far: "250 feet",
+	Distant: "10 miles",
 }
 
 const DURATIONS = {
