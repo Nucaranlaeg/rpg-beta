@@ -34,9 +34,9 @@ classes.fighter = {
 		"Invulnerable - While wearing medium or heavy armour, reduce all damage you take by 3.",
 		"Tactical Mind - If you have gained Advantage on an attack against a creature due to flanking since the beginning of your last turn, you are treated as still flanking that creature.",
 		"Battlemaster - As a swift action, you may allow one of your allies within 30 feet to move 5 feet without provoking attacks of opportunity.  That ally must be able to see a hand signal or hear a command you give them.",
-		"Ambidextrous - You may wield an offhand weapon without penalty as long as it is light.",
+		"Ambidextrous - You may wield an offhand weapon without penalty as long as its base damage is 1d6 or less.",
 		"Dangerous - Enemies you threaten cannot flank your allies unless they also flank you.  You and your flanking allies deal an additional 2 damage whenever either of you hit creatures you both flank.",
 		"Lunge - When you take a Readied action to make a single attack, you may first move 5 feet.  This does not provoke an attack of opportunity from the creature you attack.",
-		"Rally - As a standard action, you may rally your allies, allowing any friendly creature who can hear you to move up to their speed to a space within 10 feet of you.  Creatures who moved on their last turn may only move half of their speed as part of this action.",
+		"Rally - As a standard action, you may rally your allies, allowing any friendly creature who can hear you to move up to their speed to a space within 10 feet of you.",
 	],
 };
