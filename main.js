@@ -7,10 +7,13 @@ const RULE_BLOCK = {
 	TABLE: 5,
 }
 
-let mainNavSelection = "classes";
-let subNavSelection = "archer";
+let mainNavSelection = "overview";
+let subNavSelection = "overview";
 
 const navOptions = {
+	"intro": [
+		"overview",
+	],
 	"classes": [
 		"archer",
 		"barbarian",

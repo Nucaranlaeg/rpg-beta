@@ -130,15 +130,19 @@ ruleSections.stats = [
 ruleSections.skills = [
 	{
 		type: RULE_BLOCK.BODY,
-		body: `There are three types of skills: narrow skills, broad skills, and special skills.  You gain one skill of your choice each level, or increase the rank of a skill that you already have.  You may not increase the rank of a skill if it is already ranked equal to one quarter your level or higher.
-		There is no fixed list of skills.  Instead, there are some suggested skills, but you may choose whatever skill you wish when you level up.  If it is not listed, decide with your DM whether it is a narrow or broad skill, using the examples as a guide.
-		Whenever you perform an action which is similar to one of your skills, you may apply the bonus from your skill to any rolls made regarding it (other than saving throws).  For example, you might be able to apply Climbing to ascend the rigging of a ship, but Sailing or Athletics might also apply.  In any case, only one skill can be applied to any roll.
-		A narrow skill gives a +2 per rank to related actions.  A broad skill will apply to more actions, but only gives a +1 per rank.  Special skills provide other bonuses and do not apply a bonus to any roll unless the rules governing that skill say that it does.
-		If you perform an action with no associated skill, you have Disadvantage on the roll.`,
+		body: `You gain one skill of your choice each level, or increase the rank of a skill that you already have.  You may not increase the rank of a skill if it is already ranked equal to one quarter your level or higher.
+		There is no fixed list of skills.  Instead, there are some suggested skills, but you may choose whatever skill you wish when you level up.
+		Whenever you perform an action which is similar to one of your skills, you may apply the bonus from your skill to any rolls made regarding it (other than saving throws).  For example, you might be able to apply Climbing to ascend the rigging of a ship, but Sailing might also apply.  In any case, only one skill can be applied to any roll.
+		A skill gives +2 per rank to related actions. If you perform an action which requires some amount of skill but you have no associated skill, you have Disadvantage on the roll.  For example, picking a lock, riding a horse, or swimming would give you Disadvantage, but attempting to lie to someone would not.
+		Add your Intelligence modifier to any skill check (even skill checks for things like Knowledge where the key ability is Intelligence), up to the rank you have in the applicable skill.  If you have an Intelligence malus, you may lessen the malus by the rank of your skill.  For example, if you attempt to swim and have 13 (+1) STR and 5 (-3) INT and 2 ranks in Swimming, your total modifier would be +1 (STR) +4 (ranks) -1 (INT) = +4.`,
 	},
 	{
 		type: RULE_BLOCK.SUBTITLE,
 		body: "Special Skills",
+	},
+	{
+		type: RULE_BLOCK.BODY,
+		body: "Some skills have special effects.  These skills cannot be used in other circumstances - they only provide the listed benefits.",
 	},
 	{
 		type: RULE_BLOCK.SUBSUBTITLE,
@@ -146,7 +150,7 @@ ruleSections.skills = [
 	},
 	{
 		type: RULE_BLOCK.BODY,
-		body: "This is a broad skill, but it is treated as a narrow skill for the purpose of making attacks only.  If you wish to use your weapon out of combat for any purpose (training, demonstration, etc.) treat it as a broad skill.",
+		body: "Gain +2 on attack rolls with melee weapons.",
 	},
 	{
 		type: RULE_BLOCK.SUBSUBTITLE,
@@ -154,7 +158,7 @@ ruleSections.skills = [
 	},
 	{
 		type: RULE_BLOCK.BODY,
-		body: "This is a broad skill, but it is treated as a narrow skill for the purpose of making attacks only.  If you wish to use your weapon out of combat for any purpose (training, demonstration, etc.) treat it as a broad skill.",
+		body: "Gain +2 on attack rolls with ranged weapons.",
 	},
 	{
 		type: RULE_BLOCK.SUBSUBTITLE,
@@ -208,4 +212,13 @@ ruleSections.skills = [
 		type: RULE_BLOCK.EXAMPLE,
 		body: "Wizard: Gain Channelling at levels 1, 5, 9, 13, 17.",
 	},
+	{
+		type: RULE_BLOCK.SUBTITLE,
+		body: "Example Skills",
+	},
+	{type: RULE_BLOCK.EXAMPLE, body: "Climb"},
+	{type: RULE_BLOCK.EXAMPLE, body: "Hide"},
+	{type: RULE_BLOCK.EXAMPLE, body: "Ride"},
+	{type: RULE_BLOCK.EXAMPLE, body: "Sail"},
+	{type: RULE_BLOCK.EXAMPLE, body: "Swim"},
 ];

@@ -173,11 +173,22 @@ function displayLevelSelections(level){
 			});
 		}
 	}
+	const statNode = levelNode.querySelector(".stat");
+	statNode.style.display = "inline-block";
+	const statSelect = statNode.querySelector("select");
+	while (statSelect.lastChild.value !== ""){
+		statSelect.removeChild(statSelect.lastChild);
+	}
+	["STR", "DEX", "CON", "CHA", "INT", "WIS"].forEach(stat => {
+		if (!classes[levelData.class].Stats[stat.toLowerCase()]) return;
+		statSelect.innerHTML += `<option class="stat-${stat.toLowerCase()}" value="${stat}">${stat}</option>`;
+	});
+	levelNode.querySelector(".skill").style.display = "inline-block";
 }
 
 function setFeature(select){
 	const selectedFeature = select.value;
-	const level = select.closest(".level").dataset.level;
+	const level = +select.closest(".level").dataset.level;
 	const featureName = selectedFeature.split(" - ")[0];
 	if (build.levels.some((l, i) => l.featureName === featureName && i !== level - 1)){
 		const prevValue = build.levels[level - 1].featureName || "";
@@ -186,6 +197,26 @@ function setFeature(select){
 	}
 	build.levels[level - 1].feature = selectedFeature;
 	build.levels[level - 1].featureName = featureName;
+}
+
+function setStat(select){
+	const selectedStat = select.value;
+	const level = +select.closest(".level").dataset.level;
+	const prevValue = build.levels[level - 1].stat || "";
+	if (selectedStat !== "" && build.levels.some((l, i) => l.stat === selectedStat && i >= level - 3 && i <= level + 1)){
+		select.value = prevValue;
+		return;
+	}
+	if (build.stats[prevValue]) build.stats[prevValue].levels--;
+	if (build.stats[selectedStat]) build.stats[selectedStat].levels++;
+	build.levels[level - 1].stat = selectedStat;
+	build.updateStats();
+}
+
+function setSpell(select){
+	const selectedSpell = select.value;
+	const level = select.closest(".level").dataset.level;
+	throw "Not Implemented"
 }
 
 setTimeout(() => {

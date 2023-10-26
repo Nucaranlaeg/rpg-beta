@@ -16,3 +16,5 @@ classes.psion = {
 	"General": [
 	],
 };
+
+delete classes.psion;
