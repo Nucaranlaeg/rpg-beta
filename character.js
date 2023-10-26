@@ -134,7 +134,7 @@ ruleSections.skills = [
 		There is no fixed list of skills.  Instead, there are some suggested skills, but you may choose whatever skill you wish when you level up.
 		Whenever you perform an action which is similar to one of your skills, you may apply the bonus from your skill to any rolls made regarding it (other than saving throws).  For example, you might be able to apply Climbing to ascend the rigging of a ship, but Sailing might also apply.  In any case, only one skill can be applied to any roll.
 		A skill gives +2 per rank to related actions. If you perform an action which requires some amount of skill but you have no associated skill, you have Disadvantage on the roll.  For example, picking a lock, riding a horse, or swimming would give you Disadvantage, but attempting to lie to someone would not.
-		Add your Intelligence modifier to any skill check (even skill checks for things like Knowledge where the key ability is Intelligence), up to the rank you have in the applicable skill.  If you have an Intelligence malus, you may lessen the malus by the rank of your skill.  For example, if you attempt to swim and have 13 (+1) STR and 5 (-3) INT and 2 ranks in Swimming, your total modifier would be +1 (STR) +4 (ranks) -1 (INT) = +4.`,
+		You may add your Intelligence modifier to any skill check (even skill checks for things like Arcana where the key ability would already be Intelligence), up to the rank you have in the applicable skill.`,
 	},
 	{
 		type: RULE_BLOCK.SUBTITLE,
@@ -221,4 +221,7 @@ ruleSections.skills = [
 	{type: RULE_BLOCK.EXAMPLE, body: "Ride"},
 	{type: RULE_BLOCK.EXAMPLE, body: "Sail"},
 	{type: RULE_BLOCK.EXAMPLE, body: "Swim"},
+	{type: RULE_BLOCK.EXAMPLE, body: "Arcana"},
+	{type: RULE_BLOCK.EXAMPLE, body: "Religion"},
+	{type: RULE_BLOCK.EXAMPLE, body: "Nature"},
 ];
