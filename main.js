@@ -49,6 +49,10 @@ const navOptions = {
 	"combat": [
 		"actions",
 	],
+	"build": [
+		"edit",
+		"view",
+	],
 }
 
 const classes = {};
@@ -232,6 +236,8 @@ function loadView(){
 				"";
 			contentDiv.appendChild(spellDiv);
 		});
+	} else if (mainNavSelection === "build"){
+		// No HTML to load here.
 	} else {
 		const loadTarget = ruleSections[subNavSelection];
 		let block = null;
@@ -290,6 +296,7 @@ function loadView(){
 			contentDiv.appendChild(block);
 		}
 	}
+	document.querySelector("#build").style.display = mainNavSelection === "build" ? "block" : "none";
 }
 
 setTimeout(loadView, 0);

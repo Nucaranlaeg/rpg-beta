@@ -34,7 +34,7 @@ Up one size class: +2 CON, +2 STR, -2 DEX, -1 AC
 ## Thrown Weapons
 
 Max weight: 4+STR lb
-Damage for thrown bludgeoning weapons remains 1d6 for each 3lb of the projectile, rounded down, minimum 1d6.
+Damage for thrown bludgeoning weapons is 1d6 for each 3lb of the projectile, rounded down, minimum 1d6.
 
 ## New spells:
 

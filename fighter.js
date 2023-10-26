@@ -14,7 +14,7 @@ classes.fighter = {
 	],
 	"Level 1": [
 		"Heavy armour proficiency",
-		"Martial Stance - As a swift action on your turn, you may select any Stance that you know and adopt it.  You immediately gain its benefits and lose the benefits of your previous Stance.  You may choose the same Stance you are currently in, and you may leave a Stance as a free action on your turn.  You immediately fall out of a Stance if you fall unconscious.",
+		"Martial Stance - As a swift action on your turn, you may select any Stance that you know and adopt it.  You immediately gain its benefits and lose the benefits of your previous Stance.  You may choose the same Stance you are currently in, and you may leave a Stance as a free action on your turn.  You immediately fall out of a Stance if you fall unconscious.  Select a stance at level 1.",
 	],
 	"Stance": [
 		"Hold the Line - When you enter this Stance, choose a direction.  Creatures which enter your threatened squares against that direction provoke attacks of opportunity from you.  If you deal damage with this attack of opportunity, the creature that triggered it cannot continue moving in the chosen direction this turn.  For example, if you choose North it affects movement from the North, North-West, and North-East, and if you choose South-West it affects movement from the South-West, South, and West.",

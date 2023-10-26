@@ -41,6 +41,6 @@ races.halfling = {
 		"High Wisdom, Low Constitution",
 	],
 	"Racial Traits": [
-
+		"Small Packages: Thrown rocks count as weighing 3lb more for the purpose of determining their damage.",
 	],
 }
