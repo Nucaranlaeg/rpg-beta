@@ -40,5 +40,6 @@ classes.bard = {
 		"Echo - You may gain Advantage on a skill check if you see another creature succeed at it first.  The successful attempt must have been in the last 10 minutes, and you must have seen the successful attempt more recently than your most recent attempt.",
 		"Charm - By playing music, telling stories, or otherwise entertaining people, you may reroll any social check made by yourself or a nearby party member, using your modifiers instead of theirs.  Your party member must agree to have you roll, but if they do they must use your result even if it is worse.",
 		"Witty Riposte - If you didn't attack on your last turn, you may use your reaction to deal damage equal to your Intelligence modifier to a creature when it misses you with a melee attack.",
+		"Expertise - Gain a rank in a skill. Ranks in that skill now grant you +3 on relevant skill checks. You may gain this feature more than once.",
 	],
 };
