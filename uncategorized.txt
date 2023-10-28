@@ -7,11 +7,6 @@ Undead creatures and constructs are destroyed on their first failed death saving
 
 # Changes
 
-Too many iterative attacks
-
-Extra Attack (Greater) - You may attack additional times when you use your standard action to attack. The number of attacks you can make is dependent on your total levels in classes with Extra Attack. At 6 levels, you can make two attacks total. At 12 you can make three and at 18 you can make four attacks.
-
-... At 8 levels you can make two attacks total and at 16 you can make three.
 
 # OTHER
 

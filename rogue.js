@@ -8,11 +8,11 @@ classes.rogue = {
 		"wis": true,
 	},
 	"All": [
-		"Extra Attacks - Reaching level 5, 10, 15, and 20 in this class allows you to attack one additional time when you use your standard action to attack.",
 		"Reaching level 1, 5, 9, 13, and 17 in this class grants or improves the Melee Weapons skill or the Ranged Weapons skill.",
 	],
 	"Level 1": [
 		"Precision - When you have Advantage on an attack and the lower die would hit, the attack deals one extra wound.  Creatures immune to critical hits are also immune to these wounds.",
+		"Extra Attack (Greater) - You may attack additional times when you use your standard action to attack. The number of attacks you can make is dependent on your total levels in classes with Extra Attack. At 6 levels, you can make two attacks total. At 12 you can make three and at 18 you can make four attacks.",
 	],
 	"Rogue": [
 		"Good Aim - When you have Advantage on an attack, add 5 to the lower die before determining which die to take.  This cannot result in a roll greater than 20 and does not cause critical threats if the original value would not be a critical threat.",

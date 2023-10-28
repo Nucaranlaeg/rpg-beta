@@ -9,11 +9,11 @@ classes.fighter = {
 	},
 	"All": [
 		"Medium armour proficiency",
-		"Extra Attacks - Reaching level 5, 10, 15, and 20 in this class allows you to attack one additional time when you use your standard action to attack.",
 		"Reaching level 1, 5, 9, 13, and 17 in this class grants or improves the Melee Weapons skill.",
 	],
 	"Level 1": [
 		"Heavy armour proficiency",
+		"Extra Attack (Greater) - You may attack additional times when you use your standard action to attack. The number of attacks you can make is dependent on your total levels in classes with Extra Attack. At 6 levels, you can make two attacks total. At 12 you can make three and at 18 you can make four attacks.",
 		"Martial Stance - As a swift action on your turn, you may select any Stance that you know and adopt it.  You immediately gain its benefits and lose the benefits of your previous Stance.  You may choose the same Stance you are currently in, and you may leave a Stance as a free action on your turn.  You immediately fall out of a Stance if you fall unconscious.  Select a stance at level 1.",
 	],
 	"Stance": [

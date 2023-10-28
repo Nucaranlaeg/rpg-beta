@@ -9,10 +9,10 @@ classes.barbarian = {
 	},
 	"All": [
 		"Light armour proficiency",
-		"Extra Attacks - Reaching level 5, 10, 15, and 20 in this class allows you to attack one additional time when you use your standard action to attack.",
 		"Reaching level 1, 5, 9, 13, and 17 in this class grants or improves the Melee Weapons skill.",
 	],
 	"Level 1": [
+		"Extra Attack (Greater) - You may attack additional times when you use your standard action to attack. The number of attacks you can make is dependent on your total levels in classes with Extra Attack. At 6 levels, you can make two attacks total. At 12 you can make three and at 18 you can make four attacks.",
 		"Rage - You may enter a rage, gaining +4 strength and +4 constitution, but taking a -2 penalty to AC and losing the ability to cast spells (if you have it).  Your rage lasts for a number of rounds equal to half of your (newly-improved) constitution score, rounded down.  You may rage once per hour.  Your rage ends early if you fall unconscious, or you may end it as a free action on your turn.  When you begin raging, you may select a rage modifier you know and gain its benefits the entire time you are raging.",
 	],
 	"Rage Modifier": [

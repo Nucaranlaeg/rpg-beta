@@ -11,11 +11,11 @@ classes.paladin = {
 		"Medium armour proficiency",
 		"A Paladin must be Lawful or Good and cannot be Chaotic or Evil. If she fails to meet these requirements, she loses all benefits from all Paladin features.",
 		"If you don't have a magic source, you gain the Divine magic source and learn two spells - but divide the number of levels you have in Paladin by two (round up) when calculating how many times per day you can channel.",
-		"Extra Attacks - Reaching level 5, 10, 15, and 20 in this class allows you to attack one additional time when you use your standard action to attack.",
 		"Reaching level 1, 5, 9, 13, and 17 in this class grants or improves the Melee Weapons skill, the Ranged Weapons skill, or the Channelling skill.",
 	],
 	"Level 1": [
 		"Heavy armour proficiency",
+		"Extra Attack (Greater) - You may attack additional times when you use your standard action to attack. The number of attacks you can make is dependent on your total levels in classes with Extra Attack. At 6 levels, you can make two attacks total. At 12 you can make three and at 18 you can make four attacks.",
 		"Lay on Hands - Once per day per two Paladin levels (rounded up), heal a wound, cure a non-magical disease, or remove a non-magical poison from yourself or someone you touch.  This is a swift action, but you may do it at most once per turn.",
 	],
 	"Smite": [

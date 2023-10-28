@@ -10,11 +10,11 @@ classes.monk = {
 	"All": [
 		"Unarmed Prowess - Your base unarmed damage die size increases by two (d4 -> d6 -> d8 -> d10 -> d12) at every odd Monk level.  If your unarmed damage die is already a d12, instead gain +1 damage on all of your unarmed attacks.",
 		"Unarmoured Defense - While wearing no armour, gain a bonus to your AC equal to half of your Monk level (rounded up).  You lose this bonus any time you would be denied your Dexterity bonus to AC, even if your Dexterity modifier is 0 or lower.",
-		"Extra Attacks - Reaching level 6, 12, and 18 in this class allows you to attack one additional time when you use your standard action to attack.",
 		"Reaching level 1, 5, 9, 13, and 17 in this class grants or improves the Unarmed Combat skill.",
 	],
 	"Level 1": [
 		"Ki - You have a pool of Ki you can use to power your abilities.  Your maximum Ki is equal to your level plus your Intelligence modifier.  Gain the Ki Strike technique.  Techniques may be activated more than once per round, but their effects do not stack with themselves.",
+		"Extra Attack (Lesser) - You may attack additional times when you use your standard action to attack. The number of attacks you can make is dependent on your total levels in classes with Extra Attack. At 8 levels you can make two attacks total and at 16 you can make three.",
 		"Meditate - You can meditate, taking no actions (including reactions) for one round and regaining one Ki point.",
 	],
 	"Ki Techniques": [

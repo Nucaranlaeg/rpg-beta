@@ -9,10 +9,10 @@ classes.archer = {
 	},
 	"All": [
 		"Light armour proficiency",
-		"Extra Attacks - Reaching level 5, 10, 15, and 20 in this class allows you to attack one additional time when you use your standard action to attack.",
 		"Reaching level 1, 5, 9, 13, and 17 in this class grants or improves the Ranged Weapons skill.",
 	],
 	"Level 1": [
+		"Extra Attack (Greater) - You may attack additional times when you use your standard action to attack. The number of attacks you can make is dependent on your total levels in classes with Extra Attack. At 6 levels, you can make two attacks total. At 12 you can make three and at 18 you can make four attacks.",
 		"Archery Style - An archer knows one or more archery styles, and may use any one on your turn.  Not all ranged weapons are suitable for all styles, and you must select an appropriate weapon for the style you use. Choose one style at level 1.",
 	],
 	"Archery Styles": [
@@ -26,7 +26,7 @@ classes.archer = {
 		"Bull's Eye - Your critical threat range is increased by 1 plus your net Advantage (if you have net Disadvantage, this has no effect).",
 		"Weak Spot - When you score a critical hit with a ranged weapon, you can choose to double the damage you deal instead of scoring a wound (if the attack would normally deal 2d6+2, you may deal 4d6+4 on a critical hit).",
 		"Multishot - You can fire or throw two pieces of ammunition at once.  You may decrease your maximum range to 30 feet and suffer Disadvantage on your attacks, but roll two attacks each time you attack.  You may only use this to attack with weapons for which two could plausibly fit in your hand.",
-		"Trick Shot - You can attempt a feat that is normally impossible, but might be possible if you are exceptionally skilled and lucky. Detail the feat you desire to attempt and roll d%. If you roll equal to or less than your Archer level, you succeed. In any case, you cannot attempt a similar shot for 24 hours. A trick shot cannot target a conscious creature, and requires one minute to attempt - less time requires you to roll d% with Disadvantage (you must take the higher roll - unlike usual Disadvantage because high is worse).\nSome examples: cutting a rope under tension with an arrow, hitting a target up to double your normal maximum range away, or shooting another creature's arrow out of the air. If your trick is harder than these, your DM may simply disallow it (it still needs to be possible).",
+		"Trick Shot - You can attempt a feat that is normally impossible, but might be possible if you are exceptionally skilled and lucky. Detail the feat you desire to attempt and roll d%. If you roll equal to or less than your level, you succeed. In any case, you cannot attempt a similar shot for 24 hours. A trick shot cannot target a conscious creature, and requires one minute to attempt - less time requires you to roll d% with Disadvantage (you must take the higher roll - unlike usual Disadvantage because high is worse).\nSome examples: cutting a rope under tension with an arrow, hitting a target up to double your normal maximum range away, or shooting another creature's arrow out of the air. If your trick is harder than these, your DM may simply disallow it (it still needs to be possible).",
 	],
 	"General": [
 		"Warding Shot - When you hit a creature within 30 feet with a Readied attack, that creature suffers Disadvantage on its next attack this turn.",

@@ -131,7 +131,7 @@ ruleSections.skills = [
 	{
 		type: RULE_BLOCK.BODY,
 		body: `You gain one skill of your choice each level, or increase the rank of a skill that you already have.  You may not increase the rank of a skill if it is already ranked equal to one quarter your level or higher.
-		There is no fixed list of skills.  Instead, there are some suggested skills, but you may choose whatever skill you wish when you level up.
+		There is no fixed list of skills.  Instead, there are some suggested skills, but you may choose whatever skill you wish when you level up.  Skills do not affect your interaction with other creatures except for the special skills Diplomacy and Insight.
 		Whenever you perform an action which is similar to one of your skills, you may apply the bonus from your skill to any rolls made regarding it (other than saving throws).  For example, you might be able to apply Climbing to ascend the rigging of a ship, but Sailing might also apply.  In any case, only one skill can be applied to any roll.
 		A skill gives +2 per rank to related actions. If you perform an action which requires some amount of skill but you have no associated skill, you have Disadvantage on the roll.  For example, picking a lock, riding a horse, or swimming would give you Disadvantage, but attempting to lie to someone would not.
 		You may add your Intelligence modifier to any skill check (even skill checks for things like Arcana where the key ability would already be Intelligence), up to the rank you have in the applicable skill.`,
@@ -167,6 +167,22 @@ ruleSections.skills = [
 	{
 		type: RULE_BLOCK.BODY,
 		body: "Whenever you Channel, gain 1 additional mana.",
+	},
+	{
+		type: RULE_BLOCK.SUBSUBTITLE,
+		body: "Diplomacy",
+	},
+	{
+		type: RULE_BLOCK.BODY,
+		body: "When you make a social skill check, the lowest you can roll before taking your modifiers into account is twice the number of ranks you have in Diplomacy plus one (if you roll less, treat it as that number).  Expertise can increase this to thrice plus one.",
+	},
+	{
+		type: RULE_BLOCK.SUBSUBTITLE,
+		body: "Insight",
+	},
+	{
+		type: RULE_BLOCK.BODY,
+		body: "Whenever someone attempts to decieve you, if their die roll (before modifiers, including Diplomacy, if applicable) is less than or equal to twice your ranks in Insight, you are aware that they attempted to decieve you (but not what the lie was).",
 	},
 	{
 		type: RULE_BLOCK.SUBTITLE,

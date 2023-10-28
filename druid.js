@@ -9,11 +9,11 @@ classes.druid = {
 	},
 	"All": [
 		"If you don't have a magic source, you gain the Primal magic source and learn two spells.",
-		"Extra Attacks - Reaching level 6, 12, and 18 in this class allows you to attack one additional time when you use your standard action to attack.",
 		"Reaching level 1, 5, 9, 13, and 17 in this class grants or improves the Channelling skill.",
 	],
 	"Level 1": [
 		"Wild Shape - As a swift action, you may change your shape to that of a beast, provided you have not been Wild Shaped in the last hour.  While you are in the shape of a beast, you may use a swift action to regain your normal form.  The beast you choose must be <b>Appropriate Challenge Rating</b>, and must be within 1 size class of you.  Wounds carry over between forms, and if you fall unconscious (including by sleeping) you revert back to your normal form.  You may not channel while Wild Shaped, but you may still cast spells.\nWhen you are Wild Shaped, your physical attributes become those of the beast, potentially increasing your maximum and current hit points (in addition to other effects).\nWorked metal does not transform with you and may be destroyed by the transformation depending on your new form (coins are cast, so they do transform). Every other part of your gear transforms with you and is unavailable until you return to your normal form.",
+		"Extra Attack (Lesser) - You may attack additional times when you use your standard action to attack. The number of attacks you can make is dependent on your total levels in classes with Extra Attack. At 8 levels you can make two attacks total and at 16 you can make three.",
 	],
 	"Druid": [
 		"Skinwalker - You may Wild Shape even if you have been Wild Shaped within the last hour.  If you do, you immediately gain 1 stack of exhaustion.",

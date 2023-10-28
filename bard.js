@@ -9,11 +9,11 @@ classes.bard = {
 	},
 	"All": [
 		"Light armour proficiency",
-		"Extra Attacks - Reaching level 6, 12, and 18 in this class allows you to attack one additional time when you use your standard action to attack.",
 		"Reaching level 1, 5, 9, 13, and 17 in this class grants or improves the Melee Weapons skill or the Ranged Weapons skill.",
 	],
 	"Level 1": [
 		"Potent Music - Bards empower their allies and hamper their enemies through music.  As an action, you may begin to Play a Song which you then magically sustain, or you can continue to Play it, building on it by adding one Chord to the Song.  When you take damage, you must make a Wisdom save with DC equal to the damage taken or lose one Chord.  When you start a Song, it begins with one Chord, and a Song ends when you lose all of a Song's Chords or you have not spent an action to Play it for 5 rounds.  You may start up to two new Songs every hour, but if you start a Song when you are already playing a Song, the Chords transfer to the new Song.  You can have at most 3 Chords at a time.  Playing a Song provokes attacks of opportunity.  You must use an instrument properly to Play a Song.\nIf you are capable of it, you may cast spells while sustaining a Song, but you may not continue sustaining a Song if you must also concentrate on a spell.",
+		"Extra Attack (Lesser) - You may attack additional times when you use your standard action to attack. The number of attacks you can make is dependent on your total levels in classes with Extra Attack. At 8 levels you can make two attacks total and at 16 you can make three.",
 		"Bardic Training - Choose a Song.",
 	],
 	"Songs": [
