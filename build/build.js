@@ -159,18 +159,19 @@ function displayLevelSelections(level){
 				});
 			}
 		});
-		featureSelect
 	} else {
-		if (["archer", "bard", "fighter"].includes(levelData.class)){
+		if (["archer", "bard", "fighter", "sorcerer"].includes(levelData.class)){
 			featureNode.style.display = "inline-block";
 			Object.entries(classes[levelData.class]).forEach(([featureGroup, values]) => {
-				if (!["Archery Styles", "Songs", "Stances"].includes(featureGroup)) return;
+				if (!["Archery Styles", "Songs", "Stances", "Metamagic"].includes(featureGroup)) return;
 				values.forEach(feature => {
 					const featureName = feature.split(" - ")[0];
 					if (build.levels.some((l, i) => l.featureName === featureName && i !== level - 1)) return;
 					featureSelect.innerHTML += `<option value="${featureName}">${feature}</option>`;
 				});
 			});
+		} else {
+			featureNode.style.display = "none";
 		}
 	}
 	const statNode = levelNode.querySelector(".stat");
@@ -184,6 +185,22 @@ function displayLevelSelections(level){
 		statSelect.innerHTML += `<option class="stat-${stat.toLowerCase()}" value="${stat}">${stat}</option>`;
 	});
 	levelNode.querySelector(".skill").style.display = "inline-block";
+
+	const spellNode = levelNode.querySelector(".spell-1");
+	const specializeNode = levelNode.querySelector(".specialize");
+	const spellFeatures = ["New Spell", "Specialize"];
+	if ((level == 1 && classes[levelData.class]["All"].some(feature => feature.match(/you gain the \w+ magic source/))) || (levelData.feature && spellFeatures.includes(levelData.featureName))){
+		spellNode.style.display = "inline-block";
+		// Fill spell dropdown
+		if (levelData.featureName === "Specialize"){
+			specializeNode.style.display = "inline-block";
+			// Fill specialize dropdown
+		}
+		// Check for second spell
+	} else {
+		spellNode.style.display = "none";
+		specializeNode.style.display = "none";
+	}
 }
 
 function setFeature(select){

@@ -220,6 +220,11 @@ h4 {
 	display: none;
 }
 
+.level:not(:first-of-type) {
+	border-top: 1px solid #222;
+	padding-top: 5px;
+}
+
 .information {
 	margin: 10px 0;
 }
