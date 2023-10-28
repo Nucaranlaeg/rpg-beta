@@ -32,5 +32,6 @@ classes.rogue = {
 		"Constant Threat - If you would have Advantage on an attack, you may choose not to roll to hit and just do damage as though you had hit.  If you do, that damage cannot cause the target to take any wounds.",
 		"Feint - As a swift action, you may gain Advantage on your next attack.",
 		"Cunning - You may move your speed or attempt a skill check (like hiding, pickpocketing, or picking a lock) which would usually require a standard action as a swift action.",
+		"Expertise - Gain a rank in a skill. Ranks in that skill now grant you +3 on relevant skill checks. You may gain this feature more than once.",
 	],
 };
