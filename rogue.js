@@ -8,6 +8,7 @@ classes.rogue = {
 		"wis": true,
 	},
 	"All": [
+		"Martial weapon proficiency",
 		"Reaching level 1, 5, 9, 13, and 17 in this class grants or improves the Melee Weapons skill or the Ranged Weapons skill.",
 	],
 	"Level 1": [

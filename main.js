@@ -5,57 +5,22 @@ const RULE_BLOCK = {
 	BODY: 3,
 	EXAMPLE: 4,
 	TABLE: 5,
+	TABLEWITHHEAD: 6,
 }
 
 let mainNavSelection = "overview";
 let subNavSelection = "overview";
 
-const navOptions = {
-	"intro": [
-		"overview",
-	],
-	"classes": [
-		"archer",
-		"barbarian",
-		"bard",
-		"cleric",
-		"druid",
-		"fighter",
-		"monk",
-		"paladin",
-		"psion",
-		"rogue",
-		"sorcerer",
-		"wizard",
-	],
-	"character": [
-		"creation",
-		"levelling",
-		"stats",
-		"skills",
-	],
-	"races": [
-		"human",
-		"elf",
-		"dwarf",
-		"gnome",
-		"halfling",
-	],
-	"social": [
-		"alignment",
-	],
-	"magic": [
-		"spells",
-		"casting",
-		"elements",
-	],
-	"combat": [
-		"actions",
-	],
-	"build": [
-		"edit",
-		"view",
-	],
+const defaultNav = {
+	"intro": "overview",
+	"classes": "archer",
+	"character": "creation",
+	"races": "human",
+	"social": "alignment",
+	"equipment": "melee",
+	"magic": "spells",
+	"combat": "actions",
+	"build": "edit",
 }
 
 const classes = {};
@@ -71,7 +36,7 @@ function mainNavClick(event){
 		event.target.classList.add("selected");
 		mainNavSelection = event.target.id.replace("nav-", "");
 		document.querySelectorAll(".nav:not(:first-of-type)").forEach(node => node.style.display = "none");
-		document.querySelector(`#nav-${navOptions[mainNavSelection][0]}`).click();
+		document.querySelector(`#nav-${defaultNav[mainNavSelection]}`).click();
 		document.querySelector(`#sub-header-nav-${mainNavSelection}`).style.display = "block";
 	}
 }
@@ -274,9 +239,12 @@ function loadView(){
 					node.classList.add("example");
 					break;
 				case RULE_BLOCK.TABLE:
+				case RULE_BLOCK.TABLEWITHHEAD:
 					node = document.createElement("div");
 					node.classList.add("paragraph");
-					node.innerHTML = `<table>${entry.body.map(r => `<tr>${r.map(c => `<td>${c}</td>`).join("")}</tr>`).join("")}</table>`;
+					node.innerHTML = `<table>${entry.body.map((r, i) => `<tr>${r.map(c => 
+						`<${i === 0 && entry.type === RULE_BLOCK.TABLEWITHHEAD ? "th" : "td"}>${c}</${i === 0 && entry.type === RULE_BLOCK.TABLEWITHHEAD ? "th" : "td"}>`
+						).join("")}</tr>`).join("")}</table>`;
 					if (block){
 						block.appendChild(node);
 						block_size++;

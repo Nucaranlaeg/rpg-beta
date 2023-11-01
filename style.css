@@ -83,13 +83,15 @@ h4 {
 	background-color: #0004;
 	padding: 5px;
 	margin-bottom: 5px;
+	width: fit-content;
 }
 
 .paragraph table {
 	border-collapse: collapse;
 }
 
-.paragraph td {
+.paragraph td,
+.paragraph th {
 	border: 2px solid #0006;
 	padding: 4px;
 	text-align: right;

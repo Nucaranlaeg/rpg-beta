@@ -9,6 +9,7 @@ classes.archer = {
 	},
 	"All": [
 		"Light armour proficiency",
+		"Martial weapon proficiency",
 		"Reaching level 1, 5, 9, 13, and 17 in this class grants or improves the Ranged Weapons skill.",
 	],
 	"Level 1": [

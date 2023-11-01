@@ -9,6 +9,7 @@ classes.paladin = {
 	},
 	"All": [
 		"Medium armour proficiency",
+		"Martial weapon proficiency",
 		"A Paladin must be Lawful or Good and cannot be Chaotic or Evil. If she fails to meet these requirements, she loses all benefits from all Paladin features.",
 		"If you don't have a magic source, you gain the Divine magic source and learn two spells - but divide the number of levels you have in Paladin by two (round up) when calculating how many times per day you can channel.",
 		"Reaching level 1, 5, 9, 13, and 17 in this class grants or improves the Melee Weapons skill, the Ranged Weapons skill, or the Channelling skill.",
