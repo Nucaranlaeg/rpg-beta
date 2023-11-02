@@ -5,11 +5,11 @@ spells = [
 	descriptors: [SPELL_TYPES.Fire],
 	name: "Fireball",
 	requirements: [],
-	effect: `You create a small bead that flies out to the target location and explodes. The explosion deals ${DAMAGE.Fire} to each creature within 10 feet, or half that much on a successful dexterity save.`,
+	effect: `You create a small bead that flies out to the target location and explodes. The explosion deals ${DAMAGE.Fire} to each creature within 5 feet, or half that much on a successful dexterity save.`,
 	manaEffect: `For each additional mana used, the spell deals an additional ${DAMAGE.Fire} and its radius increases by 5 feet.`,
 	spellData: {
 		range: RANGE.Medium,
-		minMana: 1,
+		minMana: 2,
 		school: SCHOOLS.Evocation,
 		save: SAVES.Dexterity,
 	},
@@ -19,7 +19,7 @@ spells = [
 	descriptors: [SPELL_TYPES.Fire],
 	name: "Wall of Fire",
 	requirements: ["Fireball"],
-	effect: `You sweep out an arc with your arm, and a straight 30 foot long wall of fire springs up.  Vision through the wall is completely blocked.  Creatures who begin their turn in the wall or enter it take ${DAMAGE.Fire}.  Creatures in the wall when it first appears who succeed on a dexterity save may move 5 feet as a reaction.`,
+	effect: `You sweep out an arc with your arm, and a straight 30 foot long, 15 foot tall wall of fire springs up.  Vision through the wall is completely blocked.  Creatures who begin their turn in the wall or enter it take ${DAMAGE.Fire}.  Creatures in the wall when it first appears who succeed on a dexterity save may move 5 feet as a reaction.`,
 	manaEffect: `For each additional mana used, the spell deals an additional ${DAMAGE.Fire} and its length increases by 5 feet.`,
 	spellData: {
 		range: RANGE.Medium,
@@ -32,13 +32,13 @@ spells = [
 {
 	type: [SOURCES.Arcane],
 	descriptors: [SPELL_TYPES.Fire],
-	name: "",
+	name: "Inferno",
 	requirements: ["Fireball"],
 	effect: "",
 	manaEffect: "",
 	spellData: {
 		range: RANGE.Medium,
-		minMana: 3,
+		minMana: 5,
 		school: SCHOOLS.Evocation,
 		save: SAVES.Dexterity,
 		duration: DURATIONS.Minute,

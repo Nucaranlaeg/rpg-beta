@@ -6,7 +6,7 @@ ruleSections.casting = [
 	{
 		type: RULE_BLOCK.BODY,
 		body: `Use a standard action to cast a spell, unless the spell or a feature you own says otherwise.  Select the amount of mana you desire to use to cast the spell (which much be at least the minimum required for that spell).  Then select the target(s).  Most spells which require creatures as targets may also be cast at objects.
-		Your spells may only use up to 1 plus one third of your spellcaster level, rounded up.  Your spellcaster level is the sum of your levels in classes which grant magic sources.`,
+		Your spells may only use mana up to 1 plus half of your spellcaster level, rounded up.  Your spellcaster level is the sum of your levels in classes which grant magic sources.`,
 	},
 	{
 		type: RULE_BLOCK.BODY,

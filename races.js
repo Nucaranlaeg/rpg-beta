@@ -42,5 +42,6 @@ races.halfling = {
 	],
 	"Racial Traits": [
 		"Small Packages: Thrown rocks count as weighing 3lb more for the purpose of determining their damage.",
+		"Easily Overlooked: Gain a rank in the Hide skill. You may apply one more rank of Hide than usual.",
 	],
 }

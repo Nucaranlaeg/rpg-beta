@@ -74,6 +74,7 @@ ruleSections.ranged = [
 			["Javelin", "5 sp", "1d6", "P", "30 ft", "—", "2 lb.", "—"],
 			["Sling", "—", "1d6", "B", "50 ft", "—", "2 lb.", "—"],
 			["Crossbow", "50 gp", "1d12", "P", "100 ft", "+2 wounds", "18 lb.", "Special"],
+			["Stone", "—", "1d6", "B", "15 ft", "—", "3 lb.", "Special"],
 		],
 	},
 	{
@@ -101,7 +102,8 @@ ruleSections.ranged = [
 		Composite: Composite bows are made with a particular strength rating.  Attacks with them deal additional damage equal to that rating and travel 10 feet further per point in that rating, but impose a penalty on attacks equal to how much your Strength modifier is less than the rating.
 		Critical: Weapons without an entry under "Critical" deal one additional wound on a critical hit.
 		Crossbow: Crossbows require a DC 15 Strength check made as a full-round action to reload (a creature may instead spend one minute reloading).
-		Range: Beyond the listed range, attacks are made at Disadvantage.  Thrown attacks are impossible beyond 3x the listed range, and fired attacks are impossible beyond 4x the listed range.`,
+		Range: Beyond the listed range, attacks are made at Disadvantage.  Thrown attacks are impossible beyond 3x the listed range, and fired attacks are impossible beyond 4x the listed range.
+		Stone: Thrown stones deal 1d6 damage per 3 lb (rounded down, min 1d6 as long as it weighs at least 1 lb). You may not throw a stone weighing more than your Strength modifier plus 4 lbs.`
 	},
 ];
 
