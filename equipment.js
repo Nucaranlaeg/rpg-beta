@@ -1,5 +1,9 @@
 ruleSections.melee = [
 	{
+		type: RULE_BLOCK.BODY,
+		body: `Any creature may use a simple weapon, but only those proficient with martial weapons may use them.  If you attempt to use a weapon you are not proficient with, you suffer Disadvantage on all of your attacks.`,
+	},
+	{
 		type: RULE_BLOCK.SUBSUBTITLE,
 		body: "Simple Melee Weapons",
 	},
@@ -63,6 +67,10 @@ ruleSections.melee = [
 
 ruleSections.ranged = [
 	{
+		type: RULE_BLOCK.BODY,
+		body: `Any creature may use a simple weapon, but only those proficient with martial weapons may use them.  If you attempt to use a weapon you are not proficient with, you suffer Disadvantage on all of your attacks.`,
+	},
+	{
 		type: RULE_BLOCK.SUBSUBTITLE,
 		body: "Simple Ranged Weapons",
 	},
@@ -109,6 +117,11 @@ ruleSections.ranged = [
 
 ruleSections.armour = [
 	{
+		type: RULE_BLOCK.BODY,
+		body: `Any creature may wear light armour without penalty, but to wear medium or heavy armour requires proficiency.  Wearing armour you are not proficient with reduces the AC bonus by 1, gives you -5 on all Strength and Dexterity checks, and prevents you from casting spells.
+		If you wear armour which has a strength score listed greater than your strength score, your speed is reduced by 10 feet.`,
+	},
+	{
 		type: RULE_BLOCK.SUBSUBTITLE,
 		body: "Light Armour",
 	},
@@ -132,8 +145,8 @@ ruleSections.armour = [
 			["Armour", "Cost", "AC Bonus", "Min STR", "Weight"],
 			["Hide", "15 gp", "3", "—", "25 lb"],
 			["Scale mail", "50 gp", "4", "—", "30 lb"],
-			["Chainmail", "150 gp", "5", "—", "30 lb"],
-			["Breastplate", "200 gp", "5", "13", "35 lb"],
+			["Chainmail", "150 gp", "5", "13", "30 lb"],
+			["Breastplate", "400 gp", "6", "13", "35 lb"],
 		],
 	},
 	{
@@ -146,13 +159,18 @@ ruleSections.armour = [
 			["Armour", "Cost", "AC Bonus", "Min STR", "Weight"],
 			["Splint mail", "200 gp", "5", "13", "40 lb"],
 			["Banded mail", "250 gp", "6", "13", "30 lb"],
-			["Half plate", "600 gp", "7", "13", "45 lb"],
-			["Full plate", "1500 gp", "8", "13", "50 lb"],
+			["Half plate", "600 gp", "7", "15", "45 lb"],
+			["Full plate", "1500 gp", "8", "17", "50 lb"],
 		],
 	},
 ];
 
 ruleSections.shields = [
+	{
+		type: RULE_BLOCK.BODY,
+		body: `You must be proficient with medium armour or martial weapons to use a shield effectively.  If you wear a shield without being proficient you only recieve half of the listed bonus (rounded down) and you suffer a -2 penalty on your attacks.
+		All shields can be made from wood.`,
+	},
 	{
 		type: RULE_BLOCK.SUBSUBTITLE,
 		body: "Shields",
@@ -161,10 +179,10 @@ ruleSections.shields = [
 		type: RULE_BLOCK.TABLEWITHHEAD,
 		body: [
 			["Shield", "Cost", "AC Bonus", "Min STR", "Weight"],
-			["Buckler", "5 gp", "1", "13", "3 lb"],
-			["Targe", "10 gp", "2", "13", "8 lb"],
-			["Kite Shield", "20 gp", "3", "13", "15 lb"],
-			["Tower Shield", "35 gp", "4", "13", "30 lb"],
+			["Buckler", "5 gp", "1", "13", "—", "3 lb"],
+			["Targe", "10 gp", "2", "13", "—", "8 lb"],
+			["Kite Shield", "20 gp", "3", "13", "—", "15 lb"],
+			["Tower Shield", "35 gp", "4", "13", "—", "30 lb"],
 		],
 	},
 	{
