@@ -37,11 +37,6 @@ ruleSections.creation = [
 			["+9", "25"],
 		],
 	},
-	{
-		type: RULE_BLOCK.BODY,
-		body: `Alternately, you can roll 4d6 and drop the lowest, assigning your stats as you choose and then getting +1 to your race's high stat and -1 to your race's low stat.
-		Only do this if your DM allows it (and your entire party is rolling for their stats).`,
-	},
 ];
 
 ruleSections.levelling = [
