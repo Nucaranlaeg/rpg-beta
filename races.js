@@ -4,6 +4,7 @@ races.human = {
 	],
 	"Racial Traits": [
 		"Adaptability: Once per day per 5 levels (rounded up), you do not suffer Disadvantage for not being trained on a skill check (you can still have Disadvantage from other sources).",
+		"Indefatigueable: You may choose to ignore your exhaustion for 15 minutes. Once you do, you may not use this ability again until you reach 0 exhaustion. You still suffer penalties for exhaustion gained during the duration of this ability.",
 	],
 }
 
@@ -14,6 +15,7 @@ races.elf = {
 	],
 	"Racial Traits": [
 		"Magical Nature: Elves can channel one additional time per day.",
+		"Fleet of Foot: Increase your movement speed by 5 feet.",
 	],
 }
 
@@ -23,16 +25,17 @@ races.dwarf = {
 		"Infravision 60 feet",
 	],
 	"Racial Traits": [
-		"",
+		"Iron Gut: Dwarves are immune to ingested poisons with a save DC of 15 or less and have advantage against all other poisons. While a dwarf still gets drunk, he does not suffer longer-term penalties from drinking alcohol.",
+		"Wrought of Stone: Dwarves are familiar with all types of stone. They can navigate underground just like one would navigate by the stars (including knowing their general location) and immediately recognizes any natural stone.",
 	],
 }
 
 races.gnome = {
 	"Level 1": [
-		"High Dexterity, Low Intelligence",
+		"High Dexterity, Low Wisdom",
 	],
 	"Racial Traits": [
-
+		"Obsession: Choose a standard skill. Gain a rank in that skill, and your maximum rank in that skill is increased by one.",
 	],
 }
 
@@ -42,6 +45,6 @@ races.halfling = {
 	],
 	"Racial Traits": [
 		"Small Packages: Thrown rocks count as weighing 3lb more for the purpose of determining their damage.",
-		"Easily Overlooked: Gain a rank in the Hide skill. You may apply one more rank of Hide than usual.",
+		"Easily Overlooked: When you successfully hide from a creature, if you are not being specifically looked for and you do not move, you automatically succeed on all following hide checks against that creature.",
 	],
 }
