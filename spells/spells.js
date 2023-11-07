@@ -41,8 +41,10 @@ const EFFECT = {
 }
 
 const STATUSES = {
-	Blind: "A Blind creature is unable to see using its eyes.  If it has no other way of detecting creatures, it get -A against creatures within its reach and -2A against creatures whose locations are known but are outside of its reach.",
-	Deaf: "A Deaf creature is unable to hear.  Unless it is trained in sign language, it cannot communicate during combat unless a creature spends an action to communicate something simple.  Additionally, creatures flanking it get their flanking bonus increased to +2A.",
+	Blind: "A Blind creature is unable to see using its eyes.  If it has no other way of detecting creatures, it get Disadvantage against creatures within its reach and 2 Disadvantage against creatures whose locations are known but are outside of its reach.",
+	Deaf: "A Deaf creature is unable to hear.  Unless it is trained in sign language, it cannot communicate during combat unless a creature spends an action to communicate something simple.  Additionally, creatures flanking it get Advantage on attacks against it (in addition to the standard Advantage from flanking).",
+	Distracted: "When a Distracted creature is attacked, the attacker may choose to end the condition and gain Advantage on their attack.  This condition stacks.",
+	Frightened: "If you are within 30 feet of the object of your fear, all of your attacks are made at Disadvantage.  If you approach the object of your fear, all of your attacks this turn are made with Disadvantage.  This penalty also applies to social checks.",
 	Slowed: "A Slowed creature spends 1 additional foot of movement for every foot it travels.",
 }
 
@@ -117,7 +119,7 @@ let spells = [
 	descriptors: [SPELL_TYPES.Sustained],
 	name: "Dispel Magic",
 	requirements: [],
-	effect: "Suppress the magical properties of an item or creature for up to 1 minute. If the target is a creature or an item held by a creature, you must succeed on a touch attack against that creature. If the target is under the effect of one or more spells, you may instead attempt to end one of them of your choice. Effects caused by a spell that are not coterminus with the spell cannot be ended this way. To succeed you must succeed on an Intelligence check with DC equal to 10 plus 3 times the mana used on the targetted spell.",
+	effect: "Suppress the magical properties of an item or creature for up to 1 minute. If the target is a creature or an item held by a creature, you must succeed on a melee touch attack against that creature. If the target is under the effect of one or more spells, you may instead attempt to end one of them of your choice. Effects caused by a spell that are not coterminus with the spell cannot be ended this way. To succeed you must succeed on an Intelligence check with DC equal to 10 plus 3 times the mana used on the targetted spell.",
 	manaEffect: "Each additional mana extends the duration of the suppression by 1 minute or gives a +2 bonus to the Intelligence check.",
 	spellData: {
 		range: RANGE.Touch,

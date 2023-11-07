@@ -125,7 +125,7 @@ ruleSections.stats = [
 ruleSections.skills = [
 	{
 		type: RULE_BLOCK.BODY,
-		body: `You gain one skill of your choice each level, or increase the rank of a skill that you already have.  You may not increase the rank of a skill if it is already ranked equal to one quarter your level or higher.
+		body: `You gain one skill of your choice each level, or increase the rank of a skill that you already have.  If you have more ranks in a skill than a quarter of your level (rounded up), those additional ranks have no effect.
 		There is no fixed list of skills.  Instead, there are some suggested skills, but you may choose whatever skill you wish when you level up.  Skills do not affect your interaction with other creatures except for the special skills Diplomacy and Insight.
 		Whenever you perform an action which is similar to one of your skills, you may apply the bonus from your skill to any rolls made regarding it (other than saving throws).  For example, you might be able to apply Climbing to ascend the rigging of a ship, but Sailing might also apply.  In any case, only one skill can be applied to any roll.
 		A skill gives +2 per rank to related actions. If you perform an action which requires some amount of skill but you have no associated skill, you have Disadvantage on the roll.  For example, picking a lock, riding a horse, or swimming would give you Disadvantage, but attempting to lie to someone would not.

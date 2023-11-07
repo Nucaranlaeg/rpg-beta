@@ -139,3 +139,22 @@ ruleSections.dying = [
 		body: `Player characters add half their level to death saving throws.`,
 	},
 ];
+
+ruleSections.defenses = [
+	{
+		type: RULE_BLOCK.SUBTITLE,
+		body: `Defenses`,
+	},
+	{
+		type: RULE_BLOCK.BODY,
+		body: `Your Armour Class (AC) determines how hard it is to hit you.  However, certain attacks may bypass some of your defenses.  The most common types of attacks which bypass your defenses are recorded on your character sheet and described here.`,
+	},
+	{
+		type: RULE_BLOCK.EXAMPLE,
+		body: `Your touch AC is for when a creature needs to touch you, typically to cast a spell on you.  Do not apply your armour to you touch AC, but shields still provide AC against touch attacks.`,
+	},
+	{
+		type: RULE_BLOCK.EXAMPLE,
+		body: `Your flat-footed AC is for attacks which hit you when you are unable to react (either because you cannot move or because you are unaware of the attack).  Do not apply your Dexterity modifier or your shield bonus to your flat-footed AC.  Features which grant AC may also indicate that they do not function when flat-footed.`,
+	},
+];

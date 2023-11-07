@@ -80,7 +80,6 @@ ruleSections.ranged = [
 			["Weapon", "Cost", "Damage", "Type", "Range", "Critical", "Weight", "Properties"],
 			["Dart", "5 sp", "1d4", "P", "20 ft", "—", "0.5 lb.", "—"],
 			["Javelin", "5 sp", "1d6", "P", "30 ft", "—", "2 lb.", "—"],
-			["Sling", "—", "1d6", "B", "50 ft", "—", "2 lb.", "—"],
 			["Crossbow", "50 gp", "1d12", "P", "100 ft", "+2 wounds", "18 lb.", "Special"],
 			["Stone", "—", "1d6", "B", "15 ft", "—", "3 lb.", "Special"],
 		],
@@ -94,6 +93,7 @@ ruleSections.ranged = [
 		body: [
 			["Weapon", "Cost", "Damage", "Type", "Range", "Critical", "Weight", "Properties"],
 			["Blowgun", "10 gp", "1", "P", "25 ft", "None", "1 lb.", "Special"],
+			["Sling", "5 sp", "1d10", "B", "80 ft", "+2 wounds", "2 lb.", "—"],
 			["Shortbow", "10 gp", "1d6", "P", "70 ft", "Threat on 19-20", "2 lb.", "Two-handed"],
 			["Longbow", "50 gp", "1d8", "P", "100 ft", "Threat on 19-20", "2 lb.", "Two-handed"],
 			["Composite bow", "+50 gp", "+1", "P", "+10 ft", "—", "—", "Special"],
