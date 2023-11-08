@@ -46,6 +46,32 @@ ruleSections.actions = [
 	},
 ];
 
+ruleSections.criticals = [
+	{
+		type: RULE_BLOCK.SUBTITLE,
+		body: `Threats`,
+	},
+	{
+		type: RULE_BLOCK.BODY,
+		body: `When you roll a natural 20 on an attack roll, you score a critical threat.  When you score a critical threat, roll another d20.  If the attack would have hit using this roll (and all your modifiers), you score a critical hit.
+		If you have Advantage or Disadvantage, simply use the other die rolled as the confirmation roll.`,
+	},
+	{
+		type: RULE_BLOCK.BODY,
+		body: `Some weapons and features modify your ability to score critical hits.  For instance, a longsword scores critical threats on rolls of 19 and 20.  Even in this case, if your attack does not hit it does not count as a critical threat.`,
+	},
+	{
+		type: RULE_BLOCK.SUBTITLE,
+		body: `Result`,
+	},
+	{
+		type: RULE_BLOCK.BODY,
+		body: `When you score a critical hit, the creature you hit takes one additional wound.  Some weapons and features modify this damage.
+		If the creature hit is immune to wounds (typically constructs and some undead) it does not suffer the wound but still suffers all of the other effects associated with the critical hit, if any.`,
+	},
+];
+
+
 ruleSections.dying = [
 	{
 		type: RULE_BLOCK.SUBTITLE,
