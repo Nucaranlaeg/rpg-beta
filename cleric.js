@@ -6,6 +6,7 @@ classes.cleric = {
 		"cha": true,
 		"int": true,
 		"wis": true,
+		"hit die": 8,
 	},
 	"All": [
 		"Medium armour proficiency",

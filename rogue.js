@@ -6,6 +6,7 @@ classes.rogue = {
 		"cha": false,
 		"int": false,
 		"wis": true,
+		"hit die": 6,
 	},
 	"All": [
 		"Martial weapon proficiency",

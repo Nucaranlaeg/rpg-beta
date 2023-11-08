@@ -6,6 +6,7 @@ classes.barbarian = {
 		"cha": false,
 		"int": false,
 		"wis": true,
+		"hit die": 12,
 	},
 	"All": [
 		"Martial weapon proficiency",

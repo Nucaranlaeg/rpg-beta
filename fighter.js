@@ -6,6 +6,7 @@ classes.fighter = {
 		"cha": false,
 		"int": true,
 		"wis": false,
+		"hit die": 10,
 	},
 	"All": [
 		"Medium armour proficiency",

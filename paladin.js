@@ -6,6 +6,7 @@ classes.paladin = {
 		"cha": true,
 		"int": false,
 		"wis": true,
+		"hit die": 10,
 	},
 	"All": [
 		"Medium armour proficiency",

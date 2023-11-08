@@ -60,6 +60,7 @@ races.halfling = {
 	"Level 1": [
 		"High Wisdom, Low Constitution",
 		"Your base movement speed is 25 feet.",
+		"Lucky: You seem to get hit less hard than expected.  Gain 1 maximum hit point per level.",
 	],
 	"Racial Traits": [
 		"Small Packages: Thrown rocks count as weighing 3lb more for the purpose of determining their damage.",

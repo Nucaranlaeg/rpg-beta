@@ -6,6 +6,7 @@ classes.archer = {
 		"cha": false,
 		"int": false,
 		"wis": true,
+		"hit die": 8,
 	},
 	"All": [
 		"Martial weapon proficiency",

@@ -6,6 +6,7 @@ classes.monk = {
 		"cha": true,
 		"int": true,
 		"wis": false,
+		"hit die": 10,
 	},
 	"All": [
 		"Unarmed Prowess - Your base unarmed damage die size increases by two (d4 -> d6 -> d8 -> d10 -> d12) at every odd Monk level.  If your unarmed damage die is already a d12, instead gain +1 damage on all of your unarmed attacks.",

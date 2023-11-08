@@ -6,6 +6,7 @@ classes.sorcerer = {
 		"cha": true,
 		"int": true,
 		"wis": true,
+		"hit die": 4,
 	},
 	"All": [
 		"If you don't have a magic source, you gain the Arcane magic source and learn two spells.",

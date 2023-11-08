@@ -37,6 +37,14 @@ ruleSections.creation = [
 			["+9", "25"],
 		],
 	},
+	{
+		type: RULE_BLOCK.SUBTITLE,
+		body: `Hit points`,
+	},
+	{
+		type: RULE_BLOCK.BODY,
+		body: `Your maximum hit points is equal to the maximum value of your class's hit die.`,
+	},
 ];
 
 ruleSections.levelling = [

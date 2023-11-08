@@ -6,6 +6,7 @@ classes.druid = {
 		"cha": true,
 		"int": true,
 		"wis": true,
+		"hit die": 8,
 	},
 	"All": [
 		"If you don't have a magic source, you gain the Primal magic source and learn two spells.",
