@@ -30,7 +30,7 @@ classes.barbarian = {
 		"Adaptable rage - If you have at least 3 rage modifiers, you may choose two of them when you enter a rage.",
 		"Expanded rage - If you have at least 5 rage modifiers, you may choose three of them when you enter a rage.",
 		"Adrenaline - You may enter a rage even if you have raged within the last hour.  If you do, you immediately gain 1 stack of exhaustion.",
-		"Extended rage - Your rages now last a number of rounds equal to your Constitution score",
+		"Extended rage - Your rages now last a number of rounds equal to your Constitution score.",
 	],
 	"General": [
 		"Cleave - If you cause a creature to fall unconscious or die when you hit them with a melee weapon, you can immediately make an additional attack against a different creature with the same weapon.",

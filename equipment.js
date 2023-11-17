@@ -12,7 +12,7 @@ ruleSections.melee = [
 		body: [
 			["Weapon", "Cost", "Damage", "Type", "Range", "Critical", "Weight", "Properties"],
 			["Club", "1 sp", "1d4", "B", "—", "—", "2 lb.", "—"],
-			["Dagger", "2 gp", "1d4", "P", "20 ft", "—", "1 lb.", "—"],
+			["Dagger", "2 gp", "1d4", "P", "20 ft", "—", "1 lb.", "Finesse"],
 			["Greatclub", "2 sp", "1d8", "B", "—", "—", "10 lb.", "Two-handed"],
 			["Handaxe", "5 gp", "1d6", "S", "20 ft", "—", "2 lb.", "—"],
 			["Light Hammer", "2 gp", "1d4", "B", "20 ft", "—", "2 lb.", "—"],
@@ -41,13 +41,13 @@ ruleSections.melee = [
 			["Maul", "10 gp", "2d6", "B", "—", "—", "10 lb.", "Two-handed"],
 			["Morningstar", "15 gp", "1d8", "P", "—", "—", "4 lb.", "—"],
 			["Pike", "5 gp", "1d6", "P", "—", "—", "18 lb.", "Reach, two-handed"],
-			["Rapier", "25 gp", "1d6", "P", "—", "Threat on 18-20", "2 lb.", "—"],
-			["Scimitar", "25 gp", "1d6", "S", "—", "Threat on 18-20", "3 lb.", "—"],
-			["Shortsword", "10 gp", "1d4", "P", "—", "Threat on 19-20", "2 lb.", "—"],
+			["Rapier", "25 gp", "1d6", "P", "—", "Threat on 18-20", "2 lb.", "Finesse"],
+			["Scimitar", "25 gp", "1d6", "S", "—", "Threat on 18-20", "3 lb.", "Finesse"],
+			["Shortsword", "10 gp", "1d4", "P", "—", "Threat on 19-20", "2 lb.", "Finesse"],
 			["Trident", "5 gp", "1d8", "P", "20 ft", "—", "4 lb.", "versatile (1d8)"],
 			["War pick", "5 gp", "1d6", "P", "—", "+3 wounds", "2 lb.", "—"],
 			["Warhammer", "15 gp", "1d8", "B", "—", "+2 wounds", "2 lb.", "Versatile (1d10)"],
-			["Whip", "2 gp", "1d4", "S", "—", "—", "3 lb.", "Special"],
+			["Whip", "2 gp", "1d4", "S", "—", "—", "3 lb.", "Finesse, special"],
 		],
 	},
 	{
@@ -57,6 +57,7 @@ ruleSections.melee = [
 	{
 		type: RULE_BLOCK.BODY,
 		body: `Critical: Weapons without an entry under "Critical" deal one additional wound on a critical hit.
+		Finesse: Creatures wielding finesse weapons may add their Dexterity bonus to hit rather than Strength (but damage is still based on Strength).
 		Lance: A lance must be used two-handed unless mounted.
 		Range: Melee weapons with a range listed may be used as a throwing weapon.  Beyond the listed range, thrown attacks are made at Disadvantage.  Thrown attacks are impossible beyond 3x the listed range.
 		Reach: Reach weapons can be used to attack creatures 10 feet away from the wielder but not adjacent enemies.

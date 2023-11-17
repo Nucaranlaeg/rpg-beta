@@ -46,10 +46,53 @@ ruleSections.actions = [
 	},
 ];
 
-ruleSections.criticals = [
+ruleSections.attacks = [
 	{
 		type: RULE_BLOCK.SUBTITLE,
-		body: `Threats`,
+		body: `Making a Melee Attack`,
+	},
+	{
+		type: RULE_BLOCK.BODY,
+		body: `To make a melee attack, select a creature or a space within your reach that you have clear line of effect to.  This is the target creature.  If targetting a space, you have a Disadvantage on your attack, and it targets a random creature in the space that you can't see (if any).
+		Next roll 1d20 (suitably modified if you have Advantage or Disadvantage) and add your relevant modifiers.  Typically, this will be twice your rank in the Melee Weapons skill and your Strength modifier, but some features or items will give you additional bonuses.
+		If your roll is greater than or equal to the target creature's AC, you hit it.`,
+	},
+	{
+		type: RULE_BLOCK.SUBTITLE,
+		body: `Making a Ranged Attack`,
+	},
+	{
+		type: RULE_BLOCK.BODY,
+		body: `To make a ranged attack, select a creature or a space that you have clear line of effect to.  This is the target creature.  If targetting a space, you have a Disadvantage on your attack, and it targets a random creature in the space that you can't see (if any).
+		If the target creature is beyond the range of your weapon, you have Disadvantage.  If it is further than 4x the range of your weapon (3x for thrown attacks) you cannot hit it.
+		Next roll 1d20 (suitably modified if you have Advantage or Disadvantage) and add your relevant modifiers.  Typically, this will be twice your rank in the Ranged Weapons skill and your Dexterity modifier (Strength for thrown weapons), but some features or items will give you additional bonuses.
+		If your roll is greater than or equal to the target creature's AC, you hit it.`,
+	},
+	{
+		type: RULE_BLOCK.SUBTITLE,
+		body: `Dealing Damage with an Attack`,
+	},
+	{
+		type: RULE_BLOCK.BODY,
+		body: `When you hit a creature with an attack, you deal damage to it.  Roll your weapon's damage and add your relevant modifiers (typically Strength unless it's a projectile weapon).  See Combat->Dying for how to handle taking damage.`,
+	},
+	{
+		type: RULE_BLOCK.SUBTITLE,
+		body: `Relevant Ability Scores`,
+	},
+	{
+		type: RULE_BLOCK.TABLEWITHHEAD,
+		body: [
+			["Attack Type", "To-Hit", "To-Damage"],
+			["Melee", "Strength", "Strength"],
+			["Melee (Finesse)", "Dexterity", "Strength"],
+			["Ranged (Projectile)", "Dexterity", "—"],
+			["Ranged (Thrown)", "Strength", "Strength"],
+		],
+	},
+	{
+		type: RULE_BLOCK.SUBTITLE,
+		body: `Critical Threats`,
 	},
 	{
 		type: RULE_BLOCK.BODY,
@@ -59,10 +102,6 @@ ruleSections.criticals = [
 	{
 		type: RULE_BLOCK.BODY,
 		body: `Some weapons and features modify your ability to score critical hits.  For instance, a longsword scores critical threats on rolls of 19 and 20.  Even in this case, if your attack does not hit it does not count as a critical threat.`,
-	},
-	{
-		type: RULE_BLOCK.SUBTITLE,
-		body: `Result`,
 	},
 	{
 		type: RULE_BLOCK.BODY,

@@ -55,7 +55,7 @@ ruleSections.levelling = [
 	{
 		type: RULE_BLOCK.EXAMPLE,
 		body: `Choose a class to gain a level in (this is "your class" for the rest of this level up).  Gain a class feature from your class.  Most features can only be taken once.  You may not choose a feature which is identical to a feature you already have from another class.
-		You may only choose a "general" feature if your class is not your primary class (the one you chose at level 1).`,
+		If your class is not your primary class (the one you chose at level 1), you may only choose a "general" feature.`,
 	},
 	{
 		type: RULE_BLOCK.EXAMPLE,
