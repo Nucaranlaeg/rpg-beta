@@ -6,7 +6,7 @@ ruleSections.actions = [
 	{
 		type: RULE_BLOCK.BODY,
 		body: `On your turn, you may take one action of each type.  If an action is divisible (such as making multiple attacks or moving a distance) you may order what you do however you like.
-		Any Move action can be taken as a Standard action.  Any Swift action may be taken as a Move or a Standard action.`,
+		Any Move action can be taken as a Standard action.  Any Swift action may be taken as a Move or a Standard action.  Reactions may only be taken when a rule or feature allows you to, and may not be taken on your turn.`,
 	},
 	{
 		type: RULE_BLOCK.SUBSUBTITLE,
@@ -43,6 +43,14 @@ ruleSections.actions = [
 	{
 		type: RULE_BLOCK.EXAMPLE,
 		body: `Channel: Gain 1 mana.`,
+	},
+	{
+		type: RULE_BLOCK.SUBSUBTITLE,
+		body: `Reaction`,
+	},
+	{
+		type: RULE_BLOCK.EXAMPLE,
+		body: `Make an attack of opportunity.`,
 	},
 ];
 
@@ -83,7 +91,7 @@ ruleSections.attacks = [
 	{
 		type: RULE_BLOCK.TABLEWITHHEAD,
 		body: [
-			["Attack Type", "To-Hit", "To-Damage"],
+			["Attack Type", "To-Hit", "To Damage"],
 			["Melee", "Strength", "Strength"],
 			["Melee (Finesse)", "Dexterity", "Strength"],
 			["Ranged (Projectile)", "Dexterity", "—"],
@@ -107,6 +115,47 @@ ruleSections.attacks = [
 		type: RULE_BLOCK.BODY,
 		body: `When you score a critical hit, the creature you hit takes one additional wound.  Some weapons and features modify this damage.
 		If the creature hit is immune to wounds (typically constructs and some undead) it does not suffer the wound but still suffers all of the other effects associated with the critical hit, if any.`,
+	},
+];
+
+ruleSections.movement = [
+	{
+		type: RULE_BLOCK.SUBTITLE,
+		body: `Moving Around`,
+	},
+	{
+		type: RULE_BLOCK.BODY,
+		body: `When you use a move action, you can reposition yourself.  Different types of movement require you to spend extra feet of movement.  For example, while swimming each foot that you move costs you 2 feet of movement.
+		If you attempt a form of movement you do not have a base speed in (typically you only have a land movement speed), you must make a skill check.  The result of the check is the maximum feet of movement you may spend on that type of movement this turn.  For skill checks related to movement, every 5 feet of movement speed you have above 30 gives you a +2 bonus and every 5 feet of movement speed belows 30 gives you a -2 malus.`,
+	},
+	{
+		type: RULE_BLOCK.SUBSUBTITLE,
+		body: `Relative Movement Costs`,
+	},
+	{
+		type: RULE_BLOCK.TABLEWITHHEAD,
+		body: [
+			["Movement Type", "Cost Per Foot", "Special"],
+			["Walking", "1", "—"],
+			["Running", "1", "—"],
+			["Climbing (Vertical)", "5", "Some surfaces require a minimum climb check, otherwise you fall."],
+			["Climbing (Horizontal)", "3", "Some surfaces require a minimum climb check, otherwise you fall."],
+			["Flying", "1", "Must have a flying speed"],
+			["Swimming", "2", "—"],
+			["Jumping (Vertical)", "10", "Half of the movement you spend on jumping is refunded."],
+			["Jumping (Horizontal)", "2", "Half of the movement you spend on jumping is refunded."],
+			["Jumping (Horizontal, from standstill)", "3", "Half of the movement you spend on jumping is refunded."],
+			["Difficult Terrain", "×2", "—"],
+		],
+	},
+	{
+		type: RULE_BLOCK.SUBTITLE,
+		body: `Attacks of Opportunity`,
+	},
+	{
+		type: RULE_BLOCK.BODY,
+		body: `Creatures control the space around them in combat.  If you are wielding a weapon or are a monk, you threaten all spaces within your reach.  When a creature moves out of one of your threatened spaces, it provokes an attack of opportunity from you unless it stops in the next space it enters (it can make no more voluntary movement this turn).
+		When a creature provokes an attack of opportunity from you, you may use your reaction to make an attack against that creature.  All effects of your attack are applied before the target enters the next space.`,
 	},
 ];
 

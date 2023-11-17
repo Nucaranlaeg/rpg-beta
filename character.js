@@ -137,6 +137,7 @@ ruleSections.skills = [
 		There is no fixed list of skills.  Instead, there are some suggested skills, but you may choose whatever skill you wish when you level up.  Skills do not affect your interaction with other creatures except for the special skills Diplomacy and Insight.
 		Whenever you perform an action which is similar to one of your skills, you may apply the bonus from your skill to any rolls made regarding it (other than saving throws).  For example, you might be able to apply Climbing to ascend the rigging of a ship, but Sailing might also apply.  In any case, only one skill can be applied to any roll.
 		A skill gives +2 per rank to related actions. If you perform an action which requires some amount of skill but you have no associated skill, you have Disadvantage on the roll.  For example, picking a lock, riding a horse, or swimming would give you Disadvantage, but attempting to lie to someone would not.
+		Instead of rolling, you may choose to take 10 as your die roll.  If you have any Disadvantage (including for being untrained) or are in combat, you may only take 6.  You still add any modifiers as applicable.
 		You may add your Intelligence modifier to any skill check (even skill checks for things like Arcana where the key ability would already be Intelligence), up to the rank you have in the applicable skill.`,
 	},
 	{
