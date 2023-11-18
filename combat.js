@@ -167,7 +167,8 @@ ruleSections.dying = [
 	},
 	{
 		type: RULE_BLOCK.BODY,
-		body: `When a creature takes damage, that creature may also take one or more Wounds.  A creature's hit points may be reduced to 0 (but never below), and this does not affect their capabilities in any way - hit points are a representation of a creature's combined luck and skill to avoid injury.  Wounds are calculated in the following way:`,
+		body: `When you take damage, your first defense is your hit points.  As long as you have hit points left, subtract the damage dealt from your hitpoints.  Loss of hit points do not affect your capabilities in any way.  Rather, they are a representation of your character's combined luck and skill to avoid injury.
+		However, if you take lots of damage from a single attack, some of that damage may be taken as Wounds.  Whether you take Wounds is determined as follows:`,
 	},
 	{
 		type: RULE_BLOCK.SUBSUBTITLE,
@@ -175,11 +176,13 @@ ruleSections.dying = [
 	},
 	{
 		type: RULE_BLOCK.EXAMPLE,
-		body: `First, if the damage dealt is greater than the creature's Constitution *score*, subtract the creature's Constitution score from the damage dealt and the creature will take a Wound.  For example, an ogre hits a player character with 10 Constitution for 12 damage.  The character takes 1 Wound and loses 2 hit points.`,
+		body: `First, if the damage dealt is greater than your Constitution <i>score</i>, subtract your Constitution score from the damage dealt and take a Wound.
+		<i>Example: An ogre hits a player character with 10 Constitution for 12 damage.  The character takes 1 Wound and loses 2 hit points.</i>`,
 	},
 	{
 		type: RULE_BLOCK.EXAMPLE,
-		body: `Second, if the damage reduces a creature to 0 hit points, divide the excess damage by the creature's Constitution score, rounding any remainder up.  The creature takes that many Wounds.  For example, an ogre hits a player character with 8 Constitution for 18 damage, but the character only has 1 hit point remaining.  8 damage causes 1 Wound, 1 more damage reduces the character to 0 hit points, and the remaining 9 damage causes 2 more Wounds, for a total of 3 Wounds.`,
+		body: `Second, if the damage reduces you to 0 hit points, divide the excess damage by your Constitution score, rounding any remainder up.  You then take that many Wounds.
+		<i>Example: An ogre hits a player character with 8 Constitution for 18 damage, but the character only has 1 hit point remaining.  8 damage causes 1 Wound, 1 more damage reduces the character to 0 hit points, and the remaining 9 damage causes 2 more Wounds, for a total of 3 Wounds.</i>`,
 	},
 	{
 		type: RULE_BLOCK.EXAMPLE,
@@ -187,7 +190,8 @@ ruleSections.dying = [
 	},
 	{
 		type: RULE_BLOCK.BODY,
-		body: `If a creature takes more than one Wound from a single attack or takes a Wound from an attack that leaves it at 0 hit points, that creature must make a death saving throw or fall unconscious and begin dying.  Note that multiple Wounding attacks from one creature on its turn may not require any death saving throws, provided they only deal one Wound each.  The DC of a death saving throw is always equal to the number of Wounds that a creature has taken.  A creature gets a bonus on their death saving throw equal to their Constitution modifier.  A natural 1 is not neccessarily a failure on a death saving throw - so you are not required to roll death saving throws if you have not taken Wounds equal to your Constitution modifier plus two or more.`,
+		body: `If you take more than one Wound from a single attack or take a Wound from an attack that leaves you at 0 hit points, you must succeed on a death saving throw or fall unconscious and begin dying.  Note that multiple Wounding attacks in one turn may not require any death saving throws, provided they only deal one Wound each.  The DC of a death saving throw is always equal to the number of Wounds that you have taken.
+		You get a bonus on your death saving throw equal to your Constitution modifier.  A natural 1 is not neccessarily a failure on a death saving throw - so you are not required to roll death saving throws if you have not taken Wounds equal to your Constitution modifier plus two or more.`,
 	},
 	{
 		type: RULE_BLOCK.SUBTITLE,
@@ -228,8 +232,12 @@ ruleSections.dying = [
 		You may hire a nurse to watch over you through the night; one nurse can watch over up to 10 creatures and reduces the maximum number of death saves to 2 per night.`,
 	},
 	{
+		type: RULE_BLOCK.SUBTITLE,
+		body: `Exhaustion`,
+	},
+	{
 		type: RULE_BLOCK.BODY,
-		body: `When you rest overnight, lose a stack of exhaustion.  If you do not rest overnight, gain a stack of exhaustion instead.  If you spend a day resting, you lose a stack of exhaustion.
+		body: `When you rest overnight, lose a stack of exhaustion.  If you do not rest overnight, gain a stack of exhaustion instead.  If you spend a day resting, you lose an additional stack of exhaustion.
 		Over a ten hour rest period, you may spend up to 2.5 hours on watch and still gain all benefits of resting.  If a watch is not needed, your time can be spent tending to wounded companions, but you cannot do both.`,
 	},
 	{
