@@ -5,9 +5,6 @@ Different creatures vary in their reactions to being Wounded, but most will not 
 
 Undead creatures and constructs are destroyed on their first failed death saving throw, but they are immune to critical hits.
 
-# Changes
-
-
 # OTHER
 
 Mounted combat: if move, -D to ranged attacks, +A to melee polearm attacks
@@ -24,7 +21,9 @@ Huge
 Gargantuan
 Colossal
 
-Up one size class: +2 CON, +2 STR, -2 DEX, -1 AC
+Up one size class: +2 CON, +2 STR, -1 AC
+
+# Flanking
 
 ## New spells:
 
