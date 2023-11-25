@@ -5,9 +5,6 @@ Different creatures vary in their reactions to being Wounded, but most will not 
 
 Undead creatures and constructs are destroyed on their first failed death saving throw, but they are immune to critical hits.
 
-# Changes
-
-
 # OTHER
 
 Mounted combat: if move, -D to ranged attacks, +A to melee polearm attacks
@@ -24,7 +21,24 @@ Huge
 Gargantuan
 Colossal
 
-Up one size class: +2 CON, +2 STR, -2 DEX, -1 AC
+Up one size class: +2 CON, +2 STR, -1 AC
+
+# Flanking
+
+# Features
+You deal 1d6 extra damage while flanking.
+You deal 1 extra damage per damage die you roll.
+You deal 1d6 extra damage when adjacent to an ally.
+As a swift action, you grant attackers Advantage against you until the start of your next turn, but deal 1d6 additional damage on all of your attacks this turn.
+
+# Bug - overview
+
+Skills - look at FATE descriptions
+Hd x2width #aa5555
+
+Compound bow
+Creating 1st level character
+
 
 ## New spells:
 
