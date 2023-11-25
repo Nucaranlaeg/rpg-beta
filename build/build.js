@@ -1,38 +1,69 @@
 class Build {
 	stats = {
-		STR: {base: null, increase: 0, levels: 0},
-		DEX: {base: null, increase: 0, levels: 0},
-		CON: {base: null, increase: 0, levels: 0},
-		CHA: {base: null, increase: 0, levels: 0},
-		INT: {base: null, increase: 0, levels: 0},
-		WIS: {base: null, increase: 0, levels: 0},
+		STR: {base: null, increase: 0, levels: 0, total: 0, mod: 0, save: 0},
+		DEX: {base: null, increase: 0, levels: 0, total: 0, mod: 0, save: 0},
+		CON: {base: null, increase: 0, levels: 0, total: 0, mod: 0, save: 0},
+		CHA: {base: null, increase: 0, levels: 0, total: 0, mod: 0, save: 0},
+		INT: {base: null, increase: 0, levels: 0, total: 0, mod: 0, save: 0},
+		WIS: {base: null, increase: 0, levels: 0, total: 0, mod: 0, save: 0},
 	}
 	points = 54;
 	race = null;
 	levels = [];
 	baseClass = null;
 	hasDivineFavour = false;
+	name = "";
+
+	constructor(load){
+		if (load && localStorage.character){
+			const char = JSON.parse(localStorage.character);
+			this.stats = char.stats ? char.stats : this.stats;
+			this.points = char.points ? char.points : this.points;
+			this.race = char.race ? char.race : this.race;
+			this.levels = char.levels.length ? char.levels : this.levels;
+			this.baseClass = char.baseClass ? char.baseClass : this.baseClass;
+			this.hasDivineFavour = char.hasDivineFavour ? char.hasDivineFavour : this.hasDivineFavour;
+			this.name = char.name ? char.name : this.name;
+		} else if (!load){
+			
+		}
+	}
 
 	updateStats(){
 		Object.entries(this.stats).forEach(([name, value]) => {
-			const total = value.base + value.increase + value.levels;
-			document.querySelector(`#build-${name.toLowerCase()} .stat-value`).innerHTML = value.base === null ? "" : total;
+			value.total = value.base + value.increase + value.levels;
+			document.querySelector(`#build-${name.toLowerCase()} .stat-value`).innerHTML = value.base === null ? "" : value.total;
 			if (value.base === null){
 				document.querySelector(`#build-${name.toLowerCase()} .stat-value`).classList.add("unassigned");
 			} else {
 				document.querySelector(`#build-${name.toLowerCase()} .stat-value`).classList.remove("unassigned");
 			}
-			const modifier = Math.floor((total - 10) / 2);
-			document.querySelector(`#build-${name.toLowerCase()} .stat-modifier`).innerHTML = value.base === null ? "" : modifier > 0 ? "+" + modifier : modifier;
+			value.mod = Math.floor((value.total - 10) / 2);
+			document.querySelector(`#build-${name.toLowerCase()} .stat-modifier`).innerHTML = value.base === null ? "" : value.mod > 0 ? "+" + value.mod : value.mod;
 			document.querySelector(`#build-${name.toLowerCase()} .next-cost-value`).innerHTML = Math.ceil((value.increase + 1) / 2);
+
+			value.save = value.mod;
 		});
 		document.querySelector(`#to-spend .stat-value`).innerHTML = this.points;
 
 		// Check stats are valid for race
+
+		this.save();
+	}
+
+	save(){
+		localStorage.character = JSON.stringify(this);
+		document.querySelector("a.nav-button").href = `sheet.html?char=${localStorage.character}`;
 	}
 }
 
-const build = new Build();
+let build = new Build(true);
+
+function resetBuild(){
+	if (confirm("Do you really want to clear your current build?")){
+		build = new Build(false);
+	}
+}
 
 let levelNode = null;
 
@@ -108,6 +139,13 @@ function checkRaceStatConflict(){
 function setRace(select){
 	build.race = select.value;
 	checkRaceStatConflict();
+	build.save();
+}
+
+function setName(select){
+	console.log(select)
+	build.name = select.value;
+	build.save();
 }
 
 function setClass(select){
@@ -201,6 +239,7 @@ function displayLevelSelections(level){
 		spellNode.style.display = "none";
 		specializeNode.style.display = "none";
 	}
+	build.save();
 }
 
 function setFeature(select){
@@ -214,6 +253,7 @@ function setFeature(select){
 	}
 	build.levels[level - 1].feature = selectedFeature;
 	build.levels[level - 1].featureName = featureName;
+	build.save();
 }
 
 function setStat(select){
@@ -234,6 +274,7 @@ function setSpell(select){
 	const selectedSpell = select.value;
 	const level = select.closest(".level").dataset.level;
 	throw "Not Implemented"
+	build.save();
 }
 
 setTimeout(() => {
@@ -244,10 +285,14 @@ setTimeout(() => {
 	Object.keys(races).forEach((race) => {
 		raceSelect.innerHTML += `<option value="${race}">${race[0].toUpperCase()}${race.slice(1)}</option>`;
 	});
+	if (build.race) raceSelect.value = build.race;
+
 	const classSelect = document.querySelector(".level .class select");
 	Object.keys(classes).forEach((className) => {
 		classSelect.innerHTML += `<option value="${className}">${className[0].toUpperCase()}${className.slice(1)}</option>`;
 	});
 
 	levelNode = document.querySelector(".level").cloneNode(true);
+
+	document.querySelector("a.nav-button").href = `sheet.html?char=${localStorage.character}`;
 });

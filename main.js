@@ -42,7 +42,7 @@ function mainNavClick(event){
 }
 
 function subNavClick(event){
-	if (event.target.classList.contains("nav-button")){
+	if (event.target.classList.contains("nav-button") && event.target.id){
 		event.target.closest(".nav").querySelector(".selected")?.classList.remove("selected");
 		event.target.classList.add("selected");
 		subNavSelection = event.target.id.replace("nav-", "");

@@ -103,7 +103,7 @@
 		</div>
 		<div id="sub-header-nav-build" class="nav" onclick="subNavClick(event)" style="display:none">
 			<div id="nav-edit" class="selected nav-button">Edit</div>
-			<div id="nav-view" class="nav-button">View</div>
+			<a class="nav-button" href="sheet.html" target="_blank">View</a>
 		</div>
 		<div id="main-content">
 		</div>
@@ -111,13 +111,16 @@
 			<div class="information">
 				<div class="info">
 					<label for="info-name" class="info-name">Name</label>
-					<input id="info-name" />
+					<input id="info-name" onchange="setName(this)"/>
 				</div>
 				<div class="info">
 					<label for="info-race" class="info-name">Race</label>
 					<select id="info-race" onchange="setRace(this)">
 						<option value=""></option>
 					</select>
+				</div>
+				<div class="info">
+					<button onclick="resetBuild()">Reset</button>
 				</div>
 			</div>
 			<div class="stats">

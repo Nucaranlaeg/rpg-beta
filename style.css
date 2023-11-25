@@ -27,6 +27,11 @@ body {
 	border-style: inset;
 }
 
+a.nav-button {
+	color: #ddd;
+	text-decoration: none;
+}
+
 #main-content {
 	max-width: 1000px;
 }

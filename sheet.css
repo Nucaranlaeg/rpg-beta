@@ -1,0 +1,185 @@
+body {
+	background-color: #333;
+	font-family: "BulgariaModernaV3";
+}
+
+span {
+	display: inline-block;
+	vertical-align: top;
+}
+
+@font-face {
+    font-family: "BulgariaModernaV3";
+    src:url("font/BulgariaModernaV3.ttf.woff") format("woff"),
+        url("font/BulgariaModernaV3.ttf.svg#BulgariaModernaV3") format("svg"),
+        url("font/BulgariaModernaV3.ttf.eot"),
+        url("font/BulgariaModernaV3.ttf.eot?#iefix") format("embedded-opentype"); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+.page {
+	background-color: white;
+	width: 6.5in;
+	height: 9in;
+	margin: auto;
+	padding: 1in;
+}
+
+#char-info {
+	width: calc(100% - 82px);
+	margin: auto;
+	margin-bottom: 10px;
+}
+
+.stat-label {
+	font-family: "BulgariaModernaV3";
+	text-align: center;
+	width: 81.2756px;
+}
+
+.info-label {
+	color: #666;
+	font-size: 10px;
+	position: absolute;
+	top: -6px;
+	left: 4px;
+	background: white;
+	height: 10px;
+	line-height: 10px;
+	white-space: nowrap;
+}
+
+.info-label.right {
+	left: unset;
+	right: 8px;
+	top: unset;
+	bottom: -6px;
+}
+
+.info-label.blank {
+	width: 50px;
+	border-bottom: 1px solid #ccc;
+}
+
+.wrapper {
+	border: 1px solid #666;
+	display: inline-block;
+	width: 50px;
+	position: relative;
+	margin-left: -1px;
+	height: 16px;
+	line-height: 17px;
+	vertical-align: top;
+	transform: skewX(20deg);
+	padding-left: 5px;
+}
+
+.wrapper > * {
+	transform: skewX(-25deg);
+}
+
+.x-wide {
+	width: 200px;
+}
+
+.wide {
+	width: 75px;
+}
+
+.stat-row {
+	height: 25px;
+}
+
+.stat-row-type {
+	display: inline-block;
+	width: 60px;
+}
+
+.modifier {
+	border: 1px solid #666;
+	width: 22px;
+	height: 20px;
+	position: absolute;
+	left: 30px;
+	top: -3px;
+	text-align: center;
+	background: #eee;
+	line-height: 18px;
+}
+
+.save {
+	position: absolute;
+	top: -1px;
+	right: 8px;
+}
+
+#health-block {
+	width: 320px;
+}
+
+.health-row {
+	display: block;
+	height: 25px;
+	margin: 10px auto 0 auto;
+	width: 300px;
+}
+
+.divider {
+	height: 100%;
+	width: 0;
+	border-left: 1px solid #666;
+	transform: unset;
+	position: absolute;
+}
+
+#levels-block {
+	margin-top: 10px;
+	width: 325px;
+	position: relative;
+}
+
+.level-number {
+	position: absolute;
+	left: -20px;
+}
+
+.level-row {
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+#reputation-block {
+	position: relative;
+	width: 150px;
+	height: 150px;
+}
+
+.rep-label {
+	color: #999;
+	font-size: small;
+}
+
+#rep-background {
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.reputation {
+	position: absolute;
+	text-align: center;
+}
+
+#skill-block {
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.skill-row {
+	margin-top: 5px;
+	display: block;
+	width: 128px;
+}
