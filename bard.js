@@ -19,14 +19,14 @@ classes.bard = {
 	"Songs": [
 		"Song of Rest - Allies within 30 feet gain one hit point per round per Chord.  If an allied creature listens to the song for at least 15 minutes, they regain uses of their abilities as though they had rested for one hour.  Potent Music is not affected by Song of Rest.",
 		"Discordant Whispers - All enemies within 30 feet recieve Disadvantage on all of their saving throws.",
-		"Notes of Nettle - Enemies within 30 feet lose one hit point per round per Chord.  This damage does not deal wounds.",
-		"Cutting Chime - Enemies within 30 feet lose hit points equal to your Chords whenever they are hit by one of your allies' attacks.",
+		"Notes of Nettle - Enemies lose one hit point per Chord when they start their turn within 30 feet or move within 30 feet for the first time on their turn.  This damage does not deal wounds.",
+		"Cutting Chime - Enemies within 30 feet lose hit points equal to your Chords whenever they are hit by one of your allies' attacks. This damage does not deal wounds.",
 		"Sapping Symphony - Enemies within 30 feet have their Constitution score decreased by the number of Chords you have for the purpose of calculating how many wounds they take.",
 		"Melody of Mana - Allies within 30 feet gain 1 additional mana each time they channel and 1 additional Ki point each time they Meditate.",
 		"Aria of Alacrity - Allies within 30 feet gain 5 movement speed per Chord you have.  This Song gains an additional Chord each time you Play (including the first time - when you begin Playing it).",
 		"Echo of Armour - This Song imposes Disadvantage on the first attack made against each of your allies within 30 feet each round.  If you have at least 3 Chords, a second attack is affected and if you have at least 5 Chords, a third attack is affected.  This applies to each of your allies separately (each ally should track the effect on themselves).",
 		"Martyr's Cry - When an ally within 30 feet is wounded, you may choose to recieve all of the wounds from that attack instead.  If you do, your ally suffers none of the effects he would have suffered from the attack which caused the wound (beyond the damage recieved).  For instance, if he would have taken extra damage because of the wound or had to make a save against an effect, neither of you take that extra damage or make a save.",
-		"Crescendo of Competence - Allies within 30 feet gain a bonus equal to your Chords when attempting a skill check.  You declare what skill this Song will benefit when you begin Playing it.",
+		"Crescendo of Competence - Allies within 30 feet gain a bonus equal to your Chords when attempting a skill check of your choice.  You declare what skill this Song will benefit when you begin Playing it.",
 		"Tune of Temerity - Allies within 30 feet gain Advantage on all saving throws.",
 	],
 	"Bard": [
