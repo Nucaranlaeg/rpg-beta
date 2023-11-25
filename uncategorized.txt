@@ -23,7 +23,7 @@ Colossal
 
 Up one size class: +2 CON, +2 STR, -1 AC
 
-# Flanking
+# Fix mighty throw
 
 # Features
 You deal 1d6 extra damage while flanking.

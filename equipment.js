@@ -20,6 +20,7 @@ ruleSections.melee = [
 			["Quarterstaff", "2 sp", "1d6", "B", "—", "—", "4 lb.", "Versatile (1d8)"],
 			["Sickle", "1 gp", "1d4", "S", "—", "—", "2 lb.", "—"],
 			["Spear", "1 gp", "1d6", "P", "20 ft", "+2 wounds", "3 lb.", "Versatile (1d8)"],
+			["Improvised", "—", "1d6", "?", "—", "—", "?", "Disadvantage"],
 		],
 	},
 	{
@@ -83,6 +84,7 @@ ruleSections.ranged = [
 			["Javelin", "5 sp", "1d6", "P", "30 ft", "—", "2 lb.", "—"],
 			["Crossbow", "50 gp", "1d12", "P", "100 ft", "+2 wounds", "18 lb.", "Special"],
 			["Stone", "—", "1d6", "B", "15 ft", "—", "3 lb.", "Special"],
+			["Improvised", "—", "1d6", "?", "10 ft", "—", "?", "Disadvantage"],
 		],
 	},
 	{

@@ -21,6 +21,10 @@ ruleSections.actions = [
 		body: `Spell: Cast a spell.`,
 	},
 	{
+		type: RULE_BLOCK.EXAMPLE,
+		body: `Ready: Prepare an action for when an appropriate trigger happens before the beginning of your next turn.`,
+	},
+	{
 		type: RULE_BLOCK.SUBSUBTITLE,
 		body: `Move`,
 	},
@@ -51,6 +55,10 @@ ruleSections.actions = [
 	{
 		type: RULE_BLOCK.EXAMPLE,
 		body: `Make an attack of opportunity.`,
+	},
+	{
+		type: RULE_BLOCK.EXAMPLE,
+		body: `Use a Readied action.`,
 	},
 ];
 
@@ -278,5 +286,38 @@ ruleSections.defenses = [
 	{
 		type: RULE_BLOCK.EXAMPLE,
 		body: `Your flat-footed AC is for attacks which hit you when you are unable to react (either because you cannot move or because you are unaware of the attack).  Do not apply your Dexterity modifier or your shield bonus to your flat-footed AC.  Features which grant AC may also indicate that they do not function when flat-footed.`,
+	},
+];
+
+ruleSections.other = [
+	{
+		type: RULE_BLOCK.SUBTITLE,
+		body: `Flanking`,
+	},
+	{
+		type: RULE_BLOCK.BODY,
+		body: `You flank a creature when you and an ally are both threatening it, and there is a straight line from the centre of your space to the centre of your ally's space which passes through opposite sides of the creature's space.  While flanking a creature, your attacks against that enemy gain Advantage.
+		In other words, you flank a creature when you and your ally are on opposite sides of the creature and both threatening it.`,
+	},
+	{
+		type: RULE_BLOCK.SUBTITLE,
+		body: `Ready`,
+	},
+	{
+		type: RULE_BLOCK.BODY,
+		body: `You may use an action to prepare an action you want to take in response to something else, like a creature attacking an ally.  To do so, choose an event that you can percieve and the action you will take in response.  When the event occurs, you may immediately take your Readied action.
+		If your action is an attack, you may only attack once (even if you have Extra Attack).
+		If you have more than one Reaction available, you may not use your Readied action more than once.`,
+	},
+	{
+		type: RULE_BLOCK.SUBTITLE,
+		body: `Mounted Combat`,
+	},
+	{
+		type: RULE_BLOCK.BODY,
+		body: `You may ride a creature at least one size class larger than you.  If you do not have a saddle appropriate to both you and your mount, you suffer Disadvantage on all checks while mounted (some checks may be exempted from this penalty at your DM's discretion).
+		You must make a Dexterity check with DC 20 if there is a hostile creature within 15 feet in order to control your mount.  If you fail the check, your mount flees combat as fast as it can.  You do not need to make the check when riding a mount trained for combat.  Once you succeed on the check, you do not need to make it again until you dismount or 5 minutes have passed.
+		If you're controlling your mount, you can use a move action to move you and your mount using your mount's speed.  Ranged attacks made on the same turn that your mount moves are made with Disadvantage.
+		While mounted, your movement does not provoke attacks of opportunity from creatures smaller than your mount.`,
 	},
 ];

@@ -23,6 +23,8 @@ const defaultNav = {
 	"build": "edit",
 }
 
+const lastNavs = {};
+
 const classes = {};
 const races = {};
 
@@ -36,7 +38,7 @@ function mainNavClick(event){
 		event.target.classList.add("selected");
 		mainNavSelection = event.target.id.replace("nav-", "");
 		document.querySelectorAll(".nav:not(:first-of-type)").forEach(node => node.style.display = "none");
-		document.querySelector(`#nav-${defaultNav[mainNavSelection]}`).click();
+		document.querySelector(`#nav-${lastNavs[mainNavSelection] || defaultNav[mainNavSelection]}`).click();
 		document.querySelector(`#sub-header-nav-${mainNavSelection}`).style.display = "block";
 	}
 }
@@ -46,6 +48,7 @@ function subNavClick(event){
 		event.target.closest(".nav").querySelector(".selected")?.classList.remove("selected");
 		event.target.classList.add("selected");
 		subNavSelection = event.target.id.replace("nav-", "");
+		lastNavs[mainNavSelection] = subNavSelection;
 		loadView();
 	}
 }

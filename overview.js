@@ -10,6 +10,34 @@ ruleSections.overview = [
 		type: RULE_BLOCK.BODY,
 		body: `Certain situations and features grant Advantage or Disadvantage. Non-situational bonuses and maluses will typically be flat values so you can calculate your total bonus in advance.
 		When you have Advantage, you roll 2d20 and take the higher value. When you have Disadvantage, you take the lower value instead.
-		Subtract your Disadvantage (-D) from your Advantage (+A) before rolling - if you have +A and -D they cancel out and you make a normal roll. If you have net +2A or better, add your net Advantage to your roll (or conversely, subtract your Disadvantage).`,
+		Subtract your Disadvantage (-D) from your Advantage (+A) before rolling - if you have +A and -D they cancel out and you make a normal roll. If you have net +2A or better, add your net Advantage to your roll in addition to the normal effects of Advantage (or conversely, subtract your Disadvantage).`,
 	},
+];
+
+ruleSections.glossary = [
+	{
+		type: RULE_BLOCK.SUBTITLE,
+		body: `Conditions`,
+	},...[
+		`Blind: A Blind creature is unable to see using its eyes.  If it has no other way of detecting creatures, it get Disadvantage against creatures within its reach and 2 Disadvantage against creatures whose locations are known but are outside of its reach.`,
+		`Deaf: A Deaf creature is unable to hear.  Unless it is trained in sign language, it cannot communicate during combat unless a creature spends an action to communicate something simple.  Additionally, creatures flanking it get Advantage on attacks against it (in addition to the standard Advantage from flanking).`,
+		`Distracted: When a Distracted creature is attacked, the attacker may choose to end the condition and gain Advantage on their attack.  This condition stacks.`,
+		`Frightened: If you are within 30 feet of the object of your fear, all of your attacks are made at Disadvantage.  If you approach the object of your fear, all of your attacks this turn are made with Disadvantage.  This penalty also applies to social checks.`,
+		`Slowed: A Slowed creature spends 1 additional foot of movement for every foot it travels.`,
+	].map(condition => {
+		return {
+			type: RULE_BLOCK.EXAMPLE,
+			body: condition,
+		};
+	}),{
+		type: RULE_BLOCK.SUBTITLE,
+		body: `Keywords`,
+	},...[
+		`Flanking: When you and an ally are on opposite sides of an enemy and both threatening it, you both gain Advantage on your attacks against that enemy.`,
+	].map(condition => {
+		return {
+			type: RULE_BLOCK.EXAMPLE,
+			body: condition,
+		};
+	}),
 ];
