@@ -4,8 +4,12 @@ body {
 }
 
 .nav {
-	height: 30px;
+	height: 38px;
 	margin-bottom: 10px;
+	overflow-x: auto;
+	white-space: nowrap;
+	overflow-y: visible;
+	scrollbar-width: thin;
 }
 
 .nav-button {
@@ -13,13 +17,25 @@ body {
 	border: 1px solid black;
 	display: inline-block;
 	border-style: outset;
-	height: calc(100% - 6px);
+	height: calc(100% - 8px);
 	padding: 3px;
-	line-height: 24px;
+	line-height: 26px;
 	margin: 0;
 	text-align: center;
 	cursor: pointer;
 	user-select: none;
+}
+
+@media (max-width:480px) {
+	.nav {
+		height: 48px;
+		line-height: 36px;
+		font-size: large;
+	}
+
+	.nav-button {
+		width: 150px;
+	}
 }
 
 .nav-button.selected {

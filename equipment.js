@@ -160,7 +160,7 @@ ruleSections.armour = [
 		type: RULE_BLOCK.TABLEWITHHEAD,
 		body: [
 			["Armour", "Cost", "AC Bonus", "Min STR", "Weight"],
-			["Splint mail", "200 gp", "5", "13", "40 lb"],
+			["Splint mail", "150 gp", "5", "13", "40 lb"],
 			["Banded mail", "250 gp", "6", "13", "30 lb"],
 			["Half plate", "600 gp", "7", "15", "45 lb"],
 			["Full plate", "1500 gp", "8", "17", "50 lb"],
@@ -196,5 +196,33 @@ ruleSections.shields = [
 		Kite shields are strapped to your arm and prevent its use.  A kite shield requires a move action to doff and a full round action to don.
 		Tower shields are like kite shields, but are so unwieldy they impose a -2 penalty on your attacks.
 		In any case, you may never benefit from more than one shield at once.`,
+	},
+];
+
+ruleSections.considerations = [
+	{
+		type: RULE_BLOCK.SUBSUBTITLE,
+		body: "Starting Equipment",
+	},
+	{
+		type: RULE_BLOCK.BODY,
+		body: `All characters begin with a certain amount of starting equipment.  At level 1, you recieve armour, a weapon, and a shield of your choice totalling no more than 160 gp - but only equipment that you can use.  Instead of a shield, you may choose a second weapon.
+		You may then purchase additional mundane equipment until the total value of your equipment is 100 gold. This means that if you choose armour and weapons valued at 100 gold or more you are unable to purchase any additional equipment.
+		(For the moment, you may find equipment prices in the <a href="https://5e.d20srd.org/srd/equipment/equipment.htm">5e player's handbook</a>)`,
+	},
+	{
+		type: RULE_BLOCK.SUBSUBTITLE,
+		body: "Carrying Capacity",
+	},
+	{
+		type: RULE_BLOCK.BODY,
+		body: `You may carry up to 6 times your strength score as a light load, or up to 12 times your strength score as a heavy load.  Carrying a light load does not affect you, but carrying a heavy load reduces your speed by 25% (your speed in combat is rounded down to the nearest 5 feet).  This is in addition to the penalty imposed by wearing armour that is too heavy for you.`,
+	},
+	{
+		type: RULE_BLOCK.TABLE,
+		body: [
+			["Light Load", "20ft", "25ft", "30ft", "40ft", "50ft", "60ft", "70ft", "80ft"],
+			["Heavy Load", "15ft", "15ft", "20ft", "30ft", "35ft", "45ft", "50ft", "60ft"],
+		],
 	},
 ];
