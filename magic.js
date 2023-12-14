@@ -19,9 +19,18 @@ ruleSections.casting = [
 	},
 	{
 		type: RULE_BLOCK.BODY,
-		body: `You may Channel as a swift action three times plus your Intelligence modifier per day, but only once per turn.  Add your total levels in classes which grant a magic source to the number of times per day you can Channel.  For example, a level 5 Wizard with 16 intelligence can Channel 3 + 5 (levels) + 3 (Int) = 11 times per day.
+		body: `You may Channel as a swift action three times plus your Intelligence modifier per day, but only once per turn.  Add your total levels in classes which grant a magic source to the number of times per day you can Channel.  For example, a level 5 Wizard with 16 Intelligence can Channel 3 + 5 (levels) + 3 (Int) = 11 times per day.
 		If you have no channels left for the day, you may overchannel.  This is just like channelling, but you immediately suffer one Overdraw Wound.  An Overdraw Wound is just like a regular Wound but it cannot not be healed by healing magic.
 		When you Channel, gain 2 mana plus mana equal to your rank in Channelling.  You may use this mana for casting spells this turn or hold it for another turn.  At the end of each turn that you do not Channel or use mana to cast a spell, lose one mana.  There is no limit to the amount of mana you can hold.`,
+	},
+	{
+		type: RULE_BLOCK.SUBTITLE,
+		body: `Saves`,
+	},
+	{
+		type: RULE_BLOCK.BODY,
+		body: `Creatures affected by a spell with a save type listed are entitled to make a save of that type.  If the spell does not otherwise specify, a creature which succeeds on the save takes half damage and suffers no other ill effects.
+		The DC of a save against a spell is equal to 10 plus the caster's Charisma modifier.`,
 	},
 ];
 
@@ -36,6 +45,18 @@ ruleSections.elements = [
 	},
 	{
 		type: RULE_BLOCK.TABLE,
-		body: [],
+		body: [
+			["Element", "Damage", "Effect"],
+			["Acid", "1d8", "Creatures adjacent to creatures damaged by acid take 1d4 acid damage."],
+			["Cold", "1d8", "Creatures who fail their save are Slowed for 1 round."],
+			["Fire", "2d6", "—"],
+			["Force", "1d6", "Damaging Force spells do not permit saves."],
+			["Lightning", "1d10", "Saves made by creatures wearing metal armour have Disadvantage."],
+			["Negative", "1d10", "Undead creatures are healed by negative energy."],
+			["Positive", "1d10", "Living creatures are healed by positive energy."],
+			["Psionic", "1d10", "Wounds dealt by psionic damage do not reduce the amount of damage dealt to hit points."],
+			["Radiant", "1d8", "Creatures who fail their save are Blinded for 1 round."],
+			["Sonic", "1d8", "Creatures who fail their save are Deafened for 1 round."],
+		],
 	},
 ];

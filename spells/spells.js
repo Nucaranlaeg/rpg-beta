@@ -27,19 +27,6 @@ const DAMAGE = {
 	Sonic: "1d8 sonic damage",
 }
 
-const EFFECT = {
-	Acid: "Creatures adjacent to creatures damaged by acid take 1d4 acid damage.",
-	Cold: "Creatures who fail their save are Slowed for 1 round.",
-	Fire: "",
-	Force: "Force spells do not permit saves.",
-	Lightning: "Saves made by creatures wearing metal armour have Disadvantage.",
-	Negative: "Undead creatures are healed by negative energy.",
-	Positive: "Living creatures are healed by positive energy.",
-	Psionic: "Wounds dealt by psionic damage do not reduce the amount of damage dealt to hit points.",
-	Radiant: "Creatures who fail their save are Blinded for 1 round.",
-	Sonic: "Creatures who fail their save are Deafened for 1 round.",
-}
-
 const SOURCES = {
 	Arcane: "Arcane",
 	Divine: "Divine",

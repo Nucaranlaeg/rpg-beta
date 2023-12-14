@@ -179,7 +179,7 @@ function loadView(){
 		const schoolFilter = Object.values(SCHOOLS).map(school => spellFilters[school] ? school : null).filter(s=>s);
 		const sourceFilter = Object.values(SOURCES).map(source => spellFilters[source] ? source : null).filter(s=>s);
 		const typeFilter = Object.values(SPELL_TYPES).map(type => spellFilters[type.replace(" Energy", "")] ? type : null).filter(s=>s);
-		const costFilter = [...new Set(spells.map(s => s.spellData.minMana))].map(cost => spellFilters[cost] ? cost : null).filter(s=>s);
+		const costFilter = [...new Set(spells.map(s => s.spellData.minMana))].map(cost => spellFilters[cost] ? cost : null).filter(s=>s !== null);
 
 		spells.sort((a, b) => a.name < b.name ? -1 : 1).sort((a, b) => a.spellData.minMana - b.spellData.minMana);
 		spells.forEach(spell => {

@@ -185,6 +185,13 @@ h4 {
 	border-style: inset;
 }
 
+.filter-row {
+	overflow-x: auto;
+	white-space: nowrap;
+	overflow-y: visible;
+	scrollbar-width: thin;
+}
+
 .filter-row + .filter-row {
 	margin-top: 5px;
 }

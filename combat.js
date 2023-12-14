@@ -6,7 +6,8 @@ ruleSections.actions = [
 	{
 		type: RULE_BLOCK.BODY,
 		body: `On your turn, you may take one action of each type.  If an action is divisible (such as making multiple attacks or moving a distance) you may order what you do however you like.
-		Any Move action can be taken as a Standard action.  Any Swift action may be taken as a Move or a Standard action.  Reactions may only be taken when a rule or feature allows you to, and may not be taken on your turn.`,
+		Any Move action can be taken as a Standard action.  Any Swift action may be taken as a Move or a Standard action.  Reactions may only be taken when a rule or feature allows you to, and may not be taken on your turn.
+		Some things take minimal effort from you, and are considered Free actions.  You may take any reasonable number of Free actions at any point.`,
 	},
 	{
 		type: RULE_BLOCK.SUBSUBTITLE,
@@ -59,6 +60,14 @@ ruleSections.actions = [
 	{
 		type: RULE_BLOCK.EXAMPLE,
 		body: `Use a Readied action.`,
+	},
+	{
+		type: RULE_BLOCK.SUBSUBTITLE,
+		body: `Free`,
+	},
+	{
+		type: RULE_BLOCK.EXAMPLE,
+		body: `Speak briefly.`,
 	},
 ];
 
