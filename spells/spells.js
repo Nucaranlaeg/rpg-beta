@@ -30,6 +30,7 @@ const DAMAGE = {
 const SOURCES = {
 	Arcane: "Arcane",
 	Divine: "Divine",
+	Primal: "Primal",
 }
 
 const SCHOOLS = {
@@ -62,6 +63,7 @@ const RANGE = {
 	Long: "100 feet",
 	Far: "250 feet",
 	Distant: "10 miles",
+	Plane: "on the same plane",
 }
 
 const DURATIONS = {
@@ -110,3 +112,9 @@ let spells = [
 	}
 },
 ];
+
+setTimeout(() => {
+	Object.keys(SCHOOLS).map(key => {
+		console.log(`${key}: ${spells.filter(s => s.spellData.school == key).length}`);
+	});
+});
