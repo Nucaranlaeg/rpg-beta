@@ -163,7 +163,7 @@ function loadView(){
 
 		const costFilterRow = document.createElement("div");
 		costFilterRow.classList.add("filter-row");
-		[...new Set(spells.map(s => s.spellData.minMana))].sort().forEach(cost => {
+		[...new Set(spells.map(s => s.spellData.minMana))].sort((a,b) => a > b).forEach(cost => {
 			const costButton = document.createElement("div");
 			costButton.classList.add("filter");
 			costButton.innerHTML = cost;

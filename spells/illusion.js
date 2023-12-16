@@ -9,7 +9,7 @@ spells = [
 	manaEffect: `For each additional mana spent, the radius increases by 10 feet.`,
 	spellData: {
 		range: RANGE.Medium,
-		minMana: 2,
+		minMana: 3,
 		school: SCHOOLS.Illusion,
 		save: SAVES.Wisdom,
 		duration: DURATIONS.Minute,
@@ -24,7 +24,7 @@ spells = [
 	manaEffect: `For each additiona mana spent, the spell can target one additional creature.`,
 	spellData: {
 		range: RANGE.Touch,
-		minMana: 4,
+		minMana: 5,
 		school: SCHOOLS.Illusion,
 		save: SAVES.Wisdom,
 		duration: DURATIONS.Hour,

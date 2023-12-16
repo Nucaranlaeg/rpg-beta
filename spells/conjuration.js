@@ -150,7 +150,7 @@ spells = [
 	descriptors: [SPELL_TYPES.Acid],
 	name: "Caustic Arrow",
 	requirements: ["Acid Splash"],
-	effect: `Conjure an arrow of acid, and fire it at a creature within range. Make a ranged attack against the target (with Charisma as the key ability). If you hit, deal ${DAMAGE.Acid}.`,
+	effect: `Conjure an arrow of acid, and fire it at a creature within range. Make a ranged attack against the target (with Charisma as the key ability). If you hit, deal ${DAMAGE.Acid} each round for the duration.`,
 	manaEffect: `Each additional mana spent increases the duration by one round.`,
 	spellData: {
 		range: RANGE.Long,

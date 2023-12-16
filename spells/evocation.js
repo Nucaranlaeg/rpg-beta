@@ -296,7 +296,7 @@ spells = [
 	descriptors: [SPELL_TYPES.Psionic],
 	name: "Lobotomy",
 	requirements: ["Figment"],
-	effect: `You manipulate a target creature into forgetting all about you.  It takes ${DAMAGE.Psionic} and cannot consciously percieve you for the duration.  Directly interacting with the creature in any way breaks the spell.`,
+	effect: `You manipulate a target creature into forgetting all about you.  It takes ${DAMAGE.Psionic} and cannot consciously percieve you for the duration.  Interacting with the creature in any way breaks the spell.`,
 	manaEffect: `For each additional mana used, this spell deals an additional ${DAMAGE.Psionic}.`,
 	spellData: {
 		range: RANGE.Medium,

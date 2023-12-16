@@ -5,7 +5,7 @@ ruleSections.overview = [
 		Your skills are more fluid - you can choose things which fit your character and apply them where appropriate.`,
 	},{
 		type: RULE_BLOCK.BODY,
-		body: `This takes an explicitly simulationist approach: when you come to a situation that the rules don't cover, your DM will make a ruling based on the physical rules of the real world.  If you feel `,
+		body: `This takes an explicitly simulationist approach: when you come to a situation that the rules don't cover, your DM will make a ruling based on the physical rules of the real world.`,
 	},{
 		type: RULE_BLOCK.SUBTITLE,
 		body: `Advantage`,
