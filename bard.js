@@ -1,4 +1,5 @@
 classes.bard = {
+	"Flavour": `A bard is the life of the party.  Her music keeps her friends alert and alive, focusses them in battle, and refreshes them when they are weary.`,
 	"Stats": {
 		"str": false,
 		"dex": true,

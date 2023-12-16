@@ -1,4 +1,6 @@
 classes.barbarian = {
+	"Flavour": `A barbarian is the mightiest warrior in the land - capable of great destruction and laying low any who would stand against him.  When he lets loose, it takes great force to put him down.
+	Barbarians tend toward Chaos (especially when raging), but they vary greatly when they are calm.  Some are scholarly, some sociable, and others care little for anything beyond battle.`,
 	"Stats": {
 		"str": true,
 		"dex": true,
