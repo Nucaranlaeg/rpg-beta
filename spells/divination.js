@@ -241,7 +241,7 @@ spells = [
 	descriptors: [],
 	name: "Doom",
 	requirements: [],
-	effect: "Roll 1d20.  Then choose a creature and audibly specify an action that it may take in the future.  When that creature takes the action you specify, you may substitute the roll that you made for one of the dice that it rolls.",
+	effect: "Roll 1d20.  Then choose a creature and audibly specify an action that it may take in the future.  The next time that creature takes the action you specify, it substitutes the roll that you made for one of the dice that it rolls.",
 	manaEffect: "For each additional mana spent, you may modify the roll by up to 2 (but not below 1 or above 20)",
 	spellData: {
 		range: RANGE.Short,
