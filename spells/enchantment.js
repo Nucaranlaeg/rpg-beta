@@ -1,3 +1,47 @@
 spells = [
 ...spells,
+{
+	type: [SOURCES.Arcane],
+	descriptors: [],
+	name: "Sleep",
+	requirements: [],
+	effect: `You say some soft words and you put any number of targets fall asleep.  For each target beyond the first, each target gains Advantage on the saving throw.  If the creature is in combat or is doing a strenuous activity, it gains Advantage on the saving throw.  Those creatures wake up immediately if they take any damage or an adjacent creature spends their action to waken them.`,
+	manaEffect: "For each additional mana spent, increase the spell's DC by 1.",
+	spellData: {
+		range: RANGE.Medium,
+		minMana: 2,
+		school: SCHOOLS.Enchantment,
+		save: SAVES.Wisdom,
+	},
+},
+{
+	type: [SOURCES.Arcane],
+	descriptors: [],
+	name: "Charm Person",
+	requirements: [],
+	effect: `This charm makes a humanoid regard you as a friend.  If the target is currently being threatened or attacked by you or your allies, it recieves Advantage on the saving throw.  It does not do whatever you say, but interprets your words in the most favourable light.  You or your allies attacking the charmed person breaks the spell.`,
+	manaEffect: "For each additional mana spent, increase the spell's DC by 1.",
+	spellData: {
+		range: RANGE.Medium,
+		minMana: 2,
+		school: SCHOOLS.Enchantment,
+		save: SAVES.Wisdom,
+		duration: DURATIONS.Minute,
+	},
+},
+{
+	type: [SOURCES.Arcane],
+	descriptors: [],
+	name: "Hideous Laughter",
+	requirements: [],
+	effect: `The target creature is afflicted with uncontrollable laughter.  It can take no actions and falls prone.  It can attempt the save again at the end of each of its turns and whenever it is Wounded.`,
+	manaEffect: "For each additional mana spent, increase the spell's DC by 1.",
+	spellData: {
+		range: RANGE.Medium,
+		minMana: 3,
+		school: SCHOOLS.Enchantment,
+		save: SAVES.Wisdom,
+		duration: DURATIONS.Minute,
+	},
+},
 ];
