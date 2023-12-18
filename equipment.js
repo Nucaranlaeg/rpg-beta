@@ -122,7 +122,8 @@ ruleSections.armour = [
 	{
 		type: RULE_BLOCK.BODY,
 		body: `Any creature may wear light armour without penalty, but to wear medium or heavy armour requires proficiency.  Wearing armour you are not proficient with reduces the AC bonus by 1, gives you -5 on all Strength and Dexterity checks, and prevents you from casting spells.
-		If you wear armour which has a strength score listed greater than your strength score, your speed is reduced by 10 feet.`,
+		If you wear armour which has a strength score listed greater than your strength score, your speed is reduced by 10 feet.
+		Your AC is usually your armour's AC bonus plus your Dexterity bonus plus 10.  If you wear heavy armour, you do not add your Dexterity modifier to your AC.`,
 	},
 	{
 		type: RULE_BLOCK.SUBSUBTITLE,

@@ -133,6 +133,14 @@ ruleSections.attacks = [
 		body: `When you score a critical hit, the creature you hit takes one additional wound.  Some weapons and features modify this damage.
 		If the creature hit is immune to wounds (typically constructs and some undead) it does not suffer the wound but still suffers all of the other effects associated with the critical hit, if any.`,
 	},
+	{
+		type: RULE_BLOCK.SUBTITLE,
+		body: `Dual Wielding`,
+	},
+	{
+		type: RULE_BLOCK.BODY,
+		body: `You may wield one weapon in each hand.  If you do so, whenever you take the Attack action you may also attack with your off-hand weapon.  However, your attacks with your off-hand weapon have Disadvantage.`,
+	},
 ];
 
 ruleSections.movement = [

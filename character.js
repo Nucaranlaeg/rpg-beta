@@ -158,6 +158,14 @@ ruleSections.skills = [
 	},
 	{
 		type: RULE_BLOCK.SUBSUBTITLE,
+		body: "Unarmed Combat",
+	},
+	{
+		type: RULE_BLOCK.BODY,
+		body: "Gain +2 on attack rolls when unarmed.",
+	},
+	{
+		type: RULE_BLOCK.SUBSUBTITLE,
 		body: "Ranged Weapons",
 	},
 	{

@@ -28,6 +28,7 @@ ruleSections.glossary = [
 		`Frightened: If you are within 30 feet of the object of your fear, all of your attacks are made at Disadvantage.  If you approach the object of your fear, all of your attacks this turn are made with Disadvantage.  This penalty also applies to social checks.`,
 		`Incapacitated: You cannot take actions.  Creatures get Advantage on their attacks against you.`,
 		`Slowed: A Slowed creature spends 1 additional foot of movement for every foot it travels.`,
+		`Stunned: A Stunned creature drops everything held, can't take actions, and loses their Dexterity bonus to AC.`,
 	].map(condition => {
 		return {
 			type: RULE_BLOCK.EXAMPLE,

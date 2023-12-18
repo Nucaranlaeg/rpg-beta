@@ -53,6 +53,7 @@ const SAVES = {
 	Intelligence: "Intelligence",
 	Charisma: "Charisma",
 	None: "None",
+	Special: "Special - see text",
 }
 
 const RANGE = {
@@ -72,6 +73,7 @@ const DURATIONS = {
 	Hour: "1 hour",
 	Dawn: "Until the next dawn",
 	Day: "1 day",
+	Month: "1 month",
 }
 
 const UPKEEP = {

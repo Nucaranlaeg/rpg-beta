@@ -21,7 +21,7 @@ classes.druid = {
 		"Restore the Body - When you return to your normal form, you may heal 1 Wound if you were Wounded while you were Wild Shaped. Overchannelling does not count as being Wounded for this feature.",
 		"Natural Magic - You can channel while Wild Shaped, but it counts as two against your daily limit.",
 		"Instincts - When you Wild Shape into a beast with natural abilities, choose one of them and you gain it as long as you are in that shape. You may choose this feature multiple times, increasing the maximum number of natural abilities you gain access to. Non-standard movement speeds count as abilities for this purpose.",
-		"Animal Friendship - Small and smaller beasts do not perceive you as a threat. You can coexist peacefully with larger animals, but ones you have not met before may be aggressive on your first meeting. Purposefully harming an animal that is friendly to you robs you of your natural serenity until the next full moon.",
+		"Animal Friendship - Small and smaller beasts do not perceive you as a threat. You can coexist peacefully with larger animals, but ones you have not met before may be aggressive on your first meeting. Purposefully harming an animal that is friendly to you robs you of your natural serenity until the next new moon.",
 	],
 	"General": [
 		"New Spell - Choose a Primal spell and add it to your spell list.  You may choose this feature any number of times.",

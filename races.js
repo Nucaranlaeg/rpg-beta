@@ -34,7 +34,7 @@ races.dwarf = {
 		"Infravision 60 feet",
 	],
 	"Racial Traits": [
-		"Iron Gut: You become immune to ingested poisons with a save DC of 15 or less and have advantage against all other poisons. While you still gets drunk, you do not suffer longer-term penalties from drinking alcohol.",
+		"Iron Gut: You become immune to ingested poisons with a save DC of 15 or less and have advantage against all other poisons. While you still get drunk, you do not suffer longer-term penalties from drinking alcohol.",
 		"Stonecutting: Dwarves are familiar with all types of stone. You can navigate underground just like one would navigate by the stars (including knowing their general location) and immediately recognize any natural stone.",
 		"Stable: As long as you are standing on the ground, you have Advantage against any effect which would move you or knock you down.",
 		"Wrought of Stone: Whenever you would take damage, take 1 less.",
