@@ -16,7 +16,7 @@ spells = [
 },
 {
 	type: [SOURCES.Arcane],
-	descriptors: [],
+	descriptors: [SPELL_TYPES.MindAffecting],
 	name: "Charm Person",
 	requirements: [],
 	effect: `This charm makes a humanoid regard you as a friend.  If the target is currently being threatened or attacked by you or your allies, it recieves Advantage on the saving throw.  It does not do whatever you say, but interprets your words in the most favourable light.  You or your allies attacking the charmed person breaks the spell.`,
@@ -31,7 +31,7 @@ spells = [
 },
 {
 	type: [SOURCES.Arcane],
-	descriptors: [],
+	descriptors: [SPELL_TYPES.MindAffecting],
 	name: "Hideous Laughter",
 	requirements: [],
 	effect: `The target creature is afflicted with uncontrollable laughter.  It can take no actions and falls prone.  It can attempt the save again at the end of each of its turns and whenever it is Wounded.`,
@@ -76,7 +76,7 @@ spells = [
 },
 {
 	type: [SOURCES.Arcane],
-	descriptors: [],
+	descriptors: [SPELL_TYPES.MindAffecting],
 	name: "Heroism",
 	requirements: [],
 	effect: `You inspire a creature to greater deeds.  That creature gains Advantage on skill checks and saving throws.`,
@@ -91,7 +91,7 @@ spells = [
 },
 {
 	type: [SOURCES.Arcane],
-	descriptors: [],
+	descriptors: [SPELL_TYPES.MindAffecting],
 	name: "Suggestion",
 	requirements: ["Charm Person"],
 	effect: `You suggest a course of action to a creature, and compel it to do so.  The creature attempts to carry out that action, but it will not do anything obviously harmful (if it is obviously harmful, the spell breaks).`,
@@ -106,7 +106,7 @@ spells = [
 },
 {
 	type: [SOURCES.Arcane],
-	descriptors: [],
+	descriptors: [SPELL_TYPES.MindAffecting],
 	name: "Charm Monster",
 	requirements: ["Charm Person"],
 	effect: `This charm makes a living creature regard you as a friend.  If the target is currently being threatened or attacked by you or your allies, it recieves Advantage on the saving throw.  It does not do whatever you say, but interprets your words in the most favourable light.  You or your allies attacking the charmed creature breaks the spell.`,
@@ -121,7 +121,7 @@ spells = [
 },
 {
 	type: [SOURCES.Arcane],
-	descriptors: [],
+	descriptors: [SPELL_TYPES.MindAffecting],
 	name: "Geas",
 	requirements: [],
 	effect: `You compel a creature to your service.  You give it orders, and it must carry them out.  A Geas cannot compel a creature to kill itself or face certain death.  Each day that the creature does not attempt to follow your instructions, it recieves 1 Overdraw Wound.`,
@@ -136,7 +136,7 @@ spells = [
 },
 {
 	type: [SOURCES.Arcane],
-	descriptors: [],
+	descriptors: [SPELL_TYPES.MindAffecting],
 	name: "Crushing Despair",
 	requirements: [],
 	effect: `You manipulate the minds of creatures in a 90 degree cone.  Each creature within the cone is overcome by despair and get Disadvantage on skill checks and saving throws.`,

@@ -75,7 +75,7 @@ spells = [
 },
 {
 	type: [SOURCES.Arcane, SOURCES.Divine, SOURCES.Primal],
-	descriptors: [],
+	descriptors: [SPELL_TYPES.MindAffecting],
 	name: "Comprehend Languages",
 	requirements: [],
 	effect: "For the duration of this spell, you understand what is meant by speech or writing in any language. This does not decipher codes, and it takes focussed effort by you and at least one other creature to uncover the meaning of particular words or symbols rather than the whole sentence.",
@@ -105,7 +105,7 @@ spells = [
 },
 {
 	type: [SOURCES.Arcane, SOURCES.Divine, SOURCES.Primal],
-	descriptors: [],
+	descriptors: [SPELL_TYPES.MindAffecting],
 	name: "Truesight",
 	requirements: [],
 	effect: "You grant the creature touched the ability to see things as they really are. It immediately identifies and sees past illusions, it can see invisible creatures and objects, and sees the true form of polymorphed or transmuted objects and creatures. The truesight reaches out to 25 feet.\nTruesight does not assist with seeing through mundane disguises, spotting hidden creatures, or even through fog or other obscurment.",
@@ -119,7 +119,7 @@ spells = [
 },
 {
 	type: [SOURCES.Arcane, SOURCES.Divine],
-	descriptors: [],
+	descriptors: [SPELL_TYPES.MindAffecting],
 	name: "Guide",
 	requirements: [],
 	effect: "Touch a creature and grant it an unerring sense of where its enemies are. The affected creature has no miss chance and always targets the right square to hit the enemy it wishes to hit. Guide confers no benefit to hit. No creature within line of sight is considered hidden to the affected creature if the creature is aware of their presence.",
@@ -159,6 +159,21 @@ spells = [
 		school: SCHOOLS.Divination,
 		save: SAVES.None,
 		duration: DURATIONS.Minute,
+	},
+},
+{
+	type: [SOURCES.Arcane, SOURCES.Divine, SOURCES.Primal],
+	descriptors: [],
+	name: "Stone of Sight",
+	requirements: [],
+	effect: "You touch an object, and imbue it with your signature.  At any time while the spell lasts, you can cast this spell again to know exactly where it is relative to you and see through it as though you were there.  You may look through it for up to 10 minutes per cast.",
+	manaEffect: "Each additional mana doubles the duration of the effect.",
+	spellData: {
+		range: RANGE.Touch,
+		minMana: 7,
+		school: SCHOOLS.Divination,
+		save: SAVES.None,
+		duration: DURATIONS.Day,
 	},
 },
 {

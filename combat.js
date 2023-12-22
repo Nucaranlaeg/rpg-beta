@@ -192,6 +192,10 @@ ruleSections.dying = [
 	},
 	{
 		type: RULE_BLOCK.BODY,
+		body: `When you would take damage, first apply any damage reducing effects you have active in whatever order you please.`,
+	},
+	{
+		type: RULE_BLOCK.BODY,
 		body: `When you take damage, your first defense is your hit points.  As long as you have hit points left, subtract the damage dealt from your hitpoints.  Loss of hit points do not affect your capabilities in any way.  Rather, they are a representation of your character's combined luck and skill to avoid injury.
 		However, if you take lots of damage from a single attack, some of that damage may be taken as Wounds.  Whether you take Wounds is determined as follows:`,
 	},
@@ -258,15 +262,6 @@ ruleSections.dying = [
 	},
 	{
 		type: RULE_BLOCK.SUBTITLE,
-		body: `Exhaustion`,
-	},
-	{
-		type: RULE_BLOCK.BODY,
-		body: `When you rest overnight, lose a stack of exhaustion.  If you do not rest overnight, gain a stack of exhaustion instead.  If you spend a day resting, you lose an additional stack of exhaustion.
-		Over a ten hour rest period, you may spend up to 2.5 hours on watch and still gain all benefits of resting.  If a watch is not needed, your time can be spent tending to wounded companions, but you cannot do both.`,
-	},
-	{
-		type: RULE_BLOCK.SUBTITLE,
 		body: `Less Deadly Games`,
 	},
 	{
@@ -305,6 +300,24 @@ ruleSections.defenses = [
 		body: `Your flat-footed AC is for attacks which hit you when you are unable to react (either because you cannot move or because you are unaware of the attack).  Do not apply your Dexterity modifier or your shield bonus to your flat-footed AC.  Features which grant AC may also indicate that they do not function when flat-footed.`,
 	},
 ];
+
+ruleSections.exhaustion = [
+	{
+		type: RULE_BLOCK.SUBTITLE,
+		body: `Exhaustion`,
+	},
+	{
+		type: RULE_BLOCK.BODY,
+		body: `Various effects give you stacks of exhaustion, and it degrades your ability to function over longer periods of time.  For each stack of exhaustion you have, you suffer a -1 malus to every attck roll, skill check, and saving throw that you make.
+		After 5 stacks of exhaustion, each additional stack also gives you a -1 malus on death saving throws (so 7 stacks of exhaustion gives you -2 on death saving throws).`,
+	},
+	{
+		type: RULE_BLOCK.BODY,
+		body: `When you rest overnight, lose a stack of exhaustion.  If you do not rest overnight, gain a stack of exhaustion instead.  If you spend a day resting, you lose a stack of exhaustion.
+		Over a ten hour rest period, you may spend up to 2.5 hours on watch and still gain all benefits of resting.  If a watch is not needed, your time can be spent tending to wounded companions, but you cannot do both.
+		If you spend half of your usual time resting, you neither gain nor lose a stack of exhaustion.`,
+	},
+]
 
 ruleSections.other = [
 	{

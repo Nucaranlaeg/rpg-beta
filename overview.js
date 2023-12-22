@@ -39,6 +39,7 @@ ruleSections.glossary = [
 		body: `Keywords`,
 	},...[
 		`Flanking: When you and an ally are on opposite sides of an enemy and both threatening it, you both gain Advantage on your attacks against that enemy.`,
+		`Touch attack: A touch attack ignores your armour bonus to AC.`,
 	].map(condition => {
 		return {
 			type: RULE_BLOCK.EXAMPLE,

@@ -197,7 +197,7 @@ spells = [
 },
 {
 	type: [SOURCES.Arcane],
-	descriptors: [],
+	descriptors: [SPELL_TYPES.MindAffecting],
 	name: "Phantasmal Killer",
 	requirements: [],
 	effect: `You create a phantasmal image of the more fearsome creature imaginable to your target by drawing on its fears.  Other creatures only see a vague shape.  The target first gets a Wisdom save to recognize the image as unreal.  If it fails, the phantasm touches the target, dealing 10 Wounds from the sheer terror unless the target succeeds on a Constitution save.`,
@@ -212,7 +212,7 @@ spells = [
 },
 {
 	type: [SOURCES.Arcane],
-	descriptors: [],
+	descriptors: [SPELL_TYPES.MindAffecting],
 	name: "False Vision",
 	requirements: [],
 	effect: `Any divination spell that reveals anything within 100 feet of the point you touch instead recieves an image that you choose at the time of casting.  You may spend an action any time within the duration to change the image.`,
@@ -227,7 +227,7 @@ spells = [
 },
 {
 	type: [SOURCES.Arcane],
-	descriptors: [],
+	descriptors: [SPELL_TYPES.MindAffecting],
 	name: "Dream",
 	requirements: [],
 	effect: `You send a message in a dream to a creature that you name or otherwise specifically designate. You enter their dream and give them the message you wish them to recieve.  The communication is strictly one-way: you cannot learn anything from observing their dream, and they cannot ask you any questions.  If the creature is not sleeping when you cast this spell, the spell fails.  Creatures who do not sleep are unaffected by this spell.  While you are delivering the message, you are completely defenseless.`,
@@ -242,7 +242,7 @@ spells = [
 },
 {
 	type: [SOURCES.Arcane],
-	descriptors: [],
+	descriptors: [SPELL_TYPES.MindAffecting],
 	name: "Nightmare",
 	requirements: [],
 	effect: `You send an unsettling dream to a creature that you name or otherwise specifically designate.  That creature does not gain any benefits from its rest, and instead gains one level of exhaustion.  If the creature is not sleeping when you cast this spell, the spell fails.  Creatures who do not sleep are unaffected by this spell.`,

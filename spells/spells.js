@@ -12,6 +12,7 @@ const SPELL_TYPES = {
 	Negative: "Negative Energy",
 
 	Sustained: "Sustained",
+	MindAffecting: "Mind Affecting",
 }
 
 const DAMAGE = {

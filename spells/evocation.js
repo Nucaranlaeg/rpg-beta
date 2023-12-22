@@ -264,7 +264,7 @@ spells = [
 },
 {
 	type: [SOURCES.Arcane],
-	descriptors: [SPELL_TYPES.Psionic],
+	descriptors: [SPELL_TYPES.Psionic, SPELL_TYPES.MindAffecting],
 	name: "Figment",
 	requirements: [],
 	effect: `You project an image of a creature's worst fear into its mind, dealing ${DAMAGE.Psionic}.  Creatures who fail the save are Frightened until the end of their next turn.`,
@@ -278,7 +278,7 @@ spells = [
 },
 {
 	type: [SOURCES.Arcane],
-	descriptors: [SPELL_TYPES.Psionic],
+	descriptors: [SPELL_TYPES.Psionic, SPELL_TYPES.MindAffecting],
 	name: "Unsettle",
 	requirements: ["Figment"],
 	effect: `Choose a target creature and an action.  The next time within the duration of this spell the creature performs that action, they feel an intense fear and take ${DAMAGE.Psionic}.  Creatures who fail the save must choose a different action (if it's an attack, it could be the same attack against a different creature).`,
@@ -293,7 +293,7 @@ spells = [
 },
 {
 	type: [SOURCES.Arcane],
-	descriptors: [SPELL_TYPES.Psionic],
+	descriptors: [SPELL_TYPES.Psionic, SPELL_TYPES.MindAffecting],
 	name: "Lobotomy",
 	requirements: ["Figment"],
 	effect: `You manipulate a target creature into forgetting all about you.  It takes ${DAMAGE.Psionic} and cannot consciously percieve you for the duration.  Interacting with the creature in any way breaks the spell.`,
