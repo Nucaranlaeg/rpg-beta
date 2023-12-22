@@ -18,7 +18,7 @@ classes.rogue = {
 	],
 	"Rogue": [
 		"Good Aim - When you have Advantage on an attack, add 5 to the lower die before determining which die to take.  This cannot result in a roll greater than 20 and does not cause critical threats if the original value would not be a critical threat.",
-		"Lethal Strike - Whenever you deal a wound to a creature with Precision, that creature must make a death saving throw or fall unconscious as if it had taken two or more wounds.  The creature has a penalty on this save equal to your total Advantage on the attack.",
+		"Lethal Strike - Whenever you deal a wound to a creature with Precision, that creature must make a death saving throw or fall unconscious as if it had taken two or more wounds.  The creature has a malus on this save equal to your total Advantage on the attack.",
 		"Accuracy - When you do not have any Advantage on an attack, you gain Advantage.  This does not allow you to use any feature which you can only use if you have Advantage.",
 		"Deadly - Your attacks deal 2 additional damage.  You may choose this feature any number of times, but the total bonus you receive from it may not exceed your Dexterity modifier.",
 	],
