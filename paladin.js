@@ -1,4 +1,6 @@
 classes.paladin = {
+	"Flavour": `Paladins are holy warriors seeking out injustice and evil and ending it wherever they find it.  A paladin swears an oath, and the gods hear it.  Thence forth, they are granted great power to see their oath fulfilled.
+		Paladins do not have to be tied to any particular god or code of conduct.  However, most find themselves close to a god, as the temples look favourably upon them when they do.  While a paladin's oath has no mechanical effects, a player should consider figuring out what kind of oath it is and hewing close to it.`,
 	"Stats": {
 		"str": true,
 		"dex": false,

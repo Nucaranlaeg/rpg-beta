@@ -5,7 +5,7 @@ ruleSections.overview = [
 		Your skills are more fluid - you can choose things which fit your character and apply them where appropriate.`,
 	},{
 		type: RULE_BLOCK.BODY,
-		body: `This takes an explicitly simulationist approach: when you come to a situation that the rules don't cover, your DM will make a ruling based on the physical rules of the real world.  If you feel `,
+		body: `This takes an explicitly simulationist approach: when you come to a situation that the rules don't cover, your DM will make a ruling based on the physical rules of the real world.`,
 	},{
 		type: RULE_BLOCK.SUBTITLE,
 		body: `Advantage`,
@@ -26,7 +26,9 @@ ruleSections.glossary = [
 		`Deaf: A Deaf creature is unable to hear.  Unless it is trained in sign language, it cannot communicate during combat unless a creature spends an action to communicate something simple.  Additionally, creatures flanking it get Advantage on attacks against it (in addition to the standard Advantage from flanking).`,
 		`Distracted: When a Distracted creature is attacked, the attacker may choose to end the condition and gain Advantage on their attack.  This condition stacks.`,
 		`Frightened: If you are within 30 feet of the object of your fear, all of your attacks are made at Disadvantage.  If you approach the object of your fear, all of your attacks this turn are made with Disadvantage.  This penalty also applies to social checks.`,
+		`Incapacitated: You cannot take actions.  Creatures get Advantage on their attacks against you.`,
 		`Slowed: A Slowed creature spends 1 additional foot of movement for every foot it travels.`,
+		`Stunned: A Stunned creature drops everything held, can't take actions, and loses their Dexterity bonus to AC.`,
 	].map(condition => {
 		return {
 			type: RULE_BLOCK.EXAMPLE,
@@ -37,6 +39,7 @@ ruleSections.glossary = [
 		body: `Keywords`,
 	},...[
 		`Flanking: When you and an ally are on opposite sides of an enemy and both threatening it, you both gain Advantage on your attacks against that enemy.`,
+		`Touch attack: A touch attack ignores your armour bonus to AC.`,
 	].map(condition => {
 		return {
 			type: RULE_BLOCK.EXAMPLE,

@@ -1,4 +1,5 @@
 classes.archer = {
+	"Flavour": `An archer deals death from afar.  He is typically well-trained, as it can take many years to perfect the skill of archery.  Whether a consummate professional or a conscript with talent, he is a danger to all his enemies.`,
 	"Stats": {
 		"str": true,
 		"dex": true,

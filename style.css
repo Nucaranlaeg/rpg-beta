@@ -85,6 +85,10 @@ h4 {
 	background-color: #9f6700;
 }
 
+.category.flavour {
+	background-color: #505;
+}
+
 .stats > div {
 	display: inline-block;
 	width: 60px;

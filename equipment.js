@@ -110,7 +110,7 @@ ruleSections.ranged = [
 		type: RULE_BLOCK.BODY,
 		body: `A character applies their Strength bonus to damage rolls when using a thrown weapon, but not when using a projectile weapon.
 		Blowgun: A hidden creature who attacks with a blowgun automatically stays hidden as long as it does not attack more than once per turn.
-		Composite: Composite bows are made with a particular strength rating.  Attacks with them deal additional damage equal to that rating and travel 10 feet further per point in that rating, but impose a penalty on attacks equal to how much your Strength modifier is less than the rating.
+		Composite: Composite bows are made with a particular strength rating.  Attacks with them deal additional damage equal to that rating and travel 10 feet further per point in that rating, but impose a malus on attacks equal to how much your Strength modifier is less than the rating.
 		Critical: Weapons without an entry under "Critical" deal one additional wound on a critical hit.
 		Crossbow: Crossbows require a DC 15 Strength check made as a full-round action to reload (a creature may instead spend one minute reloading).
 		Range: Beyond the listed range, attacks are made at Disadvantage.  Thrown attacks are impossible beyond 3x the listed range, and fired attacks are impossible beyond 4x the listed range.
@@ -122,7 +122,8 @@ ruleSections.armour = [
 	{
 		type: RULE_BLOCK.BODY,
 		body: `Any creature may wear light armour without penalty, but to wear medium or heavy armour requires proficiency.  Wearing armour you are not proficient with reduces the AC bonus by 1, gives you -5 on all Strength and Dexterity checks, and prevents you from casting spells.
-		If you wear armour which has a strength score listed greater than your strength score, your speed is reduced by 10 feet.`,
+		If you wear armour which has a strength score listed greater than your strength score, your speed is reduced by 10 feet.
+		Your AC is usually your armour's AC bonus plus your Dexterity bonus plus 10.  If you wear heavy armour, you do not add your Dexterity modifier to your AC.`,
 	},
 	{
 		type: RULE_BLOCK.SUBSUBTITLE,
@@ -171,7 +172,7 @@ ruleSections.armour = [
 ruleSections.shields = [
 	{
 		type: RULE_BLOCK.BODY,
-		body: `You must be proficient with medium armour or martial weapons to use a shield effectively.  If you wear a shield without being proficient you only recieve half of the listed bonus (rounded down) and you suffer a -2 penalty on your attacks.
+		body: `You must be proficient with medium armour or martial weapons to use a shield effectively.  If you wear a shield without being proficient you only recieve half of the listed bonus (rounded down) and you suffer a -2 malus on your attacks.
 		All shields can be made from wood.`,
 	},
 	{
@@ -194,7 +195,7 @@ ruleSections.shields = [
 		Bucklers are strapped to your arm but do not prevent the use of your arm or hand for something else.  If you use the hand with a buckler for any other purpose than defense or a small object interaction, you lose the AC bonus.
 		Targes are round shields held in the hand.  The hand is unavailable for use as long as you hold the shield.
 		Kite shields are strapped to your arm and prevent its use.  A kite shield requires a move action to doff and a full round action to don.
-		Tower shields are like kite shields, but are so unwieldy they impose a -2 penalty on your attacks.
+		Tower shields are like kite shields, but are so unwieldy they impose a -2 malus on your attacks.
 		In any case, you may never benefit from more than one shield at once.`,
 	},
 ];

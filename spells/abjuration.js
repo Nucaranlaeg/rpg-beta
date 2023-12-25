@@ -21,7 +21,7 @@ spells = [
 	name: "Resiliance",
 	requirements: [],
 	effect: "You touch a creature and grant it a measure of protection. After taking a Wound it regains 3 hit points (this can occur multiple times in a single attack).",
-	manaEffect: "Each additional mana used increases the effect by 1.",
+	manaEffect: "Each additional mana used increases the hit points gained by 1.",
 	spellData: {
 		range: RANGE.Touch,
 		minMana: 2,
@@ -69,7 +69,7 @@ spells = [
 	manaEffect: "For each two additional mana used, you may target one additional creature and the duration increases by 1 minute.",
 	spellData: {
 		range: RANGE.Short,
-		minMana: 2,
+		minMana: 3,
 		school: SCHOOLS.Abjuration,
 		save: SAVES.None,
 		duration: DURATIONS.Minute,
@@ -84,7 +84,7 @@ spells = [
 	manaEffect: "For every 3 additional mana used, you may choose an additional alignment it protects against.",
 	spellData: {
 		range: RANGE.Touch,
-		minMana: 4,
+		minMana: 5,
 		school: SCHOOLS.Abjuration,
 		save: SAVES.None,
 		duration: DURATIONS.Dawn,
@@ -96,7 +96,7 @@ spells = [
 	descriptors: [],
 	name: "Shield",
 	requirements: [],
-	effect: "You conjure an invisible magical shield interposed between yourself and an incoming attack. It grants you +2 AC against that attack and any other attack before the beginning of your next turn. You may cast this spell as a reaction to being hit by an attack, before you know how much damage you take.",
+	effect: "You conjure an invisible magical shield interposed between yourself and an incoming attack. It grants you +2 AC against that attack and any other attack before the beginning of your next turn. You may cast this spell as a reaction to being hit by an attack, before you know how much damage you take.  This spell blocks any Magic Missile cast targetting you.",
 	manaEffect: "For each additional mana used, increase the bonus AC by 2.",
 	spellData: {
 		range: RANGE.Self,
@@ -129,7 +129,7 @@ spells = [
 	manaEffect: "For each additional mana used, increase the duration by 1 minute.",
 	spellData: {
 		range: RANGE.Self,
-		minMana: 9,
+		minMana: 14,
 		school: SCHOOLS.Abjuration,
 		save: SAVES.None,
 		duration: DURATIONS.Minute,
@@ -190,7 +190,7 @@ spells = [
 	manaEffect: "Each additional mana doubles the duration.",
 	spellData: {
 		range: RANGE.Touch,
-		minMana: 2,
+		minMana: 3,
 		school: SCHOOLS.Abjuration,
 		save: SAVES.Intelligence,
 		duration: DURATIONS.Dawn,
@@ -205,7 +205,7 @@ spells = [
 	manaEffect: "Each additional mana doubles the duration and increases the radius by 10 feet.",
 	spellData: {
 		range: RANGE.Short,
-		minMana: 3,
+		minMana: 4,
 		school: SCHOOLS.Abjuration,
 		save: SAVES.Wisdom,
 		duration: DURATIONS.Hour,
@@ -220,7 +220,7 @@ spells = [
 	manaEffect: "Each additional mana reduces the damage the creature takes from attacks by 1.",
 	spellData: {
 		range: RANGE.Touch,
-		minMana: 3,
+		minMana: 4,
 		school: SCHOOLS.Abjuration,
 		save: SAVES.None,
 		duration: DURATIONS.Hour,
@@ -237,7 +237,7 @@ spells = [
 	manaEffect: "Each additional mana doubles the duration or increases the radius by 10 feet.",
 	spellData: {
 		range: RANGE.Self,
-		minMana: 5,
+		minMana: 6,
 		school: SCHOOLS.Abjuration,
 		save: SAVES.None,
 		duration: DURATIONS.Minute,

@@ -60,7 +60,10 @@ function loadView(){
 		let featureCount = 0;
 		const loadTarget = classes[subNavSelection];
 		Object.entries(loadTarget).forEach(category => {
-			if (category[0] === "Stats"){
+			if (category[0] === "Flavour"){
+				contentDiv.innerHTML += `<div class="category flavour">${category[1].replaceAll("\n", "<br>")}</div>`;
+				return;
+			} else if (category[0] === "Stats"){
 				const statsHTML = `<div class='stats'><div class='${category[1].str ? "associated" : ""}'>STR</div><div class='${category[1].dex ? "associated" : ""}'>DEX</div><div class='${category[1].con ? "associated" : ""}'>CON</div><div class='${category[1].cha ? "associated" : ""}'>CHA</div><div class='${category[1].int ? "associated" : ""}'>INT</div><div class='${category[1].wis ? "associated" : ""}'>WIS</div><div class="hit-die">d${category[1]["hit die"]}</div></div>`;
 				contentDiv.innerHTML = statsHTML + contentDiv.innerHTML;
 				return;
@@ -160,7 +163,7 @@ function loadView(){
 
 		const costFilterRow = document.createElement("div");
 		costFilterRow.classList.add("filter-row");
-		[...new Set(spells.map(s => s.spellData.minMana))].sort().forEach(cost => {
+		[...new Set(spells.map(s => s.spellData.minMana))].sort((a,b) => a > b).forEach(cost => {
 			const costButton = document.createElement("div");
 			costButton.classList.add("filter");
 			costButton.innerHTML = cost;
