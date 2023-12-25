@@ -210,7 +210,7 @@ ruleSections.skills = [
 	},
 	{
 		type: RULE_BLOCK.EXAMPLE,
-		body: "Fighter: Gain Melee Weapons or Ranged Weapons at every odd level.",
+		body: "Fighter: Gain Melee Weapons at levels 1, 5, 9, 13, 17.",
 	},
 	{
 		type: RULE_BLOCK.EXAMPLE,

@@ -6,7 +6,7 @@ classes.bard = {
 		"cha": true,
 		"int": true,
 		"wis": true,
-		"hit die": 6,
+		"hit die": 8,
 	},
 	"All": [
 		"Reaching level 1, 5, 9, 13, and 17 in this class grants or improves the Melee Weapons skill or the Ranged Weapons skill.",
