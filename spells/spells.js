@@ -80,6 +80,7 @@ const DURATIONS = {
 const UPKEEP = {
 	Half: "Half of the initial mana cost",
 	One: "One mana",
+	Two: "Two mana",
 	Zero: "Concentration only",
 }
 

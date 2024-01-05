@@ -1,7 +1,7 @@
 spells = [
 ...spells,
 {
-	type: [SOURCES.Arcane],
+	type: [SOURCES.Arcane, SOURCES.Divine],
 	descriptors: [],
 	name: "Resistance",
 	requirements: [],
@@ -16,7 +16,7 @@ spells = [
 	},
 },
 {
-	type: [SOURCES.Arcane],
+	type: [SOURCES.Arcane, SOURCES.Divine],
 	descriptors: [],
 	name: "Resiliance",
 	requirements: [],
@@ -31,7 +31,7 @@ spells = [
 	},
 },
 {
-	type: [SOURCES.Arcane],
+	type: [SOURCES.Arcane, SOURCES.Divine],
 	descriptors: [],
 	name: "Elemental Adaptation",
 	requirements: [],
@@ -61,7 +61,7 @@ spells = [
 	},
 },
 {
-	type: [SOURCES.Arcane],
+	type: [SOURCES.Arcane, SOURCES.Divine],
 	descriptors: [],
 	name: "Protection From Chaos/Evil/Good/Law",
 	requirements: [],
@@ -76,7 +76,7 @@ spells = [
 	},
 },
 {
-	type: [SOURCES.Arcane],
+	type: [SOURCES.Arcane, SOURCES.Divine],
 	descriptors: [],
 	name: "Circle Against Chaos/Evil/Good/Law",
 	requirements: ["Protection From Chaos/Evil/Good/Law"],
@@ -89,6 +89,21 @@ spells = [
 		save: SAVES.None,
 		duration: DURATIONS.Dawn,
 		castTime: DURATIONS.Minute,
+	},
+},
+{
+	type: [SOURCES.Divine],
+	descriptors: [],
+	name: "Entropic Shield",
+	requirements: [],
+	effect: "You conjure a magical shield of swirling light surrounding yourself, deflecting arrows, stones, and even magical attacks.  Creatures making ranged attacks against you have a 20% chance to miss you.",
+	manaEffect: "For each additional mana used, choose a creature adjacent to you.  That creature gains the effect of this spell as long as they remain adjacent to you.",
+	spellData: {
+		range: RANGE.Self,
+		minMana: 2,
+		school: SCHOOLS.Abjuration,
+		save: SAVES.None,
+		duration: DURATIONS.Minute,
 	},
 },
 {
@@ -242,6 +257,36 @@ spells = [
 		save: SAVES.None,
 		duration: DURATIONS.Minute,
 		upkeep: UPKEEP.Zero,
+	},
+},
+{
+	type: [SOURCES.Divine],
+	descriptors: [SPELL_TYPES.Sustained],
+	name: "Entropic Shield",
+	requirements: [],
+	effect: "You conjure a magical shield of swirling light surrounding yourself, deflecting arrows, stones, and even magical attacks.  Creatures making ranged attacks against you have a 20% chance to miss you.",
+	manaEffect: "For each additional mana used, choose a creature adjacent to you.  That creature gains the effect of this spell as long as they remain adjacent to you.",
+	spellData: {
+		range: RANGE.Self,
+		minMana: 2,
+		school: SCHOOLS.Abjuration,
+		save: SAVES.None,
+		duration: DURATIONS.Minute,
+	},
+},
+{
+	type: [SOURCES.Divine],
+	descriptors: [SPELL_TYPES.Sustained],
+	name: "Sanctuary",
+	requirements: [],
+	effect: "When a creature attempts to attack, harmfully touch, or cast a spell targetting the warded creature (area of effect spells do not trigger this), it must first succeed on a Wisdom saving throw.  If it fails, it can't follow through with the attack and loses that part of its action (a spell targetted at multiple creatures could still target the remainder).  The spell ends early if the warded creature attacks a creature or casts a spell with potential to harm a creature.",
+	manaEffect: "For each additional mana used, extend the duration by 1 round.",
+	spellData: {
+		range: RANGE.Touch,
+		minMana: 2,
+		school: SCHOOLS.Abjuration,
+		save: SAVES.None,
+		duration: DURATIONS.Round,
 	},
 },
 ];
