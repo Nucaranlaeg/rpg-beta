@@ -117,7 +117,7 @@ let spells = [
 ];
 
 setTimeout(() => {
-	Object.keys(SCHOOLS).map(key => {
-		console.log(`${key}: ${spells.filter(s => s.spellData.school == key).length}`);
-	});
+	console.log("Arcane:\n", Object.keys(SCHOOLS).map(key => `${key}: ${spells.filter(s => s.spellData.school == key && s.type.includes(SOURCES.Arcane)).length}`).join("\n"));
+	console.log("Divine:\n", Object.keys(SCHOOLS).map(key => `${key}: ${spells.filter(s => s.spellData.school == key && s.type.includes(SOURCES.Divine)).length}`).join("\n"));
+	console.log("Primal:\n", Object.keys(SCHOOLS).map(key => `${key}: ${spells.filter(s => s.spellData.school == key && s.type.includes(SOURCES.Primal)).length}`).join("\n"));
 });

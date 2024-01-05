@@ -205,4 +205,32 @@ spells = [
 		duration: DURATIONS.Hour,
 	},
 },
+{
+	type: [SOURCES.Divine, SOURCES.Primal],
+	descriptors: [],
+	name: "Create Material",
+	requirements: [],
+	effect: `You create a small amount of a substance.  It cannot have any extreme properties (including heat, cold, acidity, or hardness) and it appears very roughly in a shape you specify.  If you create water, it is potable but not pure.  You can create wood or stone, but not processed materials like paper or metal.  You create up to 1 cubic foot of material.  If it is a solid, it must be resting on a surface that can support it or in your hand.`,
+	manaEffect: `Each additional mana spent doubles the total amount made.`,
+	spellData: {
+		range: RANGE.Short,
+		minMana: 1,
+		school: SCHOOLS.Conjuration,
+		save: SAVES.None,
+	},
+},
+// {
+// 	type: [SOURCES.Divine, SOURCES.Primal],
+// 	descriptors: [],
+// 	name: "Light",
+// 	requirements: [],
+// 	effect: `You touch a small object and it begins to emit light`,
+// 	manaEffect: `Each additional mana spent doubles the total amount made.`,
+// 	spellData: {
+// 		range: RANGE.Touch,
+// 		minMana: 1,
+// 		school: SCHOOLS.Conjuration,
+// 		save: SAVES.None,
+// 	},
+// },
 ];
