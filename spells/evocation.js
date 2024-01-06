@@ -336,4 +336,19 @@ spells = [
 		duration: DURATIONS.Dawn,
 	},
 },
+{
+	type: [SOURCES.Divine],
+	descriptors: [SPELL_TYPES.Sustained],
+	name: "Spiritual Weapon",
+	requirements: [],
+	effect: `You summon a weapon made of pure force that attacks opponents at a distance as you direct it.  It deals 1d8 damage on a hit, and your attack bonus is your Intelligence modifier plus 2 per rank of Channelling you have.  Once per turn (including the turn you cast the spell) you may use a swift action to cause it to move up to 30 feet and then attack a creature.  The spiritual weapon cannot take damage or be restrained and does not threaten any spaces.  For the purposes of Dispel Magic, its AC is 10.`,
+	manaEffect: `Each additional mana spent increases the damage dealt by 1.`,
+	spellData: {
+		range: RANGE.Long,
+		minMana: 1,
+		school: SCHOOLS.Evocation,
+		save: SAVES.None,
+		upkeep: UPKEEP.One,
+	},
+},
 ];

@@ -194,4 +194,19 @@ spells = [
 		duration: DURATIONS.Minute,
 	},
 },
+{
+	type: [SOURCES.Divine],
+	descriptors: [SPELL_TYPES.MindAffecting],
+	name: "Enthrall",
+	requirements: [],
+	effect: `You begin to speak.  Any creature that listens to you for at least one round must keep listening to you as long as you continue speaking.  They are not restricted in their movement or actions, except they cannot willingly move to a place where they cannot hear you and they cannot take hostile actions against you.  If any member of the audience is subjected to a hostile act, the spell is broken for all of the creatures.  Creatures predisposed to listen to you have Disadvantage on the save.`,
+	manaEffect: "For each additional mana spent, there is a one round delay after the spell ends before the audience is released (unless the spell was broken by a hostile act).  The spell must have been active for one minute for this to take effect.",
+	spellData: {
+		range: RANGE.Medium,
+		minMana: 3,
+		school: SCHOOLS.Enchantment,
+		save: SAVES.Wisdom,
+		duration: DURATIONS.Hour,
+	},
+},
 ];
