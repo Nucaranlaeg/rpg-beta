@@ -220,6 +220,7 @@ ruleSections.dying = [
 	{
 		type: RULE_BLOCK.BODY,
 		body: `If you take more than one Wound from a single attack or take a Wound from an attack that leaves you at 0 hit points, you must succeed on a death saving throw or fall unconscious and begin dying.  Note that multiple Wounding attacks in one turn may not require any death saving throws, provided they only deal one Wound each.  The DC of a death saving throw is always equal to the number of Wounds that you have taken.
+		Taking 4 or more Wounds from a single attack forces a second death saving throw (whether or not you succeeded on the first), and every two more Wounds from a single attack forces one more.
 		You get a bonus on your death saving throw equal to your Constitution modifier.  A natural 1 is not neccessarily a failure on a death saving throw - so you are not required to roll death saving throws if you have not taken Wounds equal to your Constitution modifier plus two or more.`,
 	},
 	{

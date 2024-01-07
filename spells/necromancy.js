@@ -91,4 +91,19 @@ spells = [
 		duration: DURATIONS.Dawn,
 	},
 },
+{
+	type: [SOURCES.Arcane, SOURCES.Divine],
+	descriptors: [],
+	name: "Reap",
+	requirements: [],
+	effect: `You draw the final breath from nearby creatures, strengthening your own life force. Every creature in a 30 foot radius around a point you specify must make a death saving throw. You heal 1 Wound for every creature that fails its save.`,
+	manaEffect: `For each additional mana you spend, increase the radius by 10 feet.`,
+	spellData: {
+		range: RANGE.Medium,
+		minMana: 4,
+		school: SCHOOLS.Necromancy,
+		save: SAVES.None,
+		duration: DURATIONS.Dawn,
+	},
+},
 ];
