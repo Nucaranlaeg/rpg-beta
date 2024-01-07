@@ -104,6 +104,20 @@ spells = [
 		school: SCHOOLS.Necromancy,
 		save: SAVES.None,
 		duration: DURATIONS.Dawn,
+},
+{
+	type: [SOURCES.Divine],
+	descriptors: [],
+	name: "Death Ward",
+	requirements: [],
+	effect: `You touch a creature, and that creature is protected against death.  If the creature would fail a death saving throw or be subjected to an effect that would kill it, instead end this effect.`,
+	manaEffect: "If you spend 2 additional mana, this spell lasts until the next dawn.",
+	spellData: {
+		range: RANGE.Touch,
+		minMana: 3,
+		school: SCHOOLS.Necromancy,
+		save: SAVES.None,
+		duration: DURATIONS.Hour,
 	},
 },
 ];

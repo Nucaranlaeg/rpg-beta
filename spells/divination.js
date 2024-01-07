@@ -325,4 +325,19 @@ spells = [
 		duration: DURATIONS.Hour,
 	},
 },
+{
+	type: [SOURCES.Divine],
+	descriptors: [],
+	name: "Status",
+	requirements: [],
+	effect: `You place an invisible mark on a creature that allows you to keep track of its position and general condition.  You are aware of the direction and rough distance to the creature, as well as the number of wounds it's taken and any conditions it is suffering.`,
+	manaEffect: "For each additional mana spent, you may target one additional creature.",
+	spellData: {
+		range: RANGE.Touch,
+		minMana: 1,
+		school: SCHOOLS.Divination,
+		save: SAVES.Wisdom,
+		duration: DURATIONS.Hour,
+	},
+},
 ];

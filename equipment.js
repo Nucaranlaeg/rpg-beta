@@ -220,10 +220,14 @@ ruleSections.considerations = [
 		body: `You may carry up to 6 times your strength score as a light load, or up to 12 times your strength score as a heavy load.  Carrying a light load does not affect you, but carrying a heavy load reduces your speed by 25% (your speed in combat is rounded down to the nearest 5 feet).  This is in addition to the penalty imposed by wearing armour that is too heavy for you.`,
 	},
 	{
+		type: RULE_BLOCK.SUBSUBTITLE,
+		body: "Speed Reduction",
+	},
+	{
 		type: RULE_BLOCK.TABLE,
 		body: [
-			["Light Load", "20ft", "25ft", "30ft", "40ft", "50ft", "60ft", "70ft", "80ft"],
-			["Heavy Load", "15ft", "15ft", "20ft", "30ft", "35ft", "45ft", "50ft", "60ft"],
+			["Speed with a Light Load", "20ft", "25ft", "30ft", "40ft", "50ft", "60ft", "70ft", "80ft"],
+			["Speed with a Heavy Load", "15ft", "15ft", "20ft", "30ft", "35ft", "45ft", "50ft", "60ft"],
 		],
 	},
 ];
