@@ -25,5 +25,6 @@ classes.wizard = {
 	],
 	"General": [
 		"New Spell - Choose an Arcane spell and add it to your spell list.  You may choose this feature any number of times.",
+		"Saving Throws: Mental - Gain +1 on your Mental Saving Throws (Charisma, Intelligence, and Wisdom).",
 	],
 };

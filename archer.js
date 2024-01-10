@@ -44,5 +44,6 @@ classes.archer = {
 		"Patience - If you stay hidden for one minute with your target in view, you gain Advantage on all your attacks on the first turn you reveal your presence.",
 		"Skirmish - Gain +1 AC until the beginning of your next turn whenever you end your turn at least 20 feet from where you started it.",
 		"Ranged Flank - While wielding a ranged weapon, you can help an ally flank a creature if you are within 15 feet of the flanked creature and at least one of you is adjacent to it. You must still meet the other qualifications for flanking.",
+		"Saving Throws: Physical - Gain +1 on your Physical Saving Throws (Strength, Dexterity, and Constitution).",
 	],
 };

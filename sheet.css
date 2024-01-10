@@ -50,6 +50,10 @@ span {
 	white-space: nowrap;
 }
 
+.info-label.important {
+	color: black;
+}
+
 .info-label.right {
 	left: unset;
 	right: 8px;
@@ -59,6 +63,7 @@ span {
 
 .info-label.blank {
 	width: 50px;
+	max-width: 70%;
 	border-bottom: 1px solid #ccc;
 }
 
@@ -77,6 +82,23 @@ span {
 
 .wrapper > * {
 	transform: skewX(-25deg);
+}
+
+.wrapper.gap {
+	margin-left: 20px;
+}
+
+.wrapper.small {
+	width: 35px;
+}
+
+.wrapper.small .info-label.right {
+	right: 3px;
+}
+
+.wrapper.tall {
+	height: 30px;
+	line-height: 31px;
 }
 
 .x-wide {
@@ -133,6 +155,11 @@ span {
 	position: absolute;
 }
 
+#values-block {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
 #levels-block {
 	margin-top: 10px;
 	width: 325px;
@@ -147,6 +174,10 @@ span {
 .level-row {
 	width: 100%;
 	margin-bottom: 5px;
+}
+
+#column {
+	width: min-content;
 }
 
 #reputation-block {
@@ -179,7 +210,56 @@ span {
 }
 
 .skill-row {
-	margin-top: 5px;
+	margin-top: 6px;
 	display: block;
 	width: 128px;
+}
+
+#race-block {
+	margin-left: 10px;
+}
+
+.label {
+	width: 100%;
+	text-align: center;
+}
+
+.attack-row {
+	display: flex;
+	width: 130px;
+	margin-top: -1px;
+}
+
+.attack-row:nth-of-type(2) {
+	margin-left: 6px;
+}
+
+.attack-row:nth-of-type(3) {
+	margin-left: 12px;
+}
+
+.attack-info {
+	flex: 1;
+}
+
+.attack-data {
+	margin-top: 7px;
+}
+
+#equipment-block {
+	width: 130px;
+	margin: 10px;
+}
+
+.equipment-row {
+	width: 100%;
+	margin-top: 5px;
+}
+
+.equipment-row.no-space {
+	margin-top: -1px;
+}
+
+.equipment-row .divider {
+	right: 15px;
 }

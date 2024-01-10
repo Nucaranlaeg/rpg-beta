@@ -40,5 +40,6 @@ classes.fighter = {
 		"Dangerous - Enemies you threaten cannot flank your allies unless they also flank you.  You and your flanking allies deal an additional 2 damage whenever either of you hit creatures you both flank.",
 		"Lunge - When you take a Readied action to make a single attack, you may first move 5 feet.  This does not provoke an attack of opportunity from the creature you attack.",
 		"Rally - As a standard action, you may rally your allies, allowing any friendly creature who can hear you to move up to their speed to a space within 10 feet of you.",
+		"Saving Throws: Control - Gain +2 on your Control Saving Throws (Dexterity and Intelligence).",
 	],
 };
