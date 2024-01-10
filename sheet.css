@@ -24,10 +24,21 @@ span {
 	height: 9in;
 	margin: auto;
 	padding: 1in;
+	overflow: hidden;
+}
+
+.page + .page {
+	border-top: 1px solid black;
+}
+
+@media print {
+	.page + .page {
+		border: none;
+	}
 }
 
 #char-info {
-	width: calc(100% - 82px);
+	width: fit-content;
 	margin: auto;
 	margin-bottom: 10px;
 }
@@ -42,12 +53,13 @@ span {
 	color: #666;
 	font-size: 10px;
 	position: absolute;
-	top: -6px;
+	top: -4px;
 	left: 4px;
 	background: white;
-	height: 10px;
-	line-height: 10px;
+	height: 8px;
+	line-height: 8px;
 	white-space: nowrap;
+	padding: 0 2px;
 }
 
 .info-label.important {
@@ -73,8 +85,8 @@ span {
 	width: 50px;
 	position: relative;
 	margin-left: -1px;
-	height: 16px;
-	line-height: 17px;
+	height: 22px;
+	line-height: 23px;
 	vertical-align: top;
 	transform: skewX(20deg);
 	padding-left: 5px;
@@ -92,25 +104,48 @@ span {
 	width: 35px;
 }
 
+.wrapper.x-small {
+	width: 20px;
+}
+
 .wrapper.small .info-label.right {
 	right: 3px;
 }
 
 .wrapper.tall {
+	height: 40px;
+	line-height: 41px;
+}
+
+.wrapper.medium {
 	height: 30px;
 	line-height: 31px;
 }
 
 .x-wide {
-	width: 200px;
+	width: 265px;
 }
 
 .wide {
 	width: 75px;
 }
 
+.wider {
+	width: 225px;
+}
+
+#name-wrapper {
+	width: 250px;
+}
+
 .stat-row {
 	height: 25px;
+	margin-bottom: 4px;
+}
+
+.stat-row:first-of-type {
+	height: 20px;
+	margin-bottom: 0;
 }
 
 .stat-row-type {
@@ -121,10 +156,10 @@ span {
 .modifier {
 	border: 1px solid #666;
 	width: 22px;
-	height: 20px;
+	height: 26px;
 	position: absolute;
 	left: 30px;
-	top: -3px;
+	top: -2.5px;
 	text-align: center;
 	background: #eee;
 	line-height: 18px;
@@ -162,13 +197,14 @@ span {
 
 #levels-block {
 	margin-top: 10px;
-	width: 325px;
+	width: 407px;
 	position: relative;
 }
 
 .level-number {
 	position: absolute;
 	left: -20px;
+	line-height: 41px;
 }
 
 .level-row {
@@ -176,14 +212,28 @@ span {
 	margin-bottom: 5px;
 }
 
-#column {
+#class-features {
+	display: flex;
+	width: calc(100% - 17px);
+	margin-bottom: 5px;
+}
+
+#class-features > .wrapper {
+	flex: 1;
+}
+
+.spell-row {
+	margin-top: -1px;
+}
+
+.column {
 	width: min-content;
 }
 
 #reputation-block {
 	position: relative;
-	width: 150px;
-	height: 150px;
+	width: 200px;
+	height: 200px;
 }
 
 .rep-label {
@@ -192,8 +242,8 @@ span {
 }
 
 #rep-background {
-	width: 150px;
-	height: 150px;
+	width: 200px;
+	height: 200px;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -210,13 +260,109 @@ span {
 }
 
 .skill-row {
-	margin-top: 6px;
 	display: block;
-	width: 128px;
+	width: 200px;
+}
+
+.skill-label {
+	color: #666;
+	font-size: 10px;
+	background: white;
+	height: 10px;
+	line-height: 10px;
+	white-space: nowrap;
+	width: 50%;
+	display: inline-block;
+}
+
+.skill-label.blank {
+	border-bottom: 1px solid #ccc;
+	width: 40%;
+	margin-right: 10%;
+}
+
+.skill-box {
+	border: 1px solid #666;
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	transform: skewX(20deg);
+}
+
+.skill-box::after {
+	content: attr(data-box-label);
+	transform: skewX(-25deg);
+	color: #bbb;
+	font-size: 10px;
+	line-height: 10px;
+	position: absolute;
+	text-align: center;
+	width: 10px;
+}
+
+.skill-box:last-of-type {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.skill-mod {
+	border-bottom: 1px solid #ccc;
+	display: inline-block;
+	width: 20px;
+	height: 13px;
+	position: relative;
+}
+
+.skill-mod:not(.no-plus)::before {
+	color: #999;
+	content: "+";
+	bottom: -1px;
+	position: absolute;
+}
+
+#equipment-block {
+	margin-left: 10px;
+}
+
+.equipment-row {
+	width: 200px;
+	margin-top: 6px;
+}
+
+.equipment-row.no-space {
+	margin-top: -1px;
+}
+
+.equipment-row .divider {
+	right: 15px;
+}
+
+.equipment-row:last-of-type {
+	display: flex;
+}
+
+.equipment-row:last-of-type > .wrapper {
+	flex: 1;
+}
+
+#magic-block {
+	margin-top: 10px;
+	margin-left: 10px;
+	width: 200px;
+}
+
+.magic-row {
+	margin-bottom: 10px;
 }
 
 #race-block {
 	margin-left: 10px;
+}
+
+.race-row {
+	margin-top: 6px;
+	display: block;
+	width: 200px;
 }
 
 .label {
@@ -226,16 +372,16 @@ span {
 
 .attack-row {
 	display: flex;
-	width: 130px;
+	width: 200px;
 	margin-top: -1px;
 }
 
 .attack-row:nth-of-type(2) {
-	margin-left: 6px;
+	margin-left: 8px;
 }
 
 .attack-row:nth-of-type(3) {
-	margin-left: 12px;
+	margin-left: 16.5px;
 }
 
 .attack-info {
@@ -244,22 +390,4 @@ span {
 
 .attack-data {
 	margin-top: 7px;
-}
-
-#equipment-block {
-	width: 130px;
-	margin: 10px;
-}
-
-.equipment-row {
-	width: 100%;
-	margin-top: 5px;
-}
-
-.equipment-row.no-space {
-	margin-top: -1px;
-}
-
-.equipment-row .divider {
-	right: 15px;
 }
