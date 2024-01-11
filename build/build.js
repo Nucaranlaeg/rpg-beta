@@ -53,7 +53,7 @@ class Build {
 
 	save(){
 		localStorage.character = JSON.stringify(this);
-		document.querySelector("a.nav-button").href = `sheet.html?char=${localStorage.character}`;
+		document.querySelector("#view-character").href = `sheet.html?char=${localStorage.character}`;
 	}
 }
 
