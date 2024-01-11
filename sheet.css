@@ -262,6 +262,7 @@ span {
 .skill-row {
 	display: block;
 	width: 200px;
+	white-space: nowrap;
 }
 
 .skill-label {
