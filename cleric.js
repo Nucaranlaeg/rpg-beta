@@ -22,6 +22,7 @@ classes.cleric = {
 	],
 	"General": [
 		"New Spell - Choose a Divine spell and add it to your spell list.  You may choose this feature any number of times.",
+		"Saving Throws: Resist - Gain +1 on your Resist Saving Throws (Constitution and Wisdom).",
 	],
 	"Divine Favour": [
 		"Holy Sword - Once per day, you may change a natural 1 that you roll to a natural 20.  If you have Disadvantage, the result becomes 19 instead.\nYou may only have one Divine Favour.",

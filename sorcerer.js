@@ -34,5 +34,6 @@ classes.sorcerer = {
 	],
 	"General": [
 		"New Spell - Choose an Arcane spell and add it to your spell list.  You may choose this feature any number of times.",
+		"Saving Throws: Control - Gain +2 on your Control Saving Throws (Dexterity and Intelligence).",
 	],
 };

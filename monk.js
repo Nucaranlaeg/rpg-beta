@@ -51,5 +51,6 @@ classes.monk = {
 		"Deflect Arrows - Once per round, when you would be hit by an arrow or other projectile weighing fewer pounds than your strength modifier (minimum 1), you may knock it out of the air as a free action and take no damage.  You cannot deflect critical hits.",
 		"Quick Reflexes - When you make a successful physical save against an attack or effect which normally deals half damage on a successful save, take no damage instead.",
 		"Evasion - When you fail a physical save against an attack or effect which normally deals half damage on a successful save, take half damage anyway.",
+		"Saving Throws: Change - Gain +3 on your Change Saving Throws (Strength and Charisma).",
 	],
 };

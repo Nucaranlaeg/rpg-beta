@@ -43,5 +43,6 @@ classes.bard = {
 		"Charm - By playing music, telling stories, or otherwise entertaining people, you may reroll any social check made by yourself or a nearby party member, using your modifiers instead of theirs.  Your party member must agree to have you roll, but if they do they must use your result even if it is worse.",
 		"Witty Riposte - If you didn't attack on your last turn, you may use your reaction to deal damage equal to your Charisma modifier plus your Chords (if any) to a creature when it misses you with a melee attack.",
 		"Expertise - Gain a rank in a skill. Ranks in that skill now grant you +3 on relevant skill checks. You may gain this feature more than once.",
+		"Saving Throws: Mental - Gain +1 on your Mental Saving Throws (Charisma, Intelligence, and Wisdom).",
 	],
 };

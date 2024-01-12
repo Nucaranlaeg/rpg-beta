@@ -46,5 +46,6 @@ classes.barbarian = {
 		"Tireless - You are treated as having 2 fewer stacks of exhaustion (but not less than 0).  You lose one additional stack of exhaustion when you take a long rest.",
 		"Outlast - When you fail a physical check or save by 5 or less, you may gain a stack of exhaustion to succeed on it instead.",
 		"Unarmoured Defense - When you wear light or no armour, gain bonus AC equal to your Wisdom modifier.  You lose this bonus any time you would be denied your Dexterity bonus to AC, even if your Dexterity modifier is 0 or lower.",
-	]
+		"Saving Throws: Physical - Gain +1 on your Physical Saving Throws (Strength, Dexterity, and Constitution).",
+	],
 };

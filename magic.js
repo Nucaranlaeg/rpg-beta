@@ -20,7 +20,7 @@ ruleSections.casting = [
 	{
 		type: RULE_BLOCK.BODY,
 		body: `You may Channel as a swift action three times plus your Intelligence modifier per day, but only once per turn.  Add your total levels in classes which grant a magic source to the number of times per day you can Channel.  For example, a level 5 Wizard with 16 Intelligence can Channel 3 + 5 (levels) + 3 (Int) = 11 times per day.
-		If you have no channels left for the day, you may overchannel.  This is just like channelling, but you immediately suffer one Overdraw Wound.  An Overdraw Wound is just like a regular Wound but it cannot not be healed by healing magic.
+		If you have no channels left for the day, you may overchannel.  This is just like channelling, but you immediately suffer one Overdraw Wound.  An Overdraw Wound is just like a regular Wound but it cannot be healed by healing magic.
 		When you Channel, gain 2 mana plus mana equal to your rank in Channelling.  You may use this mana for casting spells this turn or hold it for another turn.  At the end of each turn that you do not Channel or use mana to cast a spell, lose one mana.  There is no limit to the amount of mana you can hold.`,
 	},
 	{

@@ -42,6 +42,7 @@ classes.paladin = {
 	"General": [
 		"New Spell - Choose an Divine spell and add it to your spell list.  You may choose this feature any number of times.",
 		"Beacon of Hope - While you are conscious, allied creatures who can see you have Advantage on saves against fear effects.  If you ever gain the frightened condition, you may end it as a swift action on your turn.",
+		"Saving Throws: Resist - Gain +1 on your Resist Saving Throws (Constitution and Wisdom).",
 	],
 	"Divine Favour": [
 		"Holy Sword - Once per day, you may change a natural 1 that you roll to a natural 20.  If you have Disadvantage, the result becomes 19 instead.\nYou may only have one Divine Favour.",

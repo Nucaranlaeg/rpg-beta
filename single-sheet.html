@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<meta charset="UTF-8" http-equiv="Content-Type">
+<html>
+	<head>
+		<title>Sam's beta RPG</title>
+		<link rel="stylesheet" type="text/css" href="sheet.css">
+		<script src="sheet.js"></script>
+	</head>
+	<body>
+		<div class="page">
+			<div id="char-info">
+				<div id="name-wrapper" class="wrapper x-wide">
+					<div class="info-label">Name</div>
+					<div id="name"></div>
+				</div>
+				<div id="age-wrapper" class="wrapper">
+					<div class="info-label">Age</div>
+					<div id="age"></div>
+				</div>
+				<div id="sex-wrapper" class="wrapper">
+					<div class="info-label">Sex</div>
+					<div id="sex"></div>
+				</div>
+				<div id="height-wrapper" class="wrapper">
+					<div class="info-label">Height</div>
+					<div id="height"></div>
+				</div>
+				<div id="weight-wrapper" class="wrapper">
+					<div class="info-label">Weight</div>
+					<div id="weight"></div>
+				</div>
+				<div id="eyes-wrapper" class="wrapper">
+					<div class="info-label">Eyes</div>
+					<div id="eyes"></div>
+				</div>
+				<div id="hair-wrapper" class="wrapper">
+					<div class="info-label">Hair</div>
+					<div id="hair"></div>
+				</div>
+			</div>
+			<span id="stat-block">
+				<div class="stat-row">
+					<div class="stat-row-type"></div>
+					<span class="stat-label">Change</span>
+					<span class="stat-label">Control</span>
+					<span class="stat-label">Resist</span>
+				</div>
+				<div class="stat-row">
+					<div class="stat-row-type">Physical</div>
+					<div id="str-wrapper" class="wrapper wide">
+						<div class="info-label">STR</div>
+						<div class="info-label right">Save</div>
+						<div id="str"></div>
+						<div class="modifier" id="str-mod"></div>
+						<div id="str-save" class="save"></div>
+					</div>
+					<div id="dex-wrapper" class="wrapper wide">
+						<div class="info-label">DEX</div>
+						<div class="info-label right">Save</div>
+						<div id="dex"></div>
+						<div class="modifier" id="dex-mod"></div>
+						<div id="dex-save" class="save"></div>
+					</div>
+					<div id="con-wrapper" class="wrapper wide">
+						<div class="info-label">CON</div>
+						<div class="info-label right">Save</div>
+						<div id="con"></div>
+						<div class="modifier" id="con-mod"></div>
+						<div id="con-save" class="save"></div>
+					</div>
+				</div>
+				<div class="stat-row">
+					<div class="stat-row-type">Mental</div>
+					<div id="cha-wrapper" class="wrapper wide">
+						<div class="info-label">CHA</div>
+						<div class="info-label right">Save</div>
+						<div id="cha"></div>
+						<div class="modifier" id="cha-mod"></div>
+						<div id="cha-save" class="save"></div>
+					</div>
+					<div id="int-wrapper" class="wrapper wide">
+						<div class="info-label">INT</div>
+						<div class="info-label right">Save</div>
+						<div id="int"></div>
+						<div class="modifier" id="int-mod"></div>
+						<div id="int-save" class="save"></div>
+					</div>
+					<div id="wis-wrapper" class="wrapper wide">
+						<div class="info-label">WIS</div>
+						<div class="info-label right">Save</div>
+						<div id="wis"></div>
+						<div class="modifier" id="wis-mod"></div>
+						<div id="wis-save" class="save"></div>
+					</div>
+				</div>
+			</span>
+			<span id="health-block">
+				<div class="health-row wrapper">
+					<div class="info-label important">Max Health</div>
+					<div class="info-label right">Current</div>
+					<div class="divider" style="left: 50px"></div>
+				</div>
+				<div class="health-row wrapper">
+					<div class="info-label important">Wounds</div>
+					<div class="info-label right">Overchannel</div>
+					<div class="divider" style="right: 60px"></div>
+				</div>
+			</span>
+			<span id="values-block">
+				<div class="wrapper">
+					<div class="info-label important">Initiative</div>
+				</div>
+				<div class="wrapper gap">
+					<div class="info-label important">AC</div>
+					<div class="info-label right">Total</div>
+				</div>
+				<div class="wrapper small">
+					<div class="info-label right">Dex</div>
+				</div>
+				<div class="wrapper small">
+					<div class="info-label right">Armour</div>
+				</div>
+				<div class="wrapper small">
+					<div class="info-label right">Shield</div>
+				</div>
+				<div class="wrapper small">
+					<div class="info-label right blank"></div>
+				</div>
+				<div class="wrapper small">
+					<div class="info-label right blank"></div>
+				</div>
+				<div class="wrapper small">
+					<div class="info-label right blank"></div>
+				</div>
+				<div class="wrapper gap">
+					<div class="info-label important">Touch AC</div>
+				</div>
+				<div class="wrapper gap">
+					<div class="info-label important">Flatfooted AC</div>
+				</div>
+				<div class="wrapper gap">
+					<div class="info-label important">Speed</div>
+				</div>
+			</span>
+			<span id="levels-block">
+				<div id="level-1" class="level-row">
+					<div class="level-number" style="left: -17px;">1</div>
+					<div class="wrapper tall">
+						<div class="info-label">Class</div>
+						<div class="data-class"></div>
+					</div>
+					<div class="wrapper tall">
+						<div class="info-label">Stat</div>
+						<div class="data-stat"></div>
+					</div>
+					<div class="wrapper x-wide tall">
+						<div class="info-label">Feature</div>
+						<div class="data-feature"></div>
+					</div>
+				</div>
+				<div id="level-2" class="level-row">
+					<div class="level-number">2</div>
+					<div class="wrapper tall">
+						<div class="info-label">Class</div>
+						<div class="data-class"></div>
+					</div>
+					<div class="wrapper tall">
+						<div class="info-label">Stat</div>
+						<div class="data-stat"></div>
+					</div>
+					<div class="wrapper x-wide tall">
+						<div class="info-label">Feature</div>
+						<div class="data-feature"></div>
+					</div>
+				</div>
+				<div id="level-3" class="level-row">
+					<div class="level-number">3</div>
+					<div class="wrapper tall">
+						<div class="info-label">Class</div>
+						<div class="data-class"></div>
+					</div>
+					<div class="wrapper tall">
+						<div class="info-label">Stat</div>
+						<div class="data-stat"></div>
+					</div>
+					<div class="wrapper x-wide tall">
+						<div class="info-label">Feature</div>
+						<div class="data-feature"></div>
+					</div>
+				</div>
+				<div id="level-4" class="level-row">
+					<div class="level-number">4</div>
+					<div class="wrapper tall">
+						<div class="info-label">Class</div>
+						<div class="data-class"></div>
+					</div>
+					<div class="wrapper tall">
+						<div class="info-label">Stat</div>
+						<div class="data-stat"></div>
+					</div>
+					<div class="wrapper x-wide tall">
+						<div class="info-label">Feature</div>
+						<div class="data-feature"></div>
+					</div>
+				</div>
+				<div id="level-5" class="level-row">
+					<div class="level-number">5</div>
+					<div class="wrapper tall">
+						<div class="info-label">Class</div>
+						<div class="data-class"></div>
+					</div>
+					<div class="wrapper tall">
+						<div class="info-label">Stat</div>
+						<div class="data-stat"></div>
+					</div>
+					<div class="wrapper x-wide tall">
+						<div class="info-label">Feature</div>
+						<div class="data-feature"></div>
+					</div>
+				</div>
+				<div id="level-6" class="level-row">
+					<div class="level-number">6</div>
+					<div class="wrapper tall">
+						<div class="info-label">Class</div>
+						<div class="data-class"></div>
+					</div>
+					<div class="wrapper tall">
+						<div class="info-label">Stat</div>
+						<div class="data-stat"></div>
+					</div>
+					<div class="wrapper x-wide tall">
+						<div class="info-label">Feature</div>
+						<div class="data-feature"></div>
+					</div>
+				</div>
+				<div id="level-7" class="level-row">
+					<div class="level-number">7</div>
+					<div class="wrapper tall">
+						<div class="info-label">Class</div>
+						<div class="data-class"></div>
+					</div>
+					<div class="wrapper tall">
+						<div class="info-label">Stat</div>
+						<div class="data-stat"></div>
+					</div>
+					<div class="wrapper x-wide tall">
+						<div class="info-label">Feature</div>
+						<div class="data-feature"></div>
+					</div>
+				</div>
+				<div id="level-8" class="level-row">
+					<div class="level-number">8</div>
+					<div class="wrapper tall">
+						<div class="info-label">Class</div>
+						<div class="data-class"></div>
+					</div>
+					<div class="wrapper tall">
+						<div class="info-label">Stat</div>
+						<div class="data-stat"></div>
+					</div>
+					<div class="wrapper x-wide tall">
+						<div class="info-label">Feature</div>
+						<div class="data-feature"></div>
+					</div>
+				</div>
+				<div id="level-9" class="level-row">
+					<div class="level-number">9</div>
+					<div class="wrapper tall">
+						<div class="info-label">Class</div>
+						<div class="data-class"></div>
+					</div>
+					<div class="wrapper tall">
+						<div class="info-label">Stat</div>
+						<div class="data-stat"></div>
+					</div>
+					<div class="wrapper x-wide tall">
+						<div class="info-label">Feature</div>
+						<div class="data-feature"></div>
+					</div>
+				</div>
+				<div id="level-10" class="level-row">
+					<div class="level-number">10</div>
+					<div class="wrapper tall">
+						<div class="info-label">Class</div>
+						<div class="data-class"></div>
+					</div>
+					<div class="wrapper tall">
+						<div class="info-label">Stat</div>
+						<div class="data-stat"></div>
+					</div>
+					<div class="wrapper x-wide tall">
+						<div class="info-label">Feature</div>
+						<div class="data-feature"></div>
+					</div>
+				</div>
+				<div id="level-11" class="level-row">
+					<div class="level-number">11</div>
+					<div class="wrapper tall">
+						<div class="info-label">Class</div>
+						<div class="data-class"></div>
+					</div>
+					<div class="wrapper tall">
+						<div class="info-label">Stat</div>
+						<div class="data-stat"></div>
+					</div>
+					<div class="wrapper x-wide tall">
+						<div class="info-label">Feature</div>
+						<div class="data-feature"></div>
+					</div>
+				</div>
+				<div id="level-12" class="level-row">
+					<div class="level-number">12</div>
+					<div class="wrapper tall">
+						<div class="info-label">Class</div>
+						<div class="data-class"></div>
+					</div>
+					<div class="wrapper tall">
+						<div class="info-label">Stat</div>
+						<div class="data-stat"></div>
+					</div>
+					<div class="wrapper x-wide tall">
+						<div class="info-label">Feature</div>
+						<div class="data-feature"></div>
+					</div>
+				</div>
+				<div id="level-13" class="level-row">
+					<div class="level-number">13</div>
+					<div class="wrapper tall">
+						<div class="info-label">Class</div>
+						<div class="data-class"></div>
+					</div>
+					<div class="wrapper tall">
+						<div class="info-label">Stat</div>
+						<div class="data-stat"></div>
+					</div>
+					<div class="wrapper x-wide tall">
+						<div class="info-label">Feature</div>
+						<div class="data-feature"></div>
+					</div>
+				</div>
+				<div id="level-14" class="level-row">
+					<div class="level-number">14</div>
+					<div class="wrapper tall">
+						<div class="info-label">Class</div>
+						<div class="data-class"></div>
+					</div>
+					<div class="wrapper tall">
+						<div class="info-label">Stat</div>
+						<div class="data-stat"></div>
+					</div>
+					<div class="wrapper x-wide tall">
+						<div class="info-label">Feature</div>
+						<div class="data-feature"></div>
+					</div>
+				</div>
+				<div id="level-15" class="level-row">
+					<div class="level-number">15</div>
+					<div class="wrapper tall">
+						<div class="info-label">Class</div>
+						<div class="data-class"></div>
+					</div>
+					<div class="wrapper tall">
+						<div class="info-label">Stat</div>
+						<div class="data-stat"></div>
+					</div>
+					<div class="wrapper x-wide tall">
+						<div class="info-label">Feature</div>
+						<div class="data-feature"></div>
+					</div>
+				</div>
+				<div id="level-16" class="level-row">
+					<div class="level-number">16</div>
+					<div class="wrapper tall">
+						<div class="info-label">Class</div>
+						<div class="data-class"></div>
+					</div>
+					<div class="wrapper tall">
+						<div class="info-label">Stat</div>
+						<div class="data-stat"></div>
+					</div>
+					<div class="wrapper x-wide tall">
+						<div class="info-label">Feature</div>
+						<div class="data-feature"></div>
+					</div>
+				</div>
+				<div id="level-17" class="level-row">
+					<div class="level-number">17</div>
+					<div class="wrapper tall">
+						<div class="info-label">Class</div>
+						<div class="data-class"></div>
+					</div>
+					<div class="wrapper tall">
+						<div class="info-label">Stat</div>
+						<div class="data-stat"></div>
+					</div>
+					<div class="wrapper x-wide tall">
+						<div class="info-label">Feature</div>
+						<div class="data-feature"></div>
+					</div>
+				</div>
+				<div id="level-18" class="level-row">
+					<div class="level-number">18</div>
+					<div class="wrapper tall">
+						<div class="info-label">Class</div>
+						<div class="data-class"></div>
+					</div>
+					<div class="wrapper tall">
+						<div class="info-label">Stat</div>
+						<div class="data-stat"></div>
+					</div>
+					<div class="wrapper x-wide tall">
+						<div class="info-label">Feature</div>
+						<div class="data-feature"></div>
+					</div>
+				</div>
+				<div id="level-19" class="level-row">
+					<div class="level-number">19</div>
+					<div class="wrapper tall">
+						<div class="info-label">Class</div>
+						<div class="data-class"></div>
+					</div>
+					<div class="wrapper tall">
+						<div class="info-label">Stat</div>
+						<div class="data-stat"></div>
+					</div>
+					<div class="wrapper x-wide tall">
+						<div class="info-label">Feature</div>
+						<div class="data-feature"></div>
+					</div>
+				</div>
+				<div id="level-20" class="level-row">
+					<div class="level-number" style="left: -24px">20</div>
+					<div class="wrapper tall">
+						<div class="info-label">Class</div>
+						<div class="data-class"></div>
+					</div>
+					<div class="wrapper tall">
+						<div class="info-label">Stat</div>
+						<div class="data-stat"></div>
+					</div>
+					<div class="wrapper x-wide tall">
+						<div class="info-label">Feature</div>
+						<div class="data-feature"></div>
+					</div>
+				</div>
+			</span>
+			<span id="column">
+				<span id="reputation-block">
+					<div id="honour" class="reputation" style="top: 62px; left: 10px;">
+						<div class="rep-label">Honour</div>
+						<div class="amount"></div>
+					</div>
+					<div id="glory" class="reputation" style="top: 10px; left: 60px;">
+						<div class="rep-label">Glory</div>
+						<div class="amount"></div>
+					</div>
+					<div id="infamy" class="reputation" style="top: 115px; left: 58px;">
+						<div class="rep-label">Infamy</div>
+						<div class="amount"></div>
+					</div>
+					<div id="notoriety" class="reputation" style="top: 62px; left: 96px;">
+						<div class="rep-label">Notoriety</div>
+						<div class="amount"></div>
+					</div>
+					<div id="rep-background">
+						<svg viewbox="-1 -1 102 102">
+							<path
+								d="M 50 0 L 70 10 L 60 30 V 40 H 70 L 90 30 L 100 50 L 90 70 L 70 60 H 60 V 70 L 70 90 L 50 100 L 30 90 L 40 70 V 60 H 30 L 10 70 L 0 50 L 10 30 L 30 40 H 40 V 30 L 30 10 L 50 0"
+								fill="transparent"
+								stroke="#666"
+								stroke-width="1.5px"/>
+						</svg>
+					</div>
+				</span>
+				<span id="attack-block">
+					<span class="label">Attacks</span>
+					<div class="attack-data">
+						<div class="attack-row">
+							<div class="attack-info wrapper">
+								<div class="info-label">Name</div>
+								<div class="name"></div>
+							</div>
+						</div>
+						<div class="attack-row">
+							<div class="attack-info wrapper">
+								<div class="info-label">Bonus</div>
+								<div class="bonus"></div>
+							</div>
+							<div class="attack-info wrapper">
+								<div class="info-label">Damage</div>
+								<div class="damage"></div>
+							</div>
+						</div>
+						<div class="attack-row">
+							<div class="attack-info wrapper">
+								<div class="info-label">Critical</div>
+								<div class="critical"></div>
+							</div>
+							<div class="attack-info wrapper">
+								<div class="info-label">Range</div>
+								<div class="critical"></div>
+							</div>
+						</div>
+					</div>
+					<div class="attack-data">
+						<div class="attack-row">
+							<div class="attack-info wrapper">
+								<div class="info-label">Name</div>
+								<div class="name"></div>
+							</div>
+						</div>
+						<div class="attack-row">
+							<div class="attack-info wrapper">
+								<div class="info-label">Bonus</div>
+								<div class="bonus"></div>
+							</div>
+							<div class="attack-info wrapper">
+								<div class="info-label">Damage</div>
+								<div class="damage"></div>
+							</div>
+						</div>
+						<div class="attack-row">
+							<div class="attack-info wrapper">
+								<div class="info-label">Critical</div>
+								<div class="critical"></div>
+							</div>
+							<div class="attack-info wrapper">
+								<div class="info-label">Range</div>
+								<div class="critical"></div>
+							</div>
+						</div>
+					</div>
+					<div class="attack-data">
+						<div class="attack-row">
+							<div class="attack-info wrapper">
+								<div class="info-label">Name</div>
+								<div class="name"></div>
+							</div>
+						</div>
+						<div class="attack-row">
+							<div class="attack-info wrapper">
+								<div class="info-label">Bonus</div>
+								<div class="bonus"></div>
+							</div>
+							<div class="attack-info wrapper">
+								<div class="info-label">Damage</div>
+								<div class="damage"></div>
+							</div>
+						</div>
+						<div class="attack-row">
+							<div class="attack-info wrapper">
+								<div class="info-label">Critical</div>
+								<div class="critical"></div>
+							</div>
+							<div class="attack-info wrapper">
+								<div class="info-label">Range</div>
+								<div class="critical"></div>
+							</div>
+						</div>
+					</div>
+					<div class="attack-data">
+						<div class="attack-row">
+							<div class="attack-info wrapper">
+								<div class="info-label">Name</div>
+								<div class="name"></div>
+							</div>
+						</div>
+						<div class="attack-row">
+							<div class="attack-info wrapper">
+								<div class="info-label">Bonus</div>
+								<div class="bonus"></div>
+							</div>
+							<div class="attack-info wrapper">
+								<div class="info-label">Damage</div>
+								<div class="damage"></div>
+							</div>
+						</div>
+						<div class="attack-row">
+							<div class="attack-info wrapper">
+								<div class="info-label">Critical</div>
+								<div class="critical"></div>
+							</div>
+							<div class="attack-info wrapper">
+								<div class="info-label">Range</div>
+								<div class="critical"></div>
+							</div>
+						</div>
+					</div>
+				</span>
+				<span id="equipment-block">
+					<span class="label">Equipment</span>
+					<div class="equipment-row wrapper">
+						<div class="info-label">Armour</div>
+						<div class="divider"></div>
+					</div>
+					<div class="equipment-row wrapper">
+						<div class="info-label">Shield</div>
+						<div class="divider"></div>
+					</div>
+					<div class="equipment-row wrapper">
+						<div class="info-label">Magic Item</div>
+						<div class="divider"></div>
+					</div>
+					<div class="equipment-row wrapper">
+						<div class="info-label">Magic Item</div>
+						<div class="divider"></div>
+					</div>
+					<div class="equipment-row wrapper">
+						<div class="info-label">Magic Item</div>
+						<div class="divider"></div>
+					</div>
+					<div class="equipment-row wrapper no-space">
+						<div class="divider"></div>
+					</div>
+					<div class="equipment-row wrapper no-space">
+						<div class="divider"></div>
+					</div>
+					<div class="equipment-row wrapper no-space">
+						<div class="divider"></div>
+					</div>
+					<div class="equipment-row wrapper no-space">
+						<div class="divider"></div>
+					</div>
+					<div class="equipment-row wrapper no-space">
+						<div class="divider"></div>
+					</div>
+					<div class="equipment-row wrapper no-space">
+						<div class="divider"></div>
+					</div>
+					<div class="equipment-row wrapper no-space">
+						<div class="divider"></div>
+					</div>
+					<div class="equipment-row wrapper no-space">
+						<div class="divider"></div>
+					</div>
+					<div class="equipment-row wrapper no-space">
+						<div class="divider"></div>
+					</div>
+					<div class="equipment-row wrapper no-space">
+						<div class="divider"></div>
+					</div>
+					<div class="equipment-row wrapper no-space">
+						<div class="divider"></div>
+					</div>
+					<div class="equipment-row attack-row">
+						<div class="wrapper">
+							<div class="info-label">Loads</div>
+							<div class="info-label right">Light</div>
+							<div id="light-load"></div>
+						</div>
+						<div class="wrapper">
+							<div class="info-label right">Heavy</div>
+							<div id="heavy-load"></div>
+						</div>
+						<div class="wrapper">
+							<div class="info-label right">Current</div>
+						</div>
+					</div>
+				</span>
+			</span>
+			<span id="column">
+				<span id="race-block">
+					<span class="label">Race</span>
+					<div class="skill-row wrapper">
+						<div class="info-label">Race</div>
+						<div id="race"></div>
+					</div>
+					<div class="skill-row wrapper tall">
+						<div class="info-label">Level 1 Trait</div>
+					</div>
+					<div class="skill-row wrapper tall">
+						<div class="info-label">Level 5 Trait</div>
+					</div>
+					<div class="skill-row wrapper tall">
+						<div class="info-label">Level 10 Trait</div>
+					</div>
+					<div class="skill-row wrapper tall">
+						<div class="info-label">Level 15 Trait</div>
+					</div>
+					<div class="skill-row wrapper tall">
+						<div class="info-label">Level 20 Trait</div>
+					</div>
+				</span>
+				<span id="skill-block">
+					<span class="label">Skills</span>
+					<div class="skill-row wrapper">
+						<div class="info-label">Melee Weapons</div>
+					</div>
+					<div class="skill-row wrapper">
+						<div class="info-label">Ranged Weapons</div>
+					</div>
+					<div class="skill-row wrapper">
+						<div class="info-label">Channelling</div>
+					</div>
+					<div class="skill-row wrapper">
+						<div class="info-label">Diplomacy</div>
+					</div>
+					<div class="skill-row wrapper">
+						<div class="info-label">Insight</div>
+					</div>
+					<div class="skill-row wrapper">
+						<div class="info-label blank"></div>
+					</div>
+					<div class="skill-row wrapper">
+						<div class="info-label blank"></div>
+					</div>
+					<div class="skill-row wrapper">
+						<div class="info-label blank"></div>
+					</div>
+					<div class="skill-row wrapper">
+						<div class="info-label blank"></div>
+					</div>
+					<div class="skill-row wrapper">
+						<div class="info-label blank"></div>
+					</div>
+					<div class="skill-row wrapper">
+						<div class="info-label blank"></div>
+					</div>
+					<div class="skill-row wrapper">
+						<div class="info-label blank"></div>
+					</div>
+					<div class="skill-row wrapper">
+						<div class="info-label blank"></div>
+					</div>
+					<div class="skill-row wrapper">
+						<div class="info-label blank"></div>
+					</div>
+					<div class="skill-row wrapper">
+						<div class="info-label blank"></div>
+					</div>
+				</span>
+				<span id="skill-block">
+					<span class="label">Class Features</span>
+					<div class="skill-row wrapper tall"></div>
+					<div class="skill-row wrapper tall"></div>
+					<div class="skill-row wrapper tall"></div>
+				</span>
+			</span>
+		</div>
+	</body>
+</html>

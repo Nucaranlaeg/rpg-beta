@@ -35,5 +35,6 @@ classes.rogue = {
 		"Feint - As a swift action, you may gain Advantage on your next attack.",
 		"Cunning - You may move your speed or attempt a skill check (like hiding, pickpocketing, or picking a lock) which would usually require a standard action as a swift action.",
 		"Expertise - Gain a rank in a skill. Ranks in that skill now grant you +3 on relevant skill checks. You may gain this feature more than once.",
+		"Saving Throws: Physical - Gain +1 on your Physical Saving Throws (Strength, Dexterity, and Constitution).",
 	],
 };

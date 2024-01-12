@@ -26,5 +26,6 @@ classes.druid = {
 	"General": [
 		"New Spell - Choose a Primal spell and add it to your spell list.  You may choose this feature any number of times.",
 		"Natural Traveller - You are not hampered by difficult terrain caused by nature.",
+		"Saving Throws: Resist - Gain +1 on your Resist Saving Throws (Constitution and Wisdom).",
 	],
 };

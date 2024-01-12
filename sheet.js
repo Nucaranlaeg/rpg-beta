@@ -13,6 +13,13 @@ function clean(node){
 setTimeout(() => {
 	clean(document.body);
 	const char = JSON.parse((new URLSearchParams(window.location.search)).get("char"));
+	if (!char) return;
+	console.log(char)
+
+	// Info
+	document.querySelector("#race").innerHTML = char.race[0].toUpperCase() + char.race.slice(1);
+
+	// Stats
 	document.querySelector("#name").innerHTML = char.name;
 	document.querySelector("#str").innerHTML = char.stats.STR.total;
 	document.querySelector("#str-mod").innerHTML = char.stats.STR.mod > 0 ? `+${char.stats.STR.mod}` : char.stats.STR.mod;
@@ -32,4 +39,8 @@ setTimeout(() => {
 	document.querySelector("#wis").innerHTML = char.stats.WIS.total;
 	document.querySelector("#wis-mod").innerHTML = char.stats.WIS.mod > 0 ? `+${char.stats.WIS.mod}` : char.stats.WIS.mod;
 	document.querySelector("#wis-save").innerHTML = char.stats.WIS.save > 0 ? `+${char.stats.WIS.save}` : char.stats.WIS.save;
+
+	// Equipment
+	document.querySelector("#light-load").innerHTML = char.stats.STR.total * 6;
+	document.querySelector("#heavy-load").innerHTML = char.stats.STR.total * 12;
 });
