@@ -78,7 +78,7 @@ ruleSections.attacks = [
 	},
 	{
 		type: RULE_BLOCK.BODY,
-		body: `To make a melee attack, select a creature or a space within your reach that you have clear line of effect to.  This is the target creature.  If targetting a space, you have a Disadvantage on your attack, and it targets a random creature in the space that you can't see (if any).
+		body: `To make a melee attack, select a creature or a space within your reach that you have clear line of effect to.  This is the target creature.  If targetting a space, you have Disadvantage on your attack, and it targets a random creature in the space that you can't see (if any).
 		Next roll 1d20 (suitably modified if you have Advantage or Disadvantage) and add your relevant modifiers.  Typically, this will be twice your rank in the Melee Weapons skill and your Strength modifier, but some features or items will give you additional bonuses.
 		If your roll is greater than or equal to the target creature's AC, you hit it.`,
 	},
@@ -88,7 +88,7 @@ ruleSections.attacks = [
 	},
 	{
 		type: RULE_BLOCK.BODY,
-		body: `To make a ranged attack, select a creature or a space that you have clear line of effect to.  This is the target creature.  If targetting a space, you have a Disadvantage on your attack, and it targets a random creature in the space that you can't see (if any).
+		body: `To make a ranged attack, select a creature or a space that you have clear line of effect to.  This is the target creature.  If targetting a space, you have Disadvantage on your attack, and it targets a random creature in the space that you can't see (if any).
 		If the target creature is beyond the range of your weapon, you have Disadvantage.  If it is further than 4x the range of your weapon (3x for thrown attacks) you cannot hit it.
 		Next roll 1d20 (suitably modified if you have Advantage or Disadvantage) and add your relevant modifiers.  Typically, this will be twice your rank in the Ranged Weapons skill and your Dexterity modifier (Strength for thrown weapons), but some features or items will give you additional bonuses.
 		If your roll is greater than or equal to the target creature's AC, you hit it.`,
