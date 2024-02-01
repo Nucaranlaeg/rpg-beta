@@ -114,7 +114,7 @@ ruleSections.ranged = [
 		Critical: Weapons without an entry under "Critical" deal one additional wound on a critical hit.
 		Crossbow: Crossbows require a DC 15 Strength check made as a full-round action to reload (a creature may instead spend one minute reloading).
 		Range: Beyond the listed range, attacks are made at Disadvantage.  Thrown attacks are impossible beyond 3x the listed range, and fired attacks are impossible beyond 4x the listed range.
-		Stone: Thrown stones deal 1d6 damage per 3 lb (rounded down, min 1d6 as long as it weighs at least 1 lb). You may not throw a stone weighing more than your Strength modifier plus 4 lbs.`
+		Stone: Thrown stones deal 1d6 damage per 4 lb (rounded down, min 1d6 as long as it weighs at least 1 lb). You may not throw a stone weighing more than your Strength modifier plus 4 lbs.`
 	},
 ];
 
