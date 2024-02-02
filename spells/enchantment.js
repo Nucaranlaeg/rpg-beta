@@ -169,7 +169,7 @@ spells = [
 	descriptors: [SPELL_TYPES.MindAffecting],
 	name: "Bane",
 	requirements: [],
-	effect: `Your enemies within 30 feet are afflicted with fear and doubt.  Each of them must subtract 2 from their first attack or saving throw each turn.`,
+	effect: `Your enemies within 20 feet of the target point are afflicted with fear and doubt.  Each of them must subtract 2 from their first attack or saving throw each turn.`,
 	manaEffect: "For each additional mana spent, increase the malus by 1.",
 	spellData: {
 		range: RANGE.Medium,

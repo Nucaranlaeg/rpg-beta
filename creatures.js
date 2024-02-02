@@ -21,9 +21,9 @@ const creatures = [
 			"Shield Wall": "When adjacent to an ally with this feature, you can use a reaction to impose Disadvantage when a creature attacks that ally.",
 			"Spear Thicket": "When an adjacent ally with this feature attacks a creature, you can use a reaction to attack as well, adding your damage together in one attack.",
 		},
-		attacks: {
-			"Spear": "1d6+2, 2/20",
-		}
+		attacks: [
+			["Spear", "+4", "1d6+2", "2/20"],
+		],
 	},
 	{
 		name: "Swamp Gator",
@@ -46,10 +46,10 @@ const creatures = [
 		features: {
 			"Powerful Jaw": "When you bite a creature, you hold on to it.  The creature must make a DC 14 Strength save or be immobilized until the end of your next turn.  As a move action, you may drag a immobilized creature up to 10 feet.",
 		},
-		attacks: {
-			"Bite": "1d8+4",
-			"Tail Slap": "1d12+6",
-		}
+		attacks: [
+			["Bite", "+6", "1d8+4", "1/20"],
+			["Tail Slap", "+6", "1d12+6", "1/20"],
+		],
 	},
 	{
 		hidden: true,
@@ -71,12 +71,12 @@ const creatures = [
 			Size: "M",
 		},
 		features: {
-			"Waterbreathing": "A deep one can live underwater indefinitely.  If a deep one is not submerged in water for at least one minute per hour, it gains one stack of exhaustion.",
+			"Waterbreathing": "A deep one can breath air and water.  If a deep one is not submerged in water for at least one minute per hour, it gains one stack of exhaustion.",
 			"Blood in the Water": "When a deep one hits with a trident attack, the jagged edges cause the target to bleed for one minute.  Deep one's trident attacks deal one additional damage for each time the target is bleeding.",
 		},
-		attacks: {
-			"Trident": "1d8",
-		}
+		attacks: [
+			["Trident", "+2", "1d6", "1/20"],
+		],
 	},
 	{
 		hidden: true,
@@ -98,12 +98,12 @@ const creatures = [
 			Size: "M",
 		},
 		features: {
-			"Waterbreathing": "A deep one can live underwater indefinitely.  If a deep one is not submerged in water for at least one minute per hour, it gains one stack of exhaustion.",
+			"Waterbreathing": "A deep one can breath air and water.  If a deep one is not submerged in water for at least one minute per hour, it gains one stack of exhaustion.",
 			"Blood in the Water": "When a deep one hits with a trident attack, the jagged edges cause the target to bleed for one minute.  Deep one champion's trident attacks deal two additional damage for each time the target is bleeding.",
 		},
-		attacks: {
-			"Trident (x2)": "1d8+1",
-		}
+		attacks: [
+			["Trident (x2)", "+5", "1d6+1", "1/20"],
+		],
 	},
 	{
 		hidden: true,
@@ -125,9 +125,9 @@ const creatures = [
 			Size: "M",
 		},
 		features: {},
-		attacks: {
-			"Club": "1d6",
-		}
+		attacks: [
+			["Club", "+1", "1d6+1", "1/20"],
+		],
 	},
 	{
 		hidden: true,
@@ -149,12 +149,12 @@ const creatures = [
 			Size: "M",
 		},
 		features: {
-			"Charge": "An island boar can move up to double its speed, then make two tusk attacks against the same target.  If it does, it grants Advantage to all attackers during the change and on its next turn.",
+			"Charge": "An island boar can move up to double its speed, then make two tusk attacks against the same target with Advantage.  If it does, it grants Advantage to all attackers during the change and on its next turn.  It must move at least its full movement speed toward its target during the charge.",
 			"Gore": "When an island boar hits with both of its tusk attacks, it deals one additional Wound.",
 		},
-		attacks: {
-			"Tusk (x2)": "1d8+5, 2/20",
-		}
+		attacks: [
+			["Tusk (x2)", "+7", "1d8+5", "2/20"],
+		],
 	},
 	{
 		hidden: true,
@@ -176,11 +176,11 @@ const creatures = [
 			Size: "S",
 		},
 		features: {
-			"Charge": "An island boar piglet can move up to double its speed, then make two tusk attacks against the same target.  If it does, it grants Advantage to all attackers during the change and on its next turn.",
+			"Charge": "An island boar piglet can move up to double its speed, then make two tusk attacks against the same target with Advantage.  If it does, it grants Advantage to all attackers during the change and on its next turn.  It must move at least its full movement speed toward its target during the charge.",
 		},
-		attacks: {
-			"Tusk (x2)": "1d4+2, 2/20",
-		}
+		attacks: [
+			["Tusk (x2)", "+2", "1d4+2", "2/20"],
+		],
 	},
 	{
 		hidden: true,
@@ -205,10 +205,95 @@ const creatures = [
 			"Two-Headed": "An ettin gets two turns in the initiative order, separated by at least one other creature (if possible).  On each turn it may take a standard action and a swift action.",
 			"Double Bash": "An ettin may use a swift action to make one attack against a creature that it has hit since the beginning of its last turn.",
 		},
-		attacks: {
-			"Morningstar": "1d8+6",
-			"Javelin (2 ammo)": "1d6+6",
-		}
+		attacks: [
+			["Morningstar", "+8", "1d8+6", "1/20"],
+			["Javelin (2 ammo)", "+6", "1d6+6", "1/20"],
+		],
+	},
+	{
+		hidden: true,
+		name: "Goblin",
+		stats: {
+			STR: 11,
+			DEX: 13,
+			CON: 9,
+			CHA: 6,
+			INT: 10,
+			WIS: 9,
+			HitDice: "1d8",
+			HitPoints: 5,
+			AC: 13,
+			TouchAC: 12,
+			FlatfootedAC: 12,
+			Morale: 3,
+			Speed: 30,
+			Size: "S",
+		},
+		features: {
+			"Coward": "When a goblin takes a Wound, it may move 5 feet as a free action without provoking attacks of opportunity.",
+		},
+		attacks: [
+			["Mace", "+2", "1d6", "1/20"],
+			["Shortbow", "+3", "1d6", "1/19"],
+		],
+	},
+	{
+		hidden: true,
+		name: "Hobgoblin",
+		stats: {
+			STR: 13,
+			DEX: 14,
+			CON: 11,
+			CHA: 8,
+			INT: 10,
+			WIS: 9,
+			HitDice: "3d8",
+			HitPoints: 14,
+			AC: 15,
+			TouchAC: 12,
+			FlatfootedAC: 13,
+			Morale: 5,
+			Speed: 30,
+			Size: "M",
+		},
+		features: {
+			"Leader of Goblins": "A hobgoblin increases the effective morale of up to 6 nearby goblins by 2.",
+			"Superior Flank": "When a hobgoblin is flanking a creature with an allied goblinoid, the hobgoblin gains Advantage on attacks against the flanked creature and deals an additional 1d6 damage.",
+		},
+		attacks: [
+			["Mace", "+3", "1d6+1", "1/20"],
+			["Shortbow", "+4", "1d6", "1/19"],
+		],
+	},
+	{
+		hidden: true,
+		name: "Goblin Shaman",
+		stats: {
+			STR: 9,
+			DEX: 13,
+			CON: 9,
+			CHA: 12,
+			INT: 10,
+			WIS: 9,
+			HitDice: "4d8",
+			HitPoints: 18,
+			AC: 15,
+			TouchAC: 12,
+			FlatfootedAC: 13,
+			Morale: 5,
+			Speed: 30,
+			Size: "S",
+		},
+		features: {
+			"Divine Magic": "Channels for 3 mana 4/day, max mana per spell 2",
+		},
+		attacks: [
+			["Mace", "+1", "1d6-1", "1/20"],
+		],
+		spells: [
+			["Aura of Death", "1 mana (upkeep half), 2d6 negative damage in 15 feet, +1d6/mana"],
+			["Bane", "1 mana, -2 to first attack per turn, 20 foot radius within 50 feet, malus +1/mana"],
+		],
 	},
 ];
 
@@ -248,9 +333,14 @@ setTimeout(() => {
 		node.querySelector(".creature-features").innerHTML = Object.entries(creature.features).map(([name, feature]) => 
 			`<div class="creature-feature"><b>${name}</b><span>${feature}</span></div>`
 		).join("");
-		node.querySelector(".creature-attacks").innerHTML = Object.entries(creature.attacks).map(([name, attack]) => 
-			`<div class="creature-attack"><b>${name}</b><span>${attack}</span></div>`
+		node.querySelector(".creature-attacks").innerHTML = creature.attacks.map(([name, tohit, damage, crit]) => 
+			`<div class="creature-attack"><b>${name}</b><span>${tohit}</span><span>${damage}</span><span>${crit}</span></div>`
 		).join("");
+		if (creature.spells){
+			node.querySelector(".creature-spells").innerHTML = creature.spells.map(([name, effect]) => 
+				`<div class="creature-spell"><b>${name}</b><span>${effect}</span></div>`
+			).join("");
+		}
 
 		document.querySelector("#creature-display").appendChild(node);
 	});
