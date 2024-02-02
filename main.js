@@ -21,6 +21,7 @@ const defaultNav = {
 	"magic": "spells",
 	"combat": "actions",
 	"build": "edit",
+	"creatures": "monsters",
 }
 
 const lastNavs = {};
@@ -210,7 +211,7 @@ function loadView(){
 				"";
 			contentDiv.appendChild(spellDiv);
 		});
-	} else if (mainNavSelection === "build"){
+	} else if (mainNavSelection === "build" || mainNavSelection === "creatures"){
 		// No HTML to load here.
 	} else {
 		const loadTarget = ruleSections[subNavSelection];
@@ -274,6 +275,7 @@ function loadView(){
 		}
 	}
 	document.querySelector("#build").style.display = mainNavSelection === "build" ? "block" : "none";
+	document.querySelector("#creature-display").style.display = mainNavSelection === "creatures" ? "block" : "none";
 }
 
 setTimeout(loadView, 0);

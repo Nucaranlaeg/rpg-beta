@@ -104,6 +104,7 @@ spells = [
 		school: SCHOOLS.Necromancy,
 		save: SAVES.None,
 		duration: DURATIONS.Dawn,
+	}
 },
 {
 	type: [SOURCES.Divine],
