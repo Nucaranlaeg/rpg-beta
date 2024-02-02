@@ -110,7 +110,7 @@ spells = [
 	descriptors: [],
 	name: "Mending",
 	requirements: [],
-	effect: `You touch a small damaged object and it returns to an undamaged state.  Mending does not create material, so it some is lost you must supply a patch.  Mending cannot restore magic items.  The spell can fix an item weighing one pound or less or a 3-inch square portion of a larger object.`,
+	effect: `You touch a small damaged object and it returns to an undamaged state.  Mending does not create material, so if some is lost you must supply a patch.  Mending cannot restore magic items.  The spell can fix an item weighing one pound or less or a 3-inch square portion of a larger object.`,
 	manaEffect: `Each additional mana spent doubles the mass or area of the object that Mending can repair.`,
 	spellData: {
 		range: RANGE.Touch,

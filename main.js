@@ -211,7 +211,10 @@ function loadView(){
 				"";
 			contentDiv.appendChild(spellDiv);
 		});
-	} else if (mainNavSelection === "build" || mainNavSelection === "creatures"){
+	} else if (
+		mainNavSelection === "build" ||
+		(mainNavSelection === "creatures" && subNavSelection !== "types")
+		){
 		// No HTML to load here.
 	} else {
 		const loadTarget = ruleSections[subNavSelection];
@@ -275,7 +278,7 @@ function loadView(){
 		}
 	}
 	document.querySelector("#build").style.display = mainNavSelection === "build" ? "block" : "none";
-	document.querySelector("#creature-display").style.display = mainNavSelection === "creatures" ? "block" : "none";
+	document.querySelector("#creature-display").style.display = (mainNavSelection === "creatures" && subNavSelection !== "types") ? "block" : "none";
 }
 
 setTimeout(loadView, 0);

@@ -1,3 +1,29 @@
+ruleSections.types = [
+	{
+		type: RULE_BLOCK.SUBTITLE,
+		body: `Creature Types`,
+	},
+	{
+		type: RULE_BLOCK.SUBSUBTITLE,
+		body: `Undead`,
+	},
+	{
+		type: RULE_BLOCK.BODY,
+		body: `Undead creatures are immune to poison, and psionic damage if they merely follow their creator's bidding.  They do not breathe, drink or eat.
+		They do not make death saving throws, but instead are destroyed when their total number of Wounds equals their Constitution modifier plus the number of hit dice they have.
+		They are healed by negative energy and are harmed by positive energy.`,
+	},
+	{
+		type: RULE_BLOCK.SUBSUBTITLE,
+		body: `Contructs`,
+	},
+	{
+		type: RULE_BLOCK.BODY,
+		body: `Constructs are immune to poison damage, and psionic damage if they merely follow their creator's bidding.  They do not breathe, drink or eat.
+		They cannot suffer Wounds and do not make death saving throws, but instead are destroyed when their hit points reach 0.  Constructs are typically hardy, and so they add their Constitution modifier to their maximum hit points for each hit die they possess.`,
+	},
+];
+
 const creatures = [
 	{
 		name: "Human Guard",
@@ -194,9 +220,9 @@ const creatures = [
 			WIS: 10,
 			HitDice: "10d8",
 			HitPoints: 55,
-			AC: 18,
+			AC: 17,
 			TouchAC: 8,
-			FlatfootedAC: 18,
+			FlatfootedAC: 17,
 			Morale: 8,
 			Speed: 30,
 			Size: "L",
@@ -288,11 +314,125 @@ const creatures = [
 			"Divine Magic": "Channels for 3 mana 4/day, max mana per spell 2",
 		},
 		attacks: [
-			["Mace", "+1", "1d6-1", "1/20"],
+			["Shortbow", "+1", "1d6", "1/19"],
 		],
 		spells: [
 			["Aura of Death", "1 mana (upkeep half), 2d6 negative damage in 15 feet, +1d6/mana"],
 			["Bane", "1 mana, -2 to first attack per turn, 20 foot radius within 50 feet, malus +1/mana"],
+		],
+	},
+	{
+		hidden: true,
+		name: "Dire Bat",
+		stats: {
+			STR: 17,
+			DEX: 22,
+			CON: 17,
+			CHA: 6,
+			INT: 2,
+			WIS: 14,
+			HitDice: "4d8",
+			HitPoints: 18,
+			AC: 19,
+			TouchAC: 15,
+			FlatfootedAC: 13,
+			Morale: 5,
+			Speed: 40,
+			Size: "L",
+		},
+		features: {
+			"Blindsight": "A dire bat uses echolocation to see with perfect clarity within 40 feet.",
+		},
+		attacks: [
+			["Bite", "+5", "1d8+3", "1/20"],
+		],
+	},
+	{
+		hidden: true,
+		name: "Juvenile Land Shark",
+		stats: {
+			STR: 20,
+			DEX: 13,
+			CON: 16,
+			CHA: 4,
+			INT: 2,
+			WIS: 13,
+			HitDice: "4d10",
+			HitPoints: 22,
+			AC: 17,
+			TouchAC: 11,
+			FlatfootedAC: 16,
+			Morale: 6,
+			Speed: 40,
+			Size: "M",
+		},
+		features: {
+			"Burrow": "A land shark can move at a speed of 20 feet when tunneling through solid rock.  It leaves dirt in its tunnel behind it.",
+		},
+		attacks: [
+			["Bite", "+7", "1d10+5", "2/20"],
+			["Claw", "+7", "1d6+5", "1/20"],
+		],
+	},
+	{
+		hidden: true,
+		name: "Kobold",
+		stats: {
+			STR: 8,
+			DEX: 15,
+			CON: 8,
+			CHA: 6,
+			INT: 12,
+			WIS: 9,
+			HitDice: "1d8",
+			HitPoints: 5,
+			AC: 14,
+			TouchAC: 12,
+			FlatfootedAC: 13,
+			Morale: 3,
+			Speed: 25,
+			Size: "S",
+		},
+		features: {
+			"Cunning": "A kobold deals additional damage equal to twice the total Advantage it has on its attack.",
+			"Opportunist": "A kobold gets Advantage on any attack it already has Advantage on.",
+			"Infravision": "Infravision 60 feet",
+		},
+		attacks: [
+			["Spear", "+1", "1d6-1", "2/20"],
+			["Spear (thrown)", "+1", "1d6-1", "2/20"],
+		],
+	},
+	{
+		hidden: true,
+		name: "Kobold Shaman",
+		stats: {
+			STR: 8,
+			DEX: 15,
+			CON: 8,
+			CHA: 10,
+			INT: 12,
+			WIS: 9,
+			HitDice: "4d8",
+			HitPoints: 18,
+			AC: 14,
+			TouchAC: 12,
+			FlatfootedAC: 13,
+			Morale: 3,
+			Speed: 25,
+			Size: "S",
+		},
+		features: {
+			"Divine Magic": "Channels for 3 mana 5/day, max mana per spell 2",
+			"Infravision": "Infravision 60 feet",
+		},
+		attacks: [
+			["Spear", "-1", "1d6-1", "2/20"],
+			["Spear (thrown)", "-1", "1d6-1", "2/20"],
+		],
+		spells: [
+			["Fireball", "2 mana, 2d6 fire damage in 5 foot radius within 50 feet"],
+			["Grease", "1 mana, 10 foot square within 50 feet. +1 mana for 15 foot square."],
 		],
 	},
 ];
@@ -305,6 +445,8 @@ setTimeout(() => {
 		value = Math.floor((value - 10) / 2);
 		return value > 0 ? `+${value}` : value;
 	}
+
+	creatures.sort((a, b) => a.name > b.name);
 
 	creatures.forEach(creature => {
 		if (creature.hidden) return;

@@ -14,6 +14,10 @@ ruleSections.casting = [
 		Whenever you are concentrating on a spell and suffer a Wound, you must succeed on a Concentration check or lose the spell.  The DC is equal to 5 plus the number of Wounds you have, plus 5 per Wound you just suffered (so, if you just suffered your first Wound, the DC is 11).  The key ability for Concentration checks is Intelligence.`,
 	},
 	{
+		type: RULE_BLOCK.BODY,
+		body: `Most spells require verbal and somatic (gesture) components.  If you wish to cast a spell, you must be able to speak and you must have one hand free.`,
+	},
+	{
 		type: RULE_BLOCK.SUBTITLE,
 		body: `Channelling`,
 	},

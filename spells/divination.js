@@ -196,7 +196,7 @@ spells = [
 	descriptors: [],
 	name: "Tongues",
 	requirements: [],
-	effect: "When you speak, your words come out in a intelligible to one creature that you choose, and speech in that language is intelligible to you.  The language chosen is random among the languages that the creature speaks.  You may suspend the effect at will.  If the creature does not speak a language, only it understands you when you speak.",
+	effect: "When you speak, your words come out in a language intelligible to one creature that you choose, and speech in that language is intelligible to you.  The language chosen is random among the languages that the creature speaks.  You may suspend the effect at will.  If the creature does not speak a language, only it understands you when you speak.",
 	manaEffect: "Each additional mana doubles the duration of the effect.",
 	spellData: {
 		range: RANGE.Self,

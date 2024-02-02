@@ -92,7 +92,7 @@ spells = [
 	descriptors: [],
 	name: "Fog",
 	requirements: [],
-	effect: `Fog billows out from a point you designate into a 20 foot tall, 20 foot radius cloud. All vision beyond 5 feet is obscured, and all attacks are made with Disadvantage. Wind dissipates Fog in 1 to 4 rounds, depending on the speed strength of the wind.`,
+	effect: `Fog billows out from a point you designate into a 20 foot tall, 20 foot radius cloud. All vision beyond 5 feet is obscured, and all attacks are made with Disadvantage. Wind dissipates Fog in 1 to 4 rounds, depending on the speed and strength of the wind.`,
 	manaEffect: `Each additional mana spent increases the radius and height by 10 feet.`,
 	spellData: {
 		range: RANGE.Long,
@@ -165,7 +165,7 @@ spells = [
 	descriptors: [],
 	name: "Grease",
 	requirements: [],
-	effect: `Magical grease coats the ground in a 10 foot square you indicate.  Creatures within the area must save or fall prone at the start of their turn or when they begin moving within the area.  The area is also difficult terrain.  Alternately, you may Grease a single object, which then cannot be held without a successfly save.  If the object is being held by a creature, the creature may make a Wisdom save to prevent the spell from taking effect.`,
+	effect: `Magical grease coats the ground in a 10 foot square you indicate.  Creatures within the area must save or fall prone at the start of their turn or when they begin moving within the area.  The area is also difficult terrain.  Alternately, you may Grease a single object, which then cannot be held without a successful save.  If the object is being held by a creature, the creature may make a Wisdom save to prevent the spell from taking effect.`,
 	manaEffect: `Each additional mana spent increases the size of the square greased by 5 feet.`,
 	spellData: {
 		range: RANGE.Medium,
@@ -239,7 +239,7 @@ spells = [
 	descriptors: [],
 	name: "Darkness",
 	requirements: [],
-	effect: `You touch a small object and it begins to radiate shadowy darkness out to a 20 foot radius.  Natural light is incapable of brighting the area, as are Light spells cast with less mana (if the two spells are of equal strength, the first-cast one takes effect).  Creatures with infravision cannot see in magical darkness.  Covering the object that Darkness was cast on also blocks the darkness.`,
+	effect: `You touch a small object and it begins to radiate shadowy darkness out to a 20 foot radius.  Natural light is incapable of brighting the area, as are Light and Radiant spells cast with less mana (if the two spells are of equal strength, the first-cast one takes effect).  Creatures with infravision cannot see in magical darkness.  Covering the object that Darkness was cast on also blocks the darkness.`,
 	manaEffect: `Each additional mana spent increases the radius of the darkness by 20 feet.`,
 	spellData: {
 		range: RANGE.Touch,

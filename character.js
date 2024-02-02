@@ -222,7 +222,7 @@ ruleSections.skills = [
 	},
 	{
 		type: RULE_BLOCK.EXAMPLE,
-		body: "Monk: Gain the narrow skill Unarmed Combat at levels 1, 5, 9, 13, 17.",
+		body: "Monk: Gain Unarmed Combat at levels 1, 5, 9, 13, 17.",
 	},
 	{
 		type: RULE_BLOCK.EXAMPLE,

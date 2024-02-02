@@ -154,7 +154,7 @@ spells = [
 	descriptors: [SPELL_TYPES.MindAffecting],
 	name: "Bless",
 	requirements: [],
-	effect: `You and all of your allies within 30 feet recieve a blessing.  Each of you may add 2 to one of your attacks or saving throws each turn.`,
+	effect: `You and all of your allies within 20 feet of the target point recieve a blessing.  Each of you may add 2 to one of your attacks or saving throws each turn.`,
 	manaEffect: "For each additional mana spent, increase the bonus by 1.",
 	spellData: {
 		range: RANGE.Medium,

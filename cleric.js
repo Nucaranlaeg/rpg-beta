@@ -17,7 +17,7 @@ classes.cleric = {
 		"Divine Conduit - The second time you Channel every hour does not count against your limit. Your first channel must not have been free.",
 	],
 	"Cleric": [
-		"Holy Proficiency - As a free action, you may expend one of your daily Channels to gain divine guidance in the use of one weapon you are currently holding.  Until the end of your next turn, your rank in Channelling is added to your rank in Melee Weapons and Ranged Weapons and you gain proficiency in Martial weapons.  You also gain the effects of the Extra Attack (Greater) feature (counting levels in Cleric, gaining attacks at levels 6, 12, and 18).",
+		"Holy Proficiency - As a free action, you may expend one of your daily Channels to gain divine guidance in the use of one weapon you are currently holding.  Until the end of your next turn, your rank in Channelling is added to your rank in Melee Weapons, Ranged Weapons, and Unarmed Combat, and you gain proficiency in Martial weapons.  You also gain the effects of the Extra Attack (Greater) feature (counting levels in Cleric, gaining attacks at levels 6, 12, and 18).",
 		"Turn Undead - Your attacks are especially effective against undead.  Hitting an undead creature with a melee weapon deals additional damage equal to your Cleric level.",
 	],
 	"General": [
