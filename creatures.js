@@ -237,7 +237,6 @@ const creatures = [
 		],
 	},
 	{
-		hidden: true,
 		name: "Goblin",
 		stats: {
 			STR: 11,
@@ -264,7 +263,6 @@ const creatures = [
 		],
 	},
 	{
-		hidden: true,
 		name: "Hobgoblin",
 		stats: {
 			STR: 13,
@@ -292,7 +290,6 @@ const creatures = [
 		],
 	},
 	{
-		hidden: true,
 		name: "Goblin Shaman",
 		stats: {
 			STR: 9,
@@ -348,7 +345,6 @@ const creatures = [
 		],
 	},
 	{
-		hidden: true,
 		name: "Juvenile Land Shark",
 		stats: {
 			STR: 20,
@@ -449,7 +445,7 @@ setTimeout(() => {
 	creatures.sort((a, b) => a.name > b.name);
 
 	creatures.forEach(creature => {
-		if (creature.hidden) return;
+		// if (creature.hidden) return;
 		const node = creatureDiv.cloneNode(true);
 		node.querySelector(".creature-name").innerHTML = creature.name;
 		node.querySelector(".creature-ac").innerHTML = creature.stats.AC;
