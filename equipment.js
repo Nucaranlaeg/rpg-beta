@@ -45,7 +45,7 @@ ruleSections.melee = [
 			["Rapier", "25 gp", "1d6", "P", "—", "Threat on 18-20", "2 lb.", "Finesse"],
 			["Scimitar", "25 gp", "1d6", "S", "—", "Threat on 18-20", "3 lb.", "Finesse"],
 			["Shortsword", "10 gp", "1d4", "P", "—", "Threat on 19-20", "2 lb.", "Finesse"],
-			["Trident", "5 gp", "1d8", "P", "20 ft", "—", "4 lb.", "versatile (1d8)"],
+			["Trident", "5 gp", "1d8", "P", "20 ft", "—", "4 lb.", "Versatile (1d10)"],
 			["War pick", "5 gp", "1d6", "P", "—", "+3 wounds", "2 lb.", "—"],
 			["Warhammer", "15 gp", "1d8", "B", "—", "+2 wounds", "2 lb.", "Versatile (1d10)"],
 			["Whip", "2 gp", "1d4", "S", "—", "—", "3 lb.", "Finesse, special"],
@@ -114,7 +114,7 @@ ruleSections.ranged = [
 		Critical: Weapons without an entry under "Critical" deal one additional wound on a critical hit.
 		Crossbow: Crossbows require a DC 15 Strength check made as a full-round action to reload (a creature may instead spend one minute reloading).
 		Range: Beyond the listed range, attacks are made at Disadvantage.  Thrown attacks are impossible beyond 3x the listed range, and fired attacks are impossible beyond 4x the listed range.
-		Stone: Thrown stones deal 1d6 damage per 3 lb (rounded down, min 1d6 as long as it weighs at least 1 lb). You may not throw a stone weighing more than your Strength modifier plus 4 lbs.`
+		Stone: Thrown stones deal 1d6 damage per 4 lb (rounded down, min 1d6 as long as it weighs at least 1 lb). You may not throw a stone weighing more than your Strength modifier plus 4 lbs.`
 	},
 ];
 

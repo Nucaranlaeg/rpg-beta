@@ -35,7 +35,7 @@ spells = [
 	},
 },
 {
-	type: [SOURCES.Arcane],
+	type: [SOURCES.Arcane, SOURCES.Divine],
 	descriptors: [SPELL_TYPES.Negative],
 	name: "Chill Touch",
 	requirements: [],
@@ -104,6 +104,7 @@ spells = [
 		school: SCHOOLS.Necromancy,
 		save: SAVES.None,
 		duration: DURATIONS.Dawn,
+	}
 },
 {
 	type: [SOURCES.Divine],

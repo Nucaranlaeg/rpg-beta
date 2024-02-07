@@ -26,6 +26,7 @@
 		<script src="races.js"></script>
 		<script src="magic.js"></script>
 		<script src="combat.js"></script>
+		<script src="creatures.js"></script>
 		<!-- Spells -->
 		<script src="spells/spells.js"></script>
 		<script src="spells/abjuration.js"></script>
@@ -50,6 +51,7 @@
 			<div id="nav-magic" class="nav-button">Magic</div>
 			<div id="nav-combat" class="nav-button">Combat</div>
 			<div id="nav-build" class="nav-button">Build (WIP)</div>
+			<div id="nav-creatures" class="nav-button">Creatures</div>
 		</div>
 		<div id="sub-header-nav-intro" class="nav" onclick="subNavClick(event)">
 			<div id="nav-overview" class="selected nav-button">Overview</div>
@@ -109,6 +111,11 @@
 			<div id="nav-edit" class="selected nav-button">Edit</div>
 			<a id="view-character" class="nav-button" href="sheet.html" target="_blank">View</a>
 			<a class="nav-button" href="sheet.html" target="_blank">Blank Sheet</a>
+		</div>
+		<div id="sub-header-nav-creatures" class="nav" onclick="subNavClick(event)" style="display:none">
+			<div id="nav-monsters" class="selected nav-button">Monsters</div>
+			<div id="nav-types" class="nav-button">Types</div>
+			<div id="nav-fight" class="nav-button">Fight</div>
 		</div>
 		<div id="main-content">
 		</div>
@@ -246,6 +253,53 @@
 				<div class="context-option">9</div>
 				<div class="context-option">11</div>
 				<div class="context-option">Unassign</div>
+			</div>
+		</div>
+		<div id="creature-display">
+			<h2>All the creatures you've previously fought (and defeated) show up here!</h2>
+			<div class="creature">
+				<div class="creature-name"></div>
+				<div class="creature-ac-block">
+					<div class="creature-ac"></div>
+					<div class="creature-touch-ac"></div>
+					<div class="creature-flatfooted-ac"></div>
+				</div>
+				<div class="creature-morale"></div>
+				<div class="creature-speed"></div>
+				<div class="creature-size"></div>
+				<div class="creature-hp">
+					<div class="creature-hit-points"></div>
+					<div class="creature-hit-dice"></div>
+				</div>
+				<div class="creature-stats">
+					<div class="creature-stat">
+						<div class="creature-str creature-stat-value"></div>
+						<div class="creature-str-mod creature-mod"></div>
+					</div>
+					<div class="creature-stat">
+						<div class="creature-dex creature-stat-value"></div>
+						<div class="creature-dex-mod creature-mod"></div>
+					</div>
+					<div class="creature-stat">
+						<div class="creature-con creature-stat-value"></div>
+						<div class="creature-con-mod creature-mod"></div>
+					</div>
+					<div class="creature-stat">
+						<div class="creature-cha creature-stat-value"></div>
+						<div class="creature-cha-mod creature-mod"></div>
+					</div>
+					<div class="creature-stat">
+						<div class="creature-int creature-stat-value"></div>
+						<div class="creature-int-mod creature-mod"></div>
+					</div>
+					<div class="creature-stat">
+						<div class="creature-wis creature-stat-value"></div>
+						<div class="creature-wis-mod creature-mod"></div>
+					</div>
+				</div>
+				<div class="creature-features"></div>
+				<div class="creature-attacks"></div>
+				<div class="creature-spells"></div>
 			</div>
 		</div>
 	</body>

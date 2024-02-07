@@ -311,7 +311,7 @@ spells = [
 	descriptors: [SPELL_TYPES.Sustained],
 	name: "Desecrate",
 	requirements: [],
-	effect: `You curse the area in a 30 foot radius around a point you choose.  Undead in the area are strengthened, gaining Advantage on their attack rolls and saving throws, a +1 bonus to damage on their attacks, and 1 damage reduction from all sources.  Animate Dead refunds 3 mana when cast in the area.`,
+	effect: `You curse the area in a 30 foot radius around a point you choose.  Undead in the area are strengthened, gaining Advantage on their attack rolls and saving throws, a +1 bonus to damage on their attacks, and 1 damage reduction from all sources.  Animate Dead refunds 3 mana when cast in the area.  After you cast this spell, you must concentrate on it for 10 minutes before it takes effect.  If you lose concentration during that time, the spell is wasted.`,
 	manaEffect: `Each additional mana spent increases the damage bonus and the damage reduction by 1.`,
 	spellData: {
 		range: RANGE.Medium,

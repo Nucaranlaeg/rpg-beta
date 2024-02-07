@@ -96,7 +96,7 @@ let spells = [
 		range: RANGE.Long,
 		minMana: 1,
 		school: SCHOOLS.Universal,
-		save: SAVES.None,
+		save: SAVES.Intelligence,
 	},
 },
 {
