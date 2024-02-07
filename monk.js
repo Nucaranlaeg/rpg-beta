@@ -39,13 +39,13 @@ classes.monk = {
 	"Monk": [
 		"Combat Meditation - When you meditate, you can still defend yourself.  Attackers have Disadvantage when attacking you while you are meditating.",
 		"Centred - You gain two additional Ki points when you meditate.",
-		"Bodily Integrity - You are immune to non-magical disease.  You gain Advantage against the secondary effects of poison and against magical diseases.",
+		"Bodily Integrity - You are immune to non-magical disease.  You gain Advantage on saves against the effects of poison and saves against magical diseases.",
 		"Perfect Form - When you take a long rest, you heal half (rounded down) of your wounds.  For example, if you had 7 wounds, you would heal half (3) plus the one you would normally heal, and have only 3 wounds in the morning.",
 		"Efficient Meridians - Each round, the third Ki point you spend is refunded. For the purpose of Efficient Meridians, rounds are considered to begin at the start of your turn.",
 	],
 	"General": [
 		"Fast Movement - Your speed increases by 10 feet.  You gain a +2 bonus on skill checks that involve movement.",
-		"Tumble - You don't provoke opportunity attacks when leaving a space threatened by a creature unless that creature threatened you at the start of your turn and it no longer threatens you.  If you use this feature, you cannot move both before and after any other action this turn.",
+		"Tumble - You may tumble, avoiding opportunity attacks from any creature that did not threaten you at the start of your turn.  If you use this feature, you cannot move both before and after any other action this turn.",
 		"Whole Body a Weapon - You may use an unarmed strike as an offhand weapon, even if both of your hands are full.",
 		"Improved Initiative - You gain a +2 bonus to initiative.  You retain your Dexterity bonus to AC when you are surprised.",
 		"Deflect Arrows - Once per round, when you would be hit by an arrow or other projectile weighing fewer pounds than your strength modifier (minimum 1), you may knock it out of the air as a free action and take no damage.  You cannot deflect critical hits.",

@@ -445,7 +445,7 @@ setTimeout(() => {
 	creatures.sort((a, b) => a.name > b.name);
 
 	creatures.forEach(creature => {
-		// if (creature.hidden) return;
+		if (creature.hidden) return;
 		const node = creatureDiv.cloneNode(true);
 		node.querySelector(".creature-name").innerHTML = creature.name;
 		node.querySelector(".creature-ac").innerHTML = creature.stats.AC;
