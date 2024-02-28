@@ -172,7 +172,7 @@ spells = [
 	descriptors: [SPELL_TYPES.Force],
 	name: "Deny",
 	requirements: [],
-	effect: `You apply pure force to your enemy, preventing them from hitting you with an attack.  If it is a melee attack, your attacker takes ${DAMAGE.Force}.  You may only cast this spell as a reaction to being attacked, before you know whether the attack would hit.`,
+	effect: `You apply pure force to your enemy, preventing them from hitting you with an attack.  You take no damage from the attack.  If it is a melee attack, your attacker takes ${DAMAGE.Force}.  You may only cast this spell as a reaction to being attacked, before you know whether the attack would hit.`,
 	manaEffect: `For each additional mana used, this deals an additional ${DAMAGE.Force}. For each three additional mana you spend, you may block another attack with Deny as a free action before the beginning of your next turn.`,
 	spellData: {
 		range: RANGE.Touch,

@@ -162,6 +162,22 @@ spells = [
 },
 {
 	type: [SOURCES.Arcane],
+	descriptors: [SPELL_TYPES.Lightning, SPELL_TYPES.Sustained],
+	name: "Ball Lightning",
+	requirements: [],
+	effect: `You create a ball of lightning in an unoccupied space adjacent to a target creature, which can attempt a Wisdom save to avoid the spell locking on to it.  At the start of each of that creature's turns, the ball moves 15 feet toward that creature and then deals ${DAMAGE.Lightning} to each adjacent creature.  The ball of lightning must remain within ${RANGE.Long} of you.  If the creature succeeds on the initial Wisdom save, the ball of lightning simply floats in place.`,
+	manaEffect: `For each additional mana used, the spell deals an additional ${DAMAGE.Lightning} each turn and moves 5 feet faster.`,
+	spellData: {
+		range: RANGE.Medium,
+		minMana: 4,
+		school: SCHOOLS.Conjuration,
+		save: SAVES.Dexterity,
+		duration: DURATIONS.Minute,
+		upkeep: UPKEEP.Zero,
+	},
+},
+{
+	type: [SOURCES.Arcane],
 	descriptors: [],
 	name: "Grease",
 	requirements: [],
