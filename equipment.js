@@ -231,3 +231,46 @@ ruleSections.considerations = [
 		],
 	},
 ];
+
+ruleSections.magicitems = [
+	{
+		type: RULE_BLOCK.BODY,
+		body: `Non-consumable magic items are generally unique creations, each different from the last.  That being said, most magical properties fall into one of a few categories, depending on the type of item.`,
+	},
+	{
+		type: RULE_BLOCK.SUBSUBTITLE,
+		body: "Weapon Properties",
+	},
+	{
+		type: RULE_BLOCK.EXAMPLE,
+		body: "+X bonus.  Many weapons simply provide a bonus to hit and to damage, represented as a '+2 sword'.",
+	},
+	{
+		type: RULE_BLOCK.SUBSUBTITLE,
+		body: "Armour Properties",
+	},
+	{
+		type: RULE_BLOCK.EXAMPLE,
+		body: "+X bonus.  Many armours simply provide a bonus to AC, represented as a '+1 leather armour'.",
+	},
+	{
+		type: RULE_BLOCK.SUBTITLE,
+		body: "Discovering Properties",
+	},
+	{
+		type: RULE_BLOCK.BODY,
+		body: `Weapon properties are revealed to the wielder the first time a creature is Wounded by the item.  Armour properties are revealed to the wearer the first time the wearer recieves a Wound while wearing it.`,
+	},
+	{
+		type: RULE_BLOCK.SUBSUBTITLE,
+		body: "Items Found",
+	},
+	{
+		type: RULE_BLOCK.TABLEWITHHEAD,
+		body: [
+			["Name", "Type", "Effect", true],
+			["Blast Pick", "Weapon - War Pick", "When this pick strikes an inanimate object, it deals an additional 4d6 damage.  When it strikes a creature, it deals an additional 2d6 damage if the target has flatfooted AC at least 15.", false],
+			["Miner's Map", "Wondrous Item", "This map shows all non-living things that its user knows about within 100 feet.  With one minute of focus, the map can reveal the location of everything made from a non-living substance in the radius.", false],
+		].filter(x => x[x.length - 1]).map(x => x.slice(0, -1)),
+	},
+];

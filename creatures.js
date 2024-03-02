@@ -179,7 +179,7 @@ const creatures = [
 			"Gore": "When an island boar hits with both of its tusk attacks, it deals one additional Wound.",
 		},
 		attacks: [
-			["Tusk (x2)", "+7", "1d8+5", "2/20"],
+			["Tusk (x2)", "+7", "1d8+5", "3/20"],
 		],
 	},
 	{
@@ -205,7 +205,7 @@ const creatures = [
 			"Charge": "An island boar piglet can move up to double its speed, then make two tusk attacks against the same target with Advantage.  If it does, it grants Advantage to all attackers during the change and on its next turn.  It must move at least its full movement speed toward its target during the charge.",
 		},
 		attacks: [
-			["Tusk (x2)", "+2", "1d4+2", "2/20"],
+			["Tusk (x2)", "+2", "1d4+2", "3/20"],
 		],
 	},
 	{
@@ -287,6 +287,33 @@ const creatures = [
 		attacks: [
 			["Mace", "+3", "1d6+1", "1/20"],
 			["Shortbow", "+4", "1d6", "1/19"],
+		],
+	},
+	{
+		name: "Bugbear",
+		stats: {
+			STR: 16,
+			DEX: 15,
+			CON: 14,
+			CHA: 10,
+			INT: 10,
+			WIS: 9,
+			HitDice: "6d8",
+			HitPoints: 27,
+			AC: 17,
+			TouchAC: 12,
+			FlatfootedAC: 15,
+			Morale: 5,
+			Speed: 30,
+			Size: "M",
+		},
+		features: {
+			"Leader of Goblins": "A bugbear increases the effective morale of up to 6 nearby goblins by 3.",
+			"Superior Flank": "When a bugbear is flanking a creature with an allied goblinoid, the bugbear gains Advantage on attacks against the flanked creature and deals an additional 2d6 damage.",
+			"Tough Skin": "While at 0 hit points, a bugbear takes 4 less damage from attacks.",
+		},
+		attacks: [
+			["Maul", "+7", "2d6+4", "1/20"],
 		],
 	},
 	{
@@ -429,6 +456,38 @@ const creatures = [
 		spells: [
 			["Fireball", "2 mana, 2d6 fire damage in 5 foot radius within 50 feet"],
 			["Grease", "1 mana, 10 foot square within 50 feet. +1 mana for 15 foot square."],
+		],
+	},
+	{
+		hidden: true,
+		name: "Juvenile Fire Drake",
+		stats: {
+			STR: 17,
+			DEX: 10,
+			CON: 17,
+			CHA: 10,
+			INT: 11,
+			WIS: 10,
+			HitDice: "10d12",
+			HitPoints: 66,
+			AC: 19,
+			TouchAC: 10,
+			FlatfootedAC: 19,
+			Morale: 7,
+			Speed: 30,
+			Size: "M",
+		},
+		features: {
+			"Flight": "Fly speed 30",
+			"Infravision": "Infravision 60 feet",
+			"Fire breath": "Standard action: 15 foot 45 degree cone, Dexterity DC 10, 4d6 damage, recharge on a 6",
+			"Pyrophoric blood": "A fire drake's blood is highly flammable and ignites in a burst of flame upon contact with the air. A creature that makes a successful attack with a slashing or piercing weapon (including natural weapons) against a fire drake must succeed on a Reflex save or take 1d4-2 points of fire damage from the splashing blood.",
+			"Tail sweep": "A fire drake may make a tail sweep as a standard action, hitting all creatures in a 180 degree arc within 5 feet.",
+		},
+		attacks: [
+			["Bite", "+5", "1d8+3", "2/20"],
+			["Claw", "+5", "1d6+3", "2/20"],
+			["Tail Sweep", "+5", "2d6+4", "2/20"],
 		],
 	},
 ];

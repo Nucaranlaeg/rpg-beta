@@ -185,7 +185,7 @@ function loadView(){
 		const typeFilter = Object.values(SPELL_TYPES).map(type => spellFilters[type.replace(" Energy", "")] ? type : null).filter(s=>s);
 		const costFilter = [...new Set(spells.map(s => s.spellData.minMana))].map(cost => spellFilters[cost] ? cost : null).filter(s=>s !== null);
 
-		spells.sort((a, b) => a.name < b.name ? -1 : 1).sort((a, b) => a.spellData.minMana - b.spellData.minMana);
+		spells.sort((a, b) => a.name < b.name ? -1 : 1);
 		spells.forEach(spell => {
 			if (schoolFilter.length && !schoolFilter.includes(spell.spellData.school)) return;
 			if (sourceFilter.length && !sourceFilter.some(source => spell.type.some(type => type === source))) return;
