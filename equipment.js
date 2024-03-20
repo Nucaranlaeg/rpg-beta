@@ -44,7 +44,7 @@ ruleSections.melee = [
 			["Pike", "5 gp", "1d6", "P", "—", "—", "18 lb.", "Reach, two-handed"],
 			["Rapier", "25 gp", "1d6", "P", "—", "Threat on 18-20", "2 lb.", "Finesse"],
 			["Scimitar", "25 gp", "1d6", "S", "—", "Threat on 18-20", "3 lb.", "Finesse"],
-			["Shortsword", "10 gp", "1d4", "P", "—", "Threat on 19-20", "2 lb.", "Finesse"],
+			["Shortsword", "10 gp", "1d6", "P", "—", "Threat on 19-20", "2 lb.", "Finesse"],
 			["Trident", "5 gp", "1d8", "P", "20 ft", "—", "4 lb.", "Versatile (1d10)"],
 			["War pick", "5 gp", "1d6", "P", "—", "+3 wounds", "2 lb.", "—"],
 			["Warhammer", "15 gp", "1d8", "B", "—", "+2 wounds", "2 lb.", "Versatile (1d10)"],
