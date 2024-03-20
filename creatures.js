@@ -398,7 +398,6 @@ const creatures = [
 		],
 	},
 	{
-		hidden: true,
 		name: "Kobold",
 		stats: {
 			STR: 8,
@@ -459,7 +458,6 @@ const creatures = [
 		],
 	},
 	{
-		hidden: true,
 		name: "Juvenile Fire Drake",
 		stats: {
 			STR: 17,

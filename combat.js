@@ -249,7 +249,7 @@ ruleSections.dying = [
 		type: RULE_BLOCK.BODY,
 		body: `A natural 20 always stabilizes the creature, and if the result is at least DC + 5, the creature becomes conscious.
 		When a dying creature recieves magical healing, it may immediately roll a death saving throw.  This special death saving throw has no consequences if it is a failure, but it can stabilize the creature or cause it to become conscious (even if it is already stable).  Note that even with magical healing, a creature may still be dying, and will continue rolling death saving throws at the beginning of each of its turns if it does not stabilize.
-		Your DM may assume that creatures which are not player characters (or important NPCs) simply die if they fall unconscious during combat. Similarly, your DM may assume that a creature dies without rolling if it takes Wounds equal to its Constitution score.`,
+		Your DM may assume that creatures which are not player characters (or important NPCs) simply die if they fall unconscious during combat. Monsters die instantly when they have suffered a number of wounds based on their size: Small - 4, Medium - 6, Large - 8, Huge - 12.`,
 	},
 	{
 		type: RULE_BLOCK.SUBTITLE,

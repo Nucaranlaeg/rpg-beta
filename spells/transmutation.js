@@ -168,7 +168,7 @@ spells = [
 	descriptors: [SPELL_TYPES.Lightning],
 	name: "Ride the Lightning",
 	requirements: [],
-	effect: `You briefly transform yourself and everything that you are carrying into lightning, then move in a straight line to a new location.  You may move through creatures and through small spaces during this movement.  Creatures in the spaces you move through take ${DAMAGE.Lightning}.  After you determine your target location, roll 1d6.  On a 1, you move 25% less distance, and on a 6 you move 25% more.`,
+	effect: `You briefly transform yourself and everything that you are carrying into lightning, then move in a straight line to a new location.  You may move through creatures and through small spaces during this movement.  Creatures in the spaces you move through take ${DAMAGE.Lightning}.  After you determine your target location, roll 1d6.  On a 1, you move 75% less distance, on a 2 you move 50% less distance, on a 3 you move 25% less distance, and on a 6 you move 50% more.`,
 	manaEffect: `For each additional mana used, the spell deals an additional ${DAMAGE.Lightning} and its maximum range is increased by 10 feet.`,
 	spellData: {
 		range: RANGE.Short,

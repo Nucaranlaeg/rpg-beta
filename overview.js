@@ -4,7 +4,13 @@ ruleSections.overview = [
 		body: `Since Last Session`,
 	},{
 		type: RULE_BLOCK.EXAMPLE,
-		body: `Thrown rock damage from 1d6/3lb => 1d6/4lb`,
+		body: `Creatures now die instantly at 4 Wounds (small), 6 Wounds (medium), 8 Wounds (large).`,
+	},{
+		type: RULE_BLOCK.EXAMPLE,
+		body: `Lightning Plague must burn out before being recast.`,
+	},{
+		type: RULE_BLOCK.EXAMPLE,
+		body: `Ride the Lightning is much less predictable.`,
 	},{
 		type: RULE_BLOCK.SUBTITLE,
 		body: `Overview`,
