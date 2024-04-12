@@ -510,6 +510,7 @@ const creatures = [
 		features: {
 			"Regeneration": "A hydra recovers 2 hit points per hit die (16) each turn.  If this healing restores it to its maximum hit points, it heals one Wound.  Fire or acid damage temporarily lower a hydra's maximum hit points by the damage dealt; its normal maximum hitpoints are restored with the next dawn.",
 			"Extra Heads": "A hydra which takes a Wound from a slashing attack loses a head.  Two heads regrow from the stump in 1d4 rounds.  The hydra may have up to double its original number of heads, and dies if it has no heads remaining.  Extra heads wither and die within a day.",
+			"Boss Monster": "A hydra never dies except as the result of a failed death saving throw.",
 		},
 		attacks: [
 			["5 Bites", "+6", "1d10+3", "1/20"],

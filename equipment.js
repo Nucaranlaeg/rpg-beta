@@ -269,7 +269,7 @@ ruleSections.magicitems = [
 		type: RULE_BLOCK.TABLEWITHHEAD,
 		body: [
 			["Name", "Type", "Effect", true],
-			["Blast Pick", "Weapon - War Pick", "When this pick strikes an inanimate object, it deals an additional 4d6 damage.  When it strikes a creature, it deals an additional 2d6 damage if the target has flatfooted AC at least 15.", false],
+			["Blast Pick", "Weapon - War Pick", "When this pick strikes an inanimate object, it deals an additional 4d6 damage.  When it strikes a creature, it deals an additional 2d6 damage if the target has flatfooted AC at least 15.", true],
 			["Miner's Map", "Wondrous Item", "This map shows all non-living things that its user knows about within 100 feet.  With one minute of focus, the map can reveal the location of everything made from a non-living substance in the radius.", false],
 		].filter(x => x[x.length - 1]).map(x => x.slice(0, -1)),
 	},
