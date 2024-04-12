@@ -4,7 +4,7 @@ ruleSections.overview = [
 		body: `Since Last Session`,
 	},{
 		type: RULE_BLOCK.EXAMPLE,
-		body: `Creatures now die instantly at 4 Wounds (small), 6 Wounds (medium), 8 Wounds (large).`,
+		body: `Creatures now die instantly at 4 Wounds (small), 6 Wounds (medium), 8 Wounds (large), 12 Wounds (huge).`,
 	},{
 		type: RULE_BLOCK.EXAMPLE,
 		body: `Lightning Plague must burn out before being recast.`,
@@ -53,6 +53,7 @@ ruleSections.glossary = [
 		type: RULE_BLOCK.SUBTITLE,
 		body: `Keywords`,
 	},...[
+		`Difficult terrain: Movement in difficult terrain costs twice what it normally would.`,
 		`Flanking: When you and an ally are on opposite sides of an enemy and both threatening it, you both gain Advantage on your attacks against that enemy.`,
 		`Touch attack: A touch attack ignores your armour bonus to AC.`,
 	].map(condition => {

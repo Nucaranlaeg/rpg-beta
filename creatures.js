@@ -157,7 +157,7 @@ const creatures = [
 	},
 	{
 		hidden: true,
-		name: "Island Boar",
+		name: "Swamp Boar",
 		stats: {
 			STR: 20,
 			DEX: 6,
@@ -175,8 +175,9 @@ const creatures = [
 			Size: "M",
 		},
 		features: {
-			"Charge": "An island boar can move up to double its speed, then make two tusk attacks against the same target with Advantage.  If it does, it grants Advantage to all attackers during the change and on its next turn.  It must move at least its full movement speed toward its target during the charge.",
-			"Gore": "When an island boar hits with both of its tusk attacks, it deals one additional Wound.",
+			"Charge": "A swamp boar can move up its speed, ignoring difficult terrain, then make two tusk attacks against the same target with Advantage.  If it does, it grants Advantage to all attackers during the change and on its next turn.  It must move at least half of its full movement speed toward its target during the charge.",
+			"Gore": "When a swamp boar hits with both of its tusk attacks, it deals one additional Wound.",
+			"Camoflage": "A swamp boar can remain hidden in a swamp, just under the surface of the water.  If it does not move for at least a minute, it recieves +5 on hide skill checks.",
 		},
 		attacks: [
 			["Tusk (x2)", "+7", "1d8+5", "3/20"],
@@ -184,7 +185,7 @@ const creatures = [
 	},
 	{
 		hidden: true,
-		name: "Island Boar Piglet",
+		name: "Swamp Boar Piglet",
 		stats: {
 			STR: 14,
 			DEX: 6,
@@ -202,7 +203,8 @@ const creatures = [
 			Size: "S",
 		},
 		features: {
-			"Charge": "An island boar piglet can move up to double its speed, then make two tusk attacks against the same target with Advantage.  If it does, it grants Advantage to all attackers during the change and on its next turn.  It must move at least its full movement speed toward its target during the charge.",
+			"Charge": "A swamp boar piglet can move up its speed, ignoring difficult terrain, then make two tusk attacks against the same target with Advantage.  If it does, it grants Advantage to all attackers during the change and on its next turn.  It must move at least half of its full movement speed toward its target during the charge.",
+			"Camoflage": "A swamp boar piglet can remain hidden in a swamp, just under the surface of the water.  If it does not move for at least a minute, it recieves +10 on hide skill checks.",
 		},
 		attacks: [
 			["Tusk (x2)", "+2", "1d4+2", "3/20"],
@@ -346,7 +348,6 @@ const creatures = [
 		],
 	},
 	{
-		hidden: true,
 		name: "Dire Bat",
 		stats: {
 			STR: 17,
@@ -489,7 +490,6 @@ const creatures = [
 		],
 	},
 	{
-		hidden: true,
 		name: "Five-Headed Hydra",
 		stats: {
 			STR: 17,
@@ -517,7 +517,6 @@ const creatures = [
 		],
 	},
 	{
-		hidden: true,
 		name: "Assassin",
 		stats: {
 			STR: 14,
@@ -546,7 +545,6 @@ const creatures = [
 		],
 	},
 	{
-		hidden: true,
 		name: "Assassin (Master)",
 		stats: {
 			STR: 16,
@@ -579,6 +577,89 @@ const creatures = [
 			["+1 Crossbow", "+9", "1d12+1", "2/20"],
 		],
 	},
+	{
+		hidden: true,
+		name: "Disenchanter",
+		stats: {
+			STR: 18,
+			DEX: 3,
+			CON: 30,
+			CHA: 16,
+			INT: 4,
+			WIS: 5,
+			HitDice: "12d12",
+			HitPoints: 78,
+			AC: 16,
+			TouchAC: 6,
+			FlatfootedAC: 16,
+			Morale: 8,
+			Speed: 25,
+			Size: "H",
+			misc: "Damage Reduction: 1",
+		},
+		features: {
+			"Trample": "A disenchanter can move into spaces other creatures occupy, crushing medium or smaller creatures in its path.  A creature in its path may make a DC 12 Dexterity save to move 5 feet as a reaction.  Creatures remaining in the disenchanter's path take 1d12+4 damage.",
+			"Siphon": "When a creature within 30 feet of a Disenchanter channels, its magic is drained by the Disenchanter.  It loses one additional channel, and the Disenchanter's damage reduction increases by 1 until the next dawn.",
+			"Drain": "When a creature is struck by a Disenchanter's Slam attack, it must make a Wisdom save with DC 13.  If it fails, it loses a channel and the Disenchanter's damage reduction increases by 1 until the next dawn.  If it cannot lose a channel, it instead gains a stack of exhaustion.",
+		},
+		attacks: [
+			["Slam (x2)", "+8", "1d12+4", "1/20"],
+		],
+	},
+	{
+		hidden: true,
+		name: "Shambler",
+		stats: {
+			STR: 21,
+			DEX: 10,
+			CON: 17,
+			CHA: 9,
+			INT: 7,
+			WIS: 10,
+			HitDice: "8d8",
+			HitPoints: 36,
+			AC: 20,
+			TouchAC: 9,
+			FlatfootedAC: 20,
+			Morale: 6,
+			Speed: 20,
+			Size: "L",
+		},
+		features: {
+			"Immunities": "Immunity to lightning, resistance to fire.",
+			"Constrict": "If a shambler hits with both of its slam attacks, its target must make a strength save DC 15 or be immobilized until the beginning of the shambler's next turn and take 2d6+7 damage.",
+		},
+		attacks: [
+			["Slam (x2)", "+9", "2d6+5", "1/20"],
+		],
+	},
+	{
+		hidden: true,
+		name: "Swamp Thing",
+		stats: {
+			STR: 10,
+			DEX: 14,
+			CON: 12,
+			CHA: 16,
+			INT: 4,
+			WIS: 13,
+			HitDice: "7d8",
+			HitPoints: 32,
+			AC: 13,
+			TouchAC: 12,
+			FlatfootedAC: 13,
+			Morale: 3,
+			Speed: 30,
+			Size: "M",
+		},
+		features: {
+			"Poison": "When a swamp thing hits a creature with its slam attack, that creature must make a Wisdom save DC 13 or become poisoned, hallucinating and becoming unable to regain hit points naturally.  A hallucinating creature cannot see a swamp thing if it did not move or attack on its last turn.  The creature may repeat the save every 5 minutes.",
+			"Swampborne": "A swamp thing ignores difficult terrain if that terrain is swamp.",
+		},
+		attacks: [
+			["Slam", "+4", "1d6 plus poison", "1/20"],
+		],
+	},
 ];
 
 setTimeout(() => {
@@ -602,6 +683,7 @@ setTimeout(() => {
 		node.querySelector(".creature-morale").innerHTML = creature.stats.Morale;
 		node.querySelector(".creature-speed").innerHTML = creature.stats.Speed;
 		node.querySelector(".creature-size").innerHTML = creature.stats.Size;
+		node.querySelector(".creature-misc").innerHTML = creature.stats.misc || "";
 		node.querySelector(".creature-hit-points").innerHTML = creature.stats.HitPoints;
 		node.querySelector(".creature-hit-dice").innerHTML = creature.stats.HitDice;
 		node.querySelector(".creature-str").innerHTML = creature.stats.STR;
